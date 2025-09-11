@@ -5,9 +5,9 @@ VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraApp", "MedoraApp\MedoraApp.csproj", "{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraAppLibrary", "MedoraAppLibrary1\MedoraAppLibrary.csproj", "{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraAppLibrary", "MedoraAppLibrary\MedoraAppLibrary.csproj", "{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraAppTest", "MedoraAppTest1\MedoraAppTest.csproj", "{A3CB4706-CACF-46E4-B70F-F44EC826296D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraAppTest", "MedoraAppTest\MedoraAppTest.csproj", "{A3CB4706-CACF-46E4-B70F-F44EC826296D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

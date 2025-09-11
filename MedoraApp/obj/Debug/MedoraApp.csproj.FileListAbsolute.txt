@@ -7,3 +7,4 @@ C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraA
 C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.csproj.CoreCompileInputs.cache
 C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.exe
 C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.pdb
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.exe.config
