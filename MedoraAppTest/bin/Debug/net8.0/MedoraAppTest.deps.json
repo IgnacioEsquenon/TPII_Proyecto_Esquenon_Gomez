@@ -1,0 +1,38 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MedoraAppTest/1.0.0": {
+        "dependencies": {
+          "MedoraAppLibrary": "1.0.0"
+        },
+        "runtime": {
+          "MedoraAppTest.dll": {}
+        }
+      },
+      "MedoraAppLibrary/1.0.0": {
+        "runtime": {
+          "MedoraAppLibrary1.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MedoraAppTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MedoraAppLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

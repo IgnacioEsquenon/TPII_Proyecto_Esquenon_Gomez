@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,14 +53,6 @@
     <Compile Include="Main_Menu.Designer.cs">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Bloque_Horario.cs" />
-    <Compile Include="Models\Dia.cs" />
-    <Compile Include="Models\Especialidad.cs" />
-    <Compile Include="Models\Estado_Reserva.cs" />
-    <Compile Include="Models\Medico.cs" />
-    <Compile Include="Models\Paciente.cs" />
-    <Compile Include="Models\Reserva.cs" />
-    <Compile Include="Models\Turno.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

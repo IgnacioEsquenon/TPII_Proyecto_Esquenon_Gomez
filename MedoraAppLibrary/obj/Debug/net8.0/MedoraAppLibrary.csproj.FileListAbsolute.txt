@@ -1,0 +1,6 @@
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraAppLibrary\obj\Debug\net8.0\MedoraAppLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraAppLibrary\obj\Debug\net8.0\MedoraAppLibrary.AssemblyInfoInputs.cache
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraAppLibrary\obj\Debug\net8.0\MedoraAppLibrary.AssemblyInfo.cs
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraAppLibrary\obj\Debug\net8.0\MedoraAppLibrary.csproj.CoreCompileInputs.cache
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraAppLibrary\obj\Debug\net8.0\MedoraAppLibrary.sourcelink.json
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraAppLibrary\obj\Debug\net8.0\MedoraAppLibrary.csproj.ResolveComReference.cache

@@ -1,0 +1,256 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3CB4706-CACF-46E4-B70F-F44EC826296D}|MedoraAppTest1\\MedoraAppTest1.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapptest1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3CB4706-CACF-46E4-B70F-F44EC826296D}|MedoraAppTest1\\MedoraAppTest1.csproj|solutionrelative:medoraapptest1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\bloque_horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\bloque_horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MedoraAppTest||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\estado_reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\estado_reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\dia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\dia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary1\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary1\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary1\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\medoraapp\\main_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\main_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\medoraapp\\bin\\debug\\medoraapp.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\bin\\debug\\medoraapp.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3CB4706-CACF-46E4-B70F-F44EC826296D}|MedoraAppTest1\\MedoraAppTest.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapptest1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MedoraAppTest",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppTest1\\MedoraAppTest.csproj",
+              "RelativeDocumentMoniker": "MedoraAppTest1\\MedoraAppTest.csproj",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppTest1\\MedoraAppTest.csproj",
+              "RelativeToolTip": "MedoraAppTest1\\MedoraAppTest.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-11T00:58:33.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppTest1\\Program.cs",
+              "RelativeDocumentMoniker": "MedoraAppTest1\\Program.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppTest1\\Program.cs",
+              "RelativeToolTip": "MedoraAppTest1\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T00:55:03.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bloque_Horario.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Bloque_Horario.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Bloque_Horario.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Bloque_Horario.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Bloque_Horario.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwF0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:18:45.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Paciente.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Paciente.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Paciente.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:14.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Rol.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Rol.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Rol.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:22.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Usuario.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Usuario.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Usuario.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Usuario.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAiwBMAAACnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:38.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Estado_Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Estado_Reserva.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Estado_Reserva.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Estado_Reserva.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Estado_Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:13.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Turno.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Turno.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Turno.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Turno.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Turno.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA5wCYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:20:59.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Especialidad.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Especialidad.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Especialidad.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Especialidad.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Especialidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:02.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\Program.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\Program.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\Program.cs",
+              "RelativeToolTip": "MedoraApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T21:34:58.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dia.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Dia.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Dia.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Dia.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Dia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:00.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Reserva.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary1\\Reserva.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary1\\Reserva.cs",
+              "RelativeToolTip": "MedoraAppLibrary1\\Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T23:26:18.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Main_Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\Main_Menu.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\Main_Menu.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\Main_Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp\\Main_Menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T22:19:07.131Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MedoraApp.exe",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\bin\\Debug\\MedoraApp.exe",
+              "RelativeDocumentMoniker": "MedoraApp\\bin\\Debug\\MedoraApp.exe",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\bin\\Debug\\MedoraApp.exe",
+              "RelativeToolTip": "MedoraApp\\bin\\Debug\\MedoraApp.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2025-09-10T21:40:50.191Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
