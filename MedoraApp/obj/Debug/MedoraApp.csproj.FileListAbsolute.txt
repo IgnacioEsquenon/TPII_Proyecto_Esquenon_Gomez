@@ -1,0 +1,10 @@
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\bin\Debug\MedoraApp.exe.config
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\bin\Debug\MedoraApp.exe
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\bin\Debug\MedoraApp.pdb
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.csproj.AssemblyReference.cache
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.Properties.Resources.resources
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.csproj.GenerateResource.cache
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.csproj.CoreCompileInputs.cache
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.exe
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.pdb
+C:\Users\igna2\source\repos\IgnacioEsquenon\TPII_Proyecto_Esquenon_Gomez\MedoraApp\obj\Debug\MedoraApp.exe.config

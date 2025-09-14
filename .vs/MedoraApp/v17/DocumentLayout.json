@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_verbloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_verbloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_crearbloque.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_crearbloque.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\uc_menubloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\uc_menubloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\formmedico.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\formmedico.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\tpii_proyecto_esquenon_gomez-main\\medoraapp1\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\forminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\forminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp1.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp1.csproj|solutionrelative:medoraapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp1\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E20D8465-FF6E-4FFB-99C2-A660B67181A6}|MedoraApp1\\MedoraApp.csproj|solutionrelative:medoraapp1\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UC_MenuBloques.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_MenuBloques.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_MenuBloques.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_MenuBloques.cs",
+              "RelativeToolTip": "MedoraApp1\\UC_MenuBloques.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:28:20.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_VerBloques.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_VerBloques.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_VerBloques.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_VerBloques.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp1\\UC_VerBloques.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T22:02:49.068Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_VerBloques.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_VerBloques.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_VerBloques.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_VerBloques.Designer.cs",
+              "RelativeToolTip": "MedoraApp1\\UC_VerBloques.Designer.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:55:27.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_VerBloques.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_VerBloques.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_VerBloques.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_VerBloques.cs",
+              "RelativeToolTip": "MedoraApp1\\UC_VerBloques.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAC4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:16:10.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UC_CrearBloque.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_CrearBloque.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_CrearBloque.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_CrearBloque.cs",
+              "RelativeToolTip": "MedoraApp1\\UC_CrearBloque.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T16:46:26.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UC_CrearBloque.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_CrearBloque.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_CrearBloque.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_CrearBloque.Designer.cs",
+              "RelativeToolTip": "MedoraApp1\\UC_CrearBloque.Designer.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAAAOUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T16:46:33.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UC_CrearBloque.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_CrearBloque.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_CrearBloque.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_CrearBloque.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp1\\UC_CrearBloque.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T16:31:55.246Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UC_MenuBloques.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_MenuBloques.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_MenuBloques.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_MenuBloques.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp1\\UC_MenuBloques.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T21:56:55.753Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormMedico.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormMedico.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormMedico.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormMedico.cs",
+              "RelativeToolTip": "MedoraApp1\\FormMedico.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T21:35:24.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UC_MenuBloques.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_MenuBloques.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\UC_MenuBloques.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\UC_MenuBloques.Designer.cs",
+              "RelativeToolTip": "MedoraApp1\\UC_MenuBloques.Designer.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwEAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:37:36.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormMedico.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormMedico.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormMedico.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormMedico.Designer.cs",
+              "RelativeToolTip": "MedoraApp1\\FormMedico.Designer.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAAwOQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T21:35:40.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormMedico.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormMedico.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormMedico.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormMedico.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp1\\FormMedico.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T22:02:11.535Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormInicio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormInicio.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormInicio.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormInicio.Designer.cs",
+              "RelativeToolTip": "MedoraApp1\\FormInicio.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T21:51:01.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormInicio.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormInicio.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp1\\FormInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:38:00.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormAdmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormAdmin.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormAdmin.Designer.cs",
+              "RelativeToolTip": "MedoraApp1\\FormAdmin.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T21:37:18.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormAdmin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormAdmin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MedoraApp1\\FormAdmin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T00:26:22.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\Program.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\Program.cs",
+              "RelativeToolTip": "MedoraApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T22:05:47.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\Program.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\Program.cs",
+              "RelativeToolTip": "MedoraApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T21:00:52.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "MedoraApp1\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp1\\FormAdmin.cs",
+              "RelativeToolTip": "MedoraApp1\\FormAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T21:37:04.652Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

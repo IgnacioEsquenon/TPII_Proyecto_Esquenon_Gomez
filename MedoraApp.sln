@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraAppLibrary", "MedoraAppLibrary\MedoraAppLibrary.csproj", "{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraAppTest", "MedoraAppTest\MedoraAppTest.csproj", "{A3CB4706-CACF-46E4-B70F-F44EC826296D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedoraApp", "MedoraApp1\MedoraApp.csproj", "{E20D8465-FF6E-4FFB-99C2-A660B67181A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CB4706-CACF-46E4-B70F-F44EC826296D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CB4706-CACF-46E4-B70F-F44EC826296D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CB4706-CACF-46E4-B70F-F44EC826296D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CB4706-CACF-46E4-B70F-F44EC826296D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20D8465-FF6E-4FFB-99C2-A660B67181A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20D8465-FF6E-4FFB-99C2-A660B67181A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20D8465-FF6E-4FFB-99C2-A660B67181A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20D8465-FF6E-4FFB-99C2-A660B67181A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92FFE399-2802-41BD-A7F7-4B3350F4F182}
+	EndGlobalSection
+EndGlobal
