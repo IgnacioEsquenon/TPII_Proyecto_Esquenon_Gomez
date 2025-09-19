@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MedoraApp.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -47,14 +50,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main_Menu.cs">
+    <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main_Menu.Designer.cs">
-      <DependentUpon>Main_Menu.cs</DependentUpon>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedico.Designer.cs">
+      <DependentUpon>FormMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_CrearBloque.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CrearBloque.Designer.cs">
+      <DependentUpon>UC_CrearBloque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_MenuBloques.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_MenuBloques.Designer.cs">
+      <DependentUpon>UC_MenuBloques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_VerBloques.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_VerBloques.Designer.cs">
+      <DependentUpon>UC_VerBloques.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedico.resx">
+      <DependentUpon>FormMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\MedoraApp.FormAdmin.resources" />
+    <EmbeddedResource Include="obj\Debug\MedoraApp.FormInicio.resources" />
+    <EmbeddedResource Include="obj\Debug\MedoraApp.FormMedico.resources" />
+    <EmbeddedResource Include="obj\Debug\MedoraApp.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\MedoraApp.UC_CrearBloque.resources" />
+    <EmbeddedResource Include="obj\Debug\MedoraApp.UC_MenuBloques.resources" />
+    <EmbeddedResource Include="obj\Debug\MedoraApp.UC_VerBloques.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,7 +113,24 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_CrearBloque.resx">
+      <DependentUpon>UC_CrearBloque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_MenuBloques.resx">
+      <DependentUpon>UC_MenuBloques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_VerBloques.resx">
+      <DependentUpon>UC_VerBloques.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".vs\MedoraApp.csproj.dtbcache.json" />
+    <None Include="bin\Debug\MedoraApp.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\MedoraApp.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\MedoraApp.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\MedoraApp.csproj.GenerateResource.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,7 +145,61 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\MedoraApp.exe" />
+    <Content Include="bin\Debug\MedoraApp.pdb" />
+    <Content Include="obj\Debug\MedoraApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\MedoraApp.exe" />
+    <Content Include="obj\Debug\MedoraApp.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedoraAppLibrary\MedoraAppLibrary.csproj">
+      <Project>{76a471ac-146b-4c44-a2ae-f0ac1e1e70e0}</Project>
+      <Name>MedoraAppLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
