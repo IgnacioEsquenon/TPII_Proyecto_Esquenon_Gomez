@@ -68,6 +68,12 @@
     <Compile Include="FormMedico.Designer.cs">
       <DependentUpon>FormMedico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRecepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecepcionista.Designer.cs">
+      <DependentUpon>FormRecepcionista.cs</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="UC_CrearBloque.Designer.cs">
       <DependentUpon>UC_CrearBloque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_CrearMedico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CrearMedico.Designer.cs">
+      <DependentUpon>UC_CrearMedico.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_MenuBloques.cs">
       <SubType>UserControl</SubType>
@@ -98,6 +110,9 @@
     <EmbeddedResource Include="FormMedico.resx">
       <DependentUpon>FormMedico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRecepcionista.resx">
+      <DependentUpon>FormRecepcionista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\MedoraApp.FormAdmin.resources" />
     <EmbeddedResource Include="obj\Debug\MedoraApp.FormInicio.resources" />
     <EmbeddedResource Include="obj\Debug\MedoraApp.FormMedico.resources" />
@@ -117,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="UC_CrearBloque.resx">
       <DependentUpon>UC_CrearBloque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_CrearMedico.resx">
+      <DependentUpon>UC_CrearMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_MenuBloques.resx">
       <DependentUpon>UC_MenuBloques.cs</DependentUpon>

@@ -33,3 +33,5 @@ C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TP
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary1.pdb
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary1.dll.config
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.Up2Date
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearMedico.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormRecepcionista.resources

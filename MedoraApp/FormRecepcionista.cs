@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MedoraApp
 {
-    public partial class FormAdmin : Form
+    public partial class FormRecepcionista : Form
     {
-        public FormAdmin()
+        public FormRecepcionista()
         {
             InitializeComponent();
         }
@@ -22,16 +22,6 @@ namespace MedoraApp
             FormInicio inicio = new FormInicio();
             inicio.Show();
             this.Hide(); // cierra el formulario actual
-        }
-
-        private void btnCrearMed_Click(object sender, EventArgs e)
-        {
-            panelContenido.Controls.Clear();
-
-            UC_CrearMedico uc = new UC_CrearMedico();
-            uc.Dock = DockStyle.Fill;
-
-            panelContenido.Controls.Add(uc);
         }
     }
 }

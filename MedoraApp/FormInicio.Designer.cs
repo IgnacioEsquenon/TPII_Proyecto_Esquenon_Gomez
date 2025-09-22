@@ -31,41 +31,20 @@ namespace MedoraApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInicioMedico = new System.Windows.Forms.Button();
-            this.btnInicioAdmin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TB_Email_Login = new System.Windows.Forms.TextBox();
-            this.TB_Password_Login = new System.Windows.Forms.TextBox();
+            this.TB_Password = new System.Windows.Forms.TextBox();
+            this.TB_Usuario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnInicioMedico
-            // 
-            this.btnInicioMedico.Location = new System.Drawing.Point(93, 170);
-            this.btnInicioMedico.Name = "btnInicioMedico";
-            this.btnInicioMedico.Size = new System.Drawing.Size(99, 61);
-            this.btnInicioMedico.TabIndex = 0;
-            this.btnInicioMedico.Text = "Medico";
-            this.btnInicioMedico.UseVisualStyleBackColor = true;
-            this.btnInicioMedico.Click += new System.EventHandler(this.btnInicioMedico_Click);
-            // 
-            // btnInicioAdmin
-            // 
-            this.btnInicioAdmin.Location = new System.Drawing.Point(240, 170);
-            this.btnInicioAdmin.Name = "btnInicioAdmin";
-            this.btnInicioAdmin.Size = new System.Drawing.Size(99, 61);
-            this.btnInicioAdmin.TabIndex = 1;
-            this.btnInicioAdmin.Text = "Administrador";
-            this.btnInicioAdmin.UseVisualStyleBackColor = true;
-            this.btnInicioAdmin.Click += new System.EventHandler(this.btnInicioAdmin_Click);
             // 
             // label1
             // 
@@ -83,26 +62,27 @@ namespace MedoraApp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(71, 126);
+            this.label2.Location = new System.Drawing.Point(45, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña";
             // 
-            // TB_Email_Login
+            // TB_Password
             // 
-            this.TB_Email_Login.Location = new System.Drawing.Point(165, 126);
-            this.TB_Email_Login.Name = "TB_Email_Login";
-            this.TB_Email_Login.Size = new System.Drawing.Size(190, 20);
-            this.TB_Email_Login.TabIndex = 5;
+            this.TB_Password.Location = new System.Drawing.Point(150, 126);
+            this.TB_Password.Name = "TB_Password";
+            this.TB_Password.PasswordChar = '●';
+            this.TB_Password.Size = new System.Drawing.Size(190, 20);
+            this.TB_Password.TabIndex = 5;
             // 
-            // TB_Password_Login
+            // TB_Usuario
             // 
-            this.TB_Password_Login.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TB_Password_Login.Location = new System.Drawing.Point(150, 82);
-            this.TB_Password_Login.Name = "TB_Password_Login";
-            this.TB_Password_Login.Size = new System.Drawing.Size(190, 20);
-            this.TB_Password_Login.TabIndex = 6;
+            this.TB_Usuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TB_Usuario.Location = new System.Drawing.Point(150, 82);
+            this.TB_Usuario.Name = "TB_Usuario";
+            this.TB_Usuario.Size = new System.Drawing.Size(190, 20);
+            this.TB_Usuario.TabIndex = 6;
             // 
             // panel1
             // 
@@ -156,11 +136,10 @@ namespace MedoraApp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.Controls.Add(this.btnIniciarSesion);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.TB_Password_Login);
-            this.panel2.Controls.Add(this.btnInicioAdmin);
-            this.panel2.Controls.Add(this.TB_Email_Login);
-            this.panel2.Controls.Add(this.btnInicioMedico);
+            this.panel2.Controls.Add(this.TB_Usuario);
+            this.panel2.Controls.Add(this.TB_Password);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(154, 71);
@@ -168,12 +147,22 @@ namespace MedoraApp
             this.panel2.Size = new System.Drawing.Size(414, 270);
             this.panel2.TabIndex = 8;
             // 
+            // btnIniciarSesion
+            // 
+            this.btnIniciarSesion.Location = new System.Drawing.Point(150, 184);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(116, 41);
+            this.btnIniciarSesion.TabIndex = 8;
+            this.btnIniciarSesion.Text = "Iniciar Sesion";
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Forte", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Coral;
-            this.label4.Location = new System.Drawing.Point(93, 27);
+            this.label4.Location = new System.Drawing.Point(144, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(155, 35);
             this.label4.TabIndex = 7;
@@ -200,18 +189,16 @@ namespace MedoraApp
         }
 
         #endregion
-
-        private Button btnInicioMedico;
-        private Button btnInicioAdmin;
         private Label label1;
         private Label label2;
-        private TextBox TB_Email_Login;
-        private TextBox TB_Password_Login;
+        private TextBox TB_Password;
+        private TextBox TB_Usuario;
         private Panel panel1;
         private Button btnSalir;
         private Button btnMinimizar;
         private Label label3;
         private Panel panel2;
         private Label label4;
+        private Button btnIniciarSesion;
     }
 }

@@ -1,9 +1,6 @@
-﻿using System.Drawing;
-using System.Windows.Forms;
-
-namespace MedoraApp
+﻿namespace MedoraApp
 {
-    partial class FormAdmin
+    partial class FormRecepcionista
     {
         /// <summary>
         /// Required designer variable.
@@ -32,9 +29,7 @@ namespace MedoraApp
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnVerUsuarios = new System.Windows.Forms.Button();
             this.btnCrearRecep = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
@@ -43,7 +38,6 @@ namespace MedoraApp
             this.panelContenido = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelContenido.SuspendLayout();
@@ -52,9 +46,7 @@ namespace MedoraApp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btnVerUsuarios);
             this.panel1.Controls.Add(this.btnCrearRecep);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnVolver);
@@ -63,49 +55,20 @@ namespace MedoraApp
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(140, 369);
-            this.panel1.TabIndex = 1;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Enabled = false;
-            this.pictureBox3.Image = global::MedoraApp.Properties.Resources.agenda;
-            this.pictureBox3.Location = new System.Drawing.Point(14, 243);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.panel1.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Enabled = false;
-            this.pictureBox2.Image = global::MedoraApp.Properties.Resources.profile_user;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 157);
+            this.pictureBox2.Image = global::MedoraApp.Properties.Resources.agenda;
+            this.pictureBox2.Location = new System.Drawing.Point(53, 207);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
-            // 
-            // btnVerUsuarios
-            // 
-            this.btnVerUsuarios.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnVerUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVerUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerUsuarios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnVerUsuarios.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnVerUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerUsuarios.Location = new System.Drawing.Point(3, 226);
-            this.btnVerUsuarios.Name = "btnVerUsuarios";
-            this.btnVerUsuarios.Size = new System.Drawing.Size(134, 61);
-            this.btnVerUsuarios.TabIndex = 10;
-            this.btnVerUsuarios.Text = "Ver Usuarios";
-            this.btnVerUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerUsuarios.UseVisualStyleBackColor = false;
             // 
             // btnCrearRecep
             // 
@@ -115,12 +78,12 @@ namespace MedoraApp
             this.btnCrearRecep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnCrearRecep.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnCrearRecep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearRecep.Location = new System.Drawing.Point(3, 140);
+            this.btnCrearRecep.Location = new System.Drawing.Point(3, 180);
             this.btnCrearRecep.Name = "btnCrearRecep";
             this.btnCrearRecep.Size = new System.Drawing.Size(134, 61);
             this.btnCrearRecep.TabIndex = 9;
-            this.btnCrearRecep.Text = "Crear Cuenta\r\nRecepcionista\r\n";
-            this.btnCrearRecep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCrearRecep.Text = "Administrar Turnos";
+            this.btnCrearRecep.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCrearRecep.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -128,8 +91,8 @@ namespace MedoraApp
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::MedoraApp.Properties.Resources.profile_user;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox1.Image = global::MedoraApp.Properties.Resources.file;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 114);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -157,14 +120,13 @@ namespace MedoraApp
             this.btnCrearMed.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnCrearMed.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnCrearMed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearMed.Location = new System.Drawing.Point(3, 56);
+            this.btnCrearMed.Location = new System.Drawing.Point(3, 96);
             this.btnCrearMed.Name = "btnCrearMed";
             this.btnCrearMed.Size = new System.Drawing.Size(134, 61);
             this.btnCrearMed.TabIndex = 1;
-            this.btnCrearMed.Text = "Crear Cuenta\r\nMedico\r\n";
+            this.btnCrearMed.Text = "Añadir Paciente";
             this.btnCrearMed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCrearMed.UseVisualStyleBackColor = false;
-            this.btnCrearMed.Click += new System.EventHandler(this.btnCrearMed_Click);
             // 
             // LSubTitulo
             // 
@@ -173,9 +135,9 @@ namespace MedoraApp
             this.LSubTitulo.ForeColor = System.Drawing.Color.White;
             this.LSubTitulo.Location = new System.Drawing.Point(11, 16);
             this.LSubTitulo.Name = "LSubTitulo";
-            this.LSubTitulo.Size = new System.Drawing.Size(108, 15);
+            this.LSubTitulo.Size = new System.Drawing.Size(72, 15);
             this.LSubTitulo.TabIndex = 0;
-            this.LSubTitulo.Text = "Bienvenido, Admin";
+            this.LSubTitulo.Text = "Bienvenido, ";
             // 
             // panelContenido
             // 
@@ -184,7 +146,7 @@ namespace MedoraApp
             this.panelContenido.Location = new System.Drawing.Point(143, 2);
             this.panelContenido.Name = "panelContenido";
             this.panelContenido.Size = new System.Drawing.Size(659, 369);
-            this.panelContenido.TabIndex = 2;
+            this.panelContenido.TabIndex = 3;
             // 
             // label1
             // 
@@ -197,18 +159,17 @@ namespace MedoraApp
             this.label1.Text = "SELECCIONE UNA OPCION \r\nPARA COMENZAR";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormAdmin
+            // FormRecepcionista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 373);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panel1);
-            this.Name = "FormAdmin";
-            this.Text = "Administrador";
+            this.Name = "FormRecepcionista";
+            this.Text = "FormRecepcionista";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelContenido.ResumeLayout(false);
@@ -219,16 +180,14 @@ namespace MedoraApp
 
         #endregion
 
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private Button btnVolver;
-        private Button btnCrearMed;
-        private Label LSubTitulo;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private Button btnVerUsuarios;
-        private Button btnCrearRecep;
-        private Panel panelContenido;
-        private Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnCrearRecep;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnCrearMed;
+        private System.Windows.Forms.Label LSubTitulo;
+        private System.Windows.Forms.Panel panelContenido;
+        private System.Windows.Forms.Label label1;
     }
 }
