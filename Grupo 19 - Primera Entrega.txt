@@ -1,0 +1,12 @@
+Primera Entrega - Grupo 19 
+
+Integrantes 
+Esquenon Ignacio Agustin 
+Gomez Sebastian Exequiel 
+
+Link al Repo: https://github.com/IgnacioEsquenon/TPII_Proyecto_Esquenon_Gomez.git 
+
+--Email/Contraseña-- 
+Admin -> ignacio@mail.com / hash123
+Medico -> ana@mail.com / hash456
+Recepcionista -> laura@mail.com / hash789
