@@ -7,4 +7,5 @@ Commit #03: Se estructuró la aplicación en MedoraApp como la aplicación ejecu
 Resumen:  Tiene la funcionalidad dinamica del Bloque Horario (Crear Bloque y ver bloques) 
 Conexion con la BD 
 Login Basico de los 3 roles 
-Vistas generales de los 3 roles
+Vistas generales de los 3 roles 
+
