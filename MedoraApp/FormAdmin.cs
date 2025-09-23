@@ -33,5 +33,15 @@ namespace MedoraApp
 
             panelContenido.Controls.Add(uc);
         }
+
+        private void btnCrearRecep_Click(object sender, EventArgs e)
+        {
+            panelContenido.Controls.Clear();
+
+            UC_CrearRecep uc = new UC_CrearRecep();
+            uc.Dock = DockStyle.Fill;
+
+            panelContenido.Controls.Add(uc);
+        }
     }
 }

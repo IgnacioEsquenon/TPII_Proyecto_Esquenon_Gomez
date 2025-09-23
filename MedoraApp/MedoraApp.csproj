@@ -89,6 +89,12 @@
     <Compile Include="UC_CrearMedico.Designer.cs">
       <DependentUpon>UC_CrearMedico.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_CrearRecep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CrearRecep.Designer.cs">
+      <DependentUpon>UC_CrearRecep.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_MenuBloques.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_CrearMedico.resx">
       <DependentUpon>UC_CrearMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_CrearRecep.resx">
+      <DependentUpon>UC_CrearRecep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_MenuBloques.resx">
       <DependentUpon>UC_MenuBloques.cs</DependentUpon>

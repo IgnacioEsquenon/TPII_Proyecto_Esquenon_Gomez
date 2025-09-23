@@ -122,6 +122,7 @@ namespace MedoraApp
             this.btnCrearRecep.Text = "Crear Cuenta\r\nRecepcionista\r\n";
             this.btnCrearRecep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCrearRecep.UseVisualStyleBackColor = false;
+            this.btnCrearRecep.Click += new System.EventHandler(this.btnCrearRecep_Click);
             // 
             // pictureBox1
             // 

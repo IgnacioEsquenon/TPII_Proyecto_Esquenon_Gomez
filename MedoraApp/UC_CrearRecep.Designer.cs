@@ -1,6 +1,6 @@
 ﻿namespace MedoraApp
 {
-    partial class UC_CrearMedico
+    partial class UC_CrearRecep
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,176 +36,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TB_NombreMed = new System.Windows.Forms.TextBox();
-            this.TB_ApellidoMed = new System.Windows.Forms.TextBox();
-            this.TB_DNI_Med = new System.Windows.Forms.TextBox();
-            this.TB_EmailMed = new System.Windows.Forms.TextBox();
-            this.TB_TelefonoMed = new System.Windows.Forms.TextBox();
-            this.TB_PasswordMed = new System.Windows.Forms.TextBox();
-            this.LB_Especialidad = new System.Windows.Forms.ListBox();
+            this.TB_NombreRec = new System.Windows.Forms.TextBox();
+            this.TB_ApellidoRec = new System.Windows.Forms.TextBox();
+            this.TB_DNIRec = new System.Windows.Forms.TextBox();
+            this.TB_EmailRec = new System.Windows.Forms.TextBox();
+            this.TB_TelefonoRec = new System.Windows.Forms.TextBox();
+            this.TB_PasswordRec = new System.Windows.Forms.TextBox();
             this.btnCrearUsuario = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(5, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Crear Medico";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(32, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(32, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Apellido:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(32, 116);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 21);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "DNI:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(32, 149);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Email:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(32, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 21);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Telefono:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(32, 219);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 21);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Contraseña:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(32, 257);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(226, 21);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Seleccione Especialidad:";
-            // 
-            // TB_NombreMed
-            // 
-            this.TB_NombreMed.Location = new System.Drawing.Point(138, 54);
-            this.TB_NombreMed.Name = "TB_NombreMed";
-            this.TB_NombreMed.Size = new System.Drawing.Size(153, 20);
-            this.TB_NombreMed.TabIndex = 8;
-            this.TB_NombreMed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_NombreMed_KeyPress);
-            // 
-            // TB_ApellidoMed
-            // 
-            this.TB_ApellidoMed.Location = new System.Drawing.Point(138, 86);
-            this.TB_ApellidoMed.Name = "TB_ApellidoMed";
-            this.TB_ApellidoMed.Size = new System.Drawing.Size(153, 20);
-            this.TB_ApellidoMed.TabIndex = 9;
-            this.TB_ApellidoMed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_ApellidoMed_KeyPress);
-            // 
-            // TB_DNI_Med
-            // 
-            this.TB_DNI_Med.Location = new System.Drawing.Point(138, 119);
-            this.TB_DNI_Med.Name = "TB_DNI_Med";
-            this.TB_DNI_Med.Size = new System.Drawing.Size(153, 20);
-            this.TB_DNI_Med.TabIndex = 10;
-            this.TB_DNI_Med.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_DNIMed_KeyPress);
-            // 
-            // TB_EmailMed
-            // 
-            this.TB_EmailMed.Location = new System.Drawing.Point(138, 152);
-            this.TB_EmailMed.Name = "TB_EmailMed";
-            this.TB_EmailMed.Size = new System.Drawing.Size(153, 20);
-            this.TB_EmailMed.TabIndex = 11;
-            // 
-            // TB_TelefonoMed
-            // 
-            this.TB_TelefonoMed.Location = new System.Drawing.Point(138, 186);
-            this.TB_TelefonoMed.Name = "TB_TelefonoMed";
-            this.TB_TelefonoMed.Size = new System.Drawing.Size(153, 20);
-            this.TB_TelefonoMed.TabIndex = 12;
-            this.TB_TelefonoMed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_TelefonoMed_KeyPress);
-            // 
-            // TB_PasswordMed
-            // 
-            this.TB_PasswordMed.Location = new System.Drawing.Point(138, 222);
-            this.TB_PasswordMed.MaxLength = 15;
-            this.TB_PasswordMed.Name = "TB_PasswordMed";
-            this.TB_PasswordMed.Size = new System.Drawing.Size(153, 20);
-            this.TB_PasswordMed.TabIndex = 13;
-            // 
-            // LB_Especialidad
-            // 
-            this.LB_Especialidad.FormattingEnabled = true;
-            this.LB_Especialidad.Items.AddRange(new object[] {
-            "Pediatra ",
-            "Cardiologo",
-            "Psiquiatra"});
-            this.LB_Especialidad.Location = new System.Drawing.Point(255, 257);
-            this.LB_Especialidad.Name = "LB_Especialidad";
-            this.LB_Especialidad.Size = new System.Drawing.Size(148, 30);
-            this.LB_Especialidad.TabIndex = 14;
-            this.LB_Especialidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LB_Especialidad_KeyPress);
-            // 
-            // btnCrearUsuario
-            // 
-            this.btnCrearUsuario.Location = new System.Drawing.Point(245, 302);
-            this.btnCrearUsuario.Name = "btnCrearUsuario";
-            this.btnCrearUsuario.Size = new System.Drawing.Size(132, 44);
-            this.btnCrearUsuario.TabIndex = 15;
-            this.btnCrearUsuario.Text = "Crear Usuario";
-            this.btnCrearUsuario.UseVisualStyleBackColor = true;
-            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
             // 
             // panel1
             // 
@@ -213,30 +53,164 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 48);
-            this.panel1.TabIndex = 16;
+            this.panel1.TabIndex = 17;
             // 
-            // UC_CrearMedico
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(5, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Crear Recepcionista";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(34, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 21);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Nombre:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(34, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Apellido:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(34, 153);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 21);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "DNI:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(34, 190);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 21);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Email:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(34, 230);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 21);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Telefono:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(34, 268);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 21);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Contraseña:";
+            // 
+            // TB_NombreRec
+            // 
+            this.TB_NombreRec.Location = new System.Drawing.Point(149, 76);
+            this.TB_NombreRec.Name = "TB_NombreRec";
+            this.TB_NombreRec.Size = new System.Drawing.Size(153, 20);
+            this.TB_NombreRec.TabIndex = 24;
+            this.TB_NombreRec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_NombreRec_KeyPress);
+            // 
+            // TB_ApellidoRec
+            // 
+            this.TB_ApellidoRec.Location = new System.Drawing.Point(149, 114);
+            this.TB_ApellidoRec.Name = "TB_ApellidoRec";
+            this.TB_ApellidoRec.Size = new System.Drawing.Size(153, 20);
+            this.TB_ApellidoRec.TabIndex = 25;
+            this.TB_ApellidoRec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_ApellidoRec_KeyPress);
+            // 
+            // TB_DNIRec
+            // 
+            this.TB_DNIRec.Location = new System.Drawing.Point(149, 153);
+            this.TB_DNIRec.Name = "TB_DNIRec";
+            this.TB_DNIRec.Size = new System.Drawing.Size(153, 20);
+            this.TB_DNIRec.TabIndex = 26;
+            this.TB_DNIRec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_DNIRec_KeyPress);
+            // 
+            // TB_EmailRec
+            // 
+            this.TB_EmailRec.Location = new System.Drawing.Point(149, 193);
+            this.TB_EmailRec.Name = "TB_EmailRec";
+            this.TB_EmailRec.Size = new System.Drawing.Size(153, 20);
+            this.TB_EmailRec.TabIndex = 27;
+
+            // 
+            // TB_TelefonoRec
+            // 
+            this.TB_TelefonoRec.Location = new System.Drawing.Point(149, 233);
+            this.TB_TelefonoRec.Name = "TB_TelefonoRec";
+            this.TB_TelefonoRec.Size = new System.Drawing.Size(153, 20);
+            this.TB_TelefonoRec.TabIndex = 28;
+            this.TB_TelefonoRec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_TelefonoRec_KeyPress);
+            // 
+            // TB_PasswordRec
+            // 
+            this.TB_PasswordRec.Location = new System.Drawing.Point(149, 271);
+            this.TB_PasswordRec.MaxLength = 15;
+            this.TB_PasswordRec.Name = "TB_PasswordRec";
+            this.TB_PasswordRec.Size = new System.Drawing.Size(153, 20);
+            this.TB_PasswordRec.TabIndex = 29;
+
+            // 
+            // btnCrearUsuario
+            // 
+            this.btnCrearUsuario.Location = new System.Drawing.Point(251, 308);
+            this.btnCrearUsuario.Name = "btnCrearUsuario";
+            this.btnCrearUsuario.Size = new System.Drawing.Size(132, 44);
+            this.btnCrearUsuario.TabIndex = 30;
+            this.btnCrearUsuario.Text = "Crear Usuario";
+            this.btnCrearUsuario.UseVisualStyleBackColor = true;
+            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
+            // 
+            // UC_CrearRecep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCrearUsuario);
-            this.Controls.Add(this.LB_Especialidad);
-            this.Controls.Add(this.TB_PasswordMed);
-            this.Controls.Add(this.TB_TelefonoMed);
-            this.Controls.Add(this.TB_EmailMed);
-            this.Controls.Add(this.TB_DNI_Med);
-            this.Controls.Add(this.TB_ApellidoMed);
-            this.Controls.Add(this.TB_NombreMed);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.TB_PasswordRec);
+            this.Controls.Add(this.TB_TelefonoRec);
+            this.Controls.Add(this.TB_EmailRec);
+            this.Controls.Add(this.TB_DNIRec);
+            this.Controls.Add(this.TB_ApellidoRec);
+            this.Controls.Add(this.TB_NombreRec);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "UC_CrearMedico";
+            this.Controls.Add(this.panel1);
+            this.Name = "UC_CrearRecep";
             this.Size = new System.Drawing.Size(659, 369);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -247,6 +221,7 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -254,15 +229,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TB_NombreMed;
-        private System.Windows.Forms.TextBox TB_ApellidoMed;
-        private System.Windows.Forms.TextBox TB_DNI_Med;
-        private System.Windows.Forms.TextBox TB_EmailMed;
-        private System.Windows.Forms.TextBox TB_TelefonoMed;
-        private System.Windows.Forms.TextBox TB_PasswordMed;
-        private System.Windows.Forms.ListBox LB_Especialidad;
+        private System.Windows.Forms.TextBox TB_NombreRec;
+        private System.Windows.Forms.TextBox TB_ApellidoRec;
+        private System.Windows.Forms.TextBox TB_DNIRec;
+        private System.Windows.Forms.TextBox TB_EmailRec;
+        private System.Windows.Forms.TextBox TB_TelefonoRec;
+        private System.Windows.Forms.TextBox TB_PasswordRec;
         private System.Windows.Forms.Button btnCrearUsuario;
-        private System.Windows.Forms.Panel panel1;
     }
 }
