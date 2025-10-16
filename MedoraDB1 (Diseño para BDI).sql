@@ -1,6 +1,6 @@
 -- =============================================
 
---   CREACI”N DE BASE DE DATOS MEDORA
+--   CREACI√ìN DE BASE DE DATOS MEDORA
 
 CREATE DATABASE MedoraDB;
 GO
@@ -18,7 +18,7 @@ CREATE TABLE Especialidad (
 );
 
 INSERT INTO Especialidad (id_especialidad, nombre)
-VALUES (1, 'CardiologÌa'), (2, 'OftalmologÌa'), (3, 'PediatrÌa'), (4, 'GinecologÌa'), (5, 'UrologÌa'), (6, 'AtenciÛn Primaria');
+VALUES (1, 'Cardiolog√≠a'), (2, 'Oftalmolog√≠a'), (3, 'Pediatr√≠a'), (4, 'Ginecolog√≠a'), (5, 'Urolog√≠a'), (6, 'Atenci√≥n Primaria');
 GO
 
 -- =============================================
@@ -31,7 +31,7 @@ CREATE TABLE Rol (
 );
 
 INSERT INTO Rol (id_rol, nombre)
-VALUES (1, 'Administrador'), (2, 'MÈdico'), (3, 'Recepcionista');
+VALUES (1, 'Administrador'), (2, 'M√©dico'), (3, 'Recepcionista');
 GO
 
 -- =============================================
@@ -44,7 +44,7 @@ CREATE TABLE Usuario (
   dni VARCHAR(15) NOT NULL,
   email VARCHAR(50) NOT NULL,
   telefono NUMERIC(12),
-  contraseÒa_hash VARCHAR(100) NOT NULL,
+  contrase√±a_hash VARCHAR(100) NOT NULL,
   id_especialidad INT NULL,
   id_rol INT NOT NULL,
   CONSTRAINT PK_Usuario PRIMARY KEY (id_usuario),
@@ -55,21 +55,21 @@ CREATE TABLE Usuario (
   CONSTRAINT UK_Telefono_Usuario UNIQUE (telefono),
 );
 
-  INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseÒa_hash, id_especialidad, id_rol)
-  VALUES ('Juan', 'PÈrez', '26938124', 'juan@mail.com', null, 'hash123', 6, 2);
+  INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contrase√±a_hash, id_especialidad, id_rol)
+  VALUES ('Juan', 'P√©rez', '26938124', 'juan@mail.com', null, 'hash123', 6, 2);
 GO
 
 -- =============================================
 
---   TABLA: DÌa
-CREATE TABLE DÌa (
+--   TABLA: D√≠a
+CREATE TABLE D√≠a (
   id_dia INT NOT NULL,
   nombre VARCHAR(15) NOT NULL,
   CONSTRAINT PK_Dia PRIMARY KEY (id_dia)
 );
 
-INSERT INTO DÌa (id_dia, nombre)
-VALUES (1, 'Lunes'), (2, 'Martes'), (3, 'MiÈrcoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'S·bado');
+INSERT INTO D√≠a (id_dia, nombre)
+VALUES (1, 'Lunes'), (2, 'Martes'), (3, 'Mi√©rcoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'S√°bado');
 GO
 
 
@@ -86,7 +86,7 @@ CREATE TABLE Bloque_Horario (
   id_medico INT NOT NULL,
   id_dia INT NOT NULL,
   CONSTRAINT FK_Usuario_Bloque FOREIGN KEY (id_medico) REFERENCES Usuario(id_usuario),
-  CONSTRAINT FK_Dia_Bloque FOREIGN KEY (id_dia) REFERENCES DÌa(id_dia),
+  CONSTRAINT FK_Dia_Bloque FOREIGN KEY (id_dia) REFERENCES D√≠a(id_dia),
   CONSTRAINT CK_DuracionNoNula CHECK (duracion_turnos > 0),
   CONSTRAINT CK_FechaValida CHECK (fecha_inicio < fecha_fin),
   CONSTRAINT CK_DuracionMinimaDeJornada CHECK (datediff (minute, [hora_inicio], [hora_fin]) >= [duracion_turnos])
@@ -101,17 +101,17 @@ BEGIN
         FROM Bloque_Horario bh
         JOIN inserted i 
             ON bh.id_medico = i.id_medico
-           AND bh.id_dia = i.id_dia  -- compara solo si es el mismo dÌa
+           AND bh.id_dia = i.id_dia  -- compara solo si es el mismo d√≠a
         WHERE 
             -- Fechas que se superponen
             i.fecha_inicio < bh.fecha_fin
             AND i.fecha_fin > bh.fecha_inicio
-            -- Horarios que se superponen dentro del dÌa
+            -- Horarios que se superponen dentro del d√≠a
             AND i.hora_inicio < bh.hora_fin
             AND i.hora_fin > bh.hora_inicio
     )
     BEGIN
-        RAISERROR('El mÈdico ya tiene un bloque en ese rango de fechas y horas para ese dÌa.', 16, 1);
+        RAISERROR('El m√©dico ya tiene un bloque en ese rango de fechas y horas para ese d√≠a.', 16, 1);
         ROLLBACK TRANSACTION;
         RETURN;
     END;
@@ -188,7 +188,7 @@ CREATE TABLE Paciente (
 );
 
 INSERT INTO Paciente (nombre, apellido, dni, email, telefono)
-VALUES ('RamÛn', 'MÈndez', '22837412', 'ramon@mail.com', null)
+VALUES ('Ram√≥n', 'M√©ndez', '22837412', 'ramon@mail.com', null)
 GO
 
 -- =============================================
@@ -209,82 +209,138 @@ CREATE TABLE Reserva (
 );
 GO
 
--- CONSULTAS ===================================
+----- CONSULTAS =======================================================================
+----- Recepcionista ===================================================================
+----- Funci√≥n #01: Registrar Paciente -------------------------------------------------
+          /*INSERT INTO Paciente (nombre, apellido, dni, email, telefono)
+            VALUES (@Nombre, @Apellido, @Dni, @Email, @Telefono);
+            */
+---------------------------------------------------------------------------------------
+----- Funci√≥n #02: Listar pacientes con opci√≥n de filtrado ----------------------------
+          /*SELECT 
+                id_paciente,
+                nombre,
+                apellido,
+                dni,
+                email,
+                telefono
+            FROM Paciente
+            WHERE
+                (@NombreApellido IS NULL OR UPPER(nombre) LIKE '%' + UPPER(@NombreApellido) + '%' OR UPPER(apellido) LIKE '%' + UPPER(@NombreApellido) + '%')
+                AND (@Dni IS NULL OR dni = @Dni)
+            ORDER BY apellido, nombre;
+            */
+---------------------------------------------------------------------------------------
+----- Funci√≥n #03: Buscar y Reservar Turno --------------------------------------------
+    ---- Consulta #01: B√∫squeda de m√©dico para reservar un turno
+                /*SELECT
+                    U.id_usuario,
+                    U.nombre AS NombreMedico,
+                    U.apellido AS ApellidoMedico,
+                    E.nombre AS Especialidad
+                FROM Usuario U
+                JOIN Rol R ON U.id_rol = R.id_rol
+                JOIN Especialidad E ON U.id_especialidad = E.id_especialidad
+                WHERE
+                    U.id_rol = 2
+                    AND E.id_especialidad = @IdEspecialidad
+                    AND (
+                        @TextoBusquedaNombre IS NULL
+                        OR UPPER(TRIM(U.nombre)) LIKE '%' + UPPER(TRIM(@TextoBusquedaNombre)) + '%'
+                        OR UPPER(TRIM(U.apellido)) LIKE '%' + UPPER(TRIM(@TextoBusquedaNombre)) + '%'
+                    )
+                ORDER BY
+                    U.apellido, U.nombre;
+                    */
 
--- Flujo Para Reservar (Recepcionista)
-/* 1. B˙squeda de mÈdico para reservar un turno
-    SELECT
-        U.id_usuario,
-        U.nombre AS NombreMedico,
-        U.apellido AS ApellidoMedico,
-        E.nombre AS Especialidad
-    FROM Usuario U
-    JOIN Rol R ON U.id_rol = R.id_rol
-    JOIN Especialidad E ON U.id_especialidad = E.id_especialidad
-    WHERE
-        U.id_rol = 2
-        AND E.id_especialidad = @IdEspecialidad
-        AND (
-            @TextoBusquedaNombre IS NULL
-            OR UPPER(TRIM(U.nombre)) LIKE '%' + UPPER(TRIM(@TextoBusquedaNombre)) + '%'
-            OR UPPER(TRIM(U.apellido)) LIKE '%' + UPPER(TRIM(@TextoBusquedaNombre)) + '%'
-        )
-    ORDER BY
-        U.apellido, U.nombre;
+    ---- Consulta #02: Mostrar turnos disponibles para un m√©dico seleccionado con diferentes filtrados opcionales
+               /* SELECT
+                    T.id_turno,
+                    T.fecha_turno,
+                    T.hora_inicio,
+                    T.hora_fin,
+                    D.nombre AS DiaSemana,
+                    ET.nombre AS EstadoTurno
+                FROM Turno T
+                JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
+                JOIN D√≠a D ON BH.id_dia = D.id_dia
+                JOIN Estado_Turno ET ON T.id_estado_turno = ET.id_estado_turno
+                WHERE
+                    BH.id_medico = @IdMedico
+                    AND ET.id_estado_turno = 1 -- solo disponibles
+                    AND T.fecha_turno >= CAST(GETDATE() AS DATE) -- no mostrar turnos pasados
+                    AND BH.fecha_fin >= CAST(GETDATE() AS DATE)
+                    AND (@FechaInicio IS NULL OR T.fecha_turno >= @FechaInicio)
+                    AND (@FechaFin IS NULL OR T.fecha_turno <= @FechaFin)
+                    AND (@IdDia IS NULL OR BH.id_dia = @IdDia)
+                ORDER BY
+                    T.fecha_turno, T.hora_inicio;
+                    */
 
-    2. Mostrar turnos disponibles para un mÈdico seleccionado
-    SELECT
-        T.id_turno,
-        T.fecha_turno,
-        T.hora_inicio,
-        T.hora_fin,
-        D.nombre AS DiaSemana,
-        ET.nombre AS EstadoTurno
-    FROM Turno T
-    JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
-    JOIN DÌa D ON BH.id_dia = D.id_dia
-    JOIN Estado_Turno ET ON T.id_estado_turno = ET.id_estado_turno
-    WHERE
-        BH.id_medico = @id_medico
-        AND ET.id_estado_turno = 1
-        AND T.fecha_turno >= CAST(GETDATE() AS DATE)          -- No mostrar turnos pasados
-        AND BH.fecha_fin >= CAST(GETDATE() AS DATE)            -- Solo bloques vigentes
-    ORDER BY
-        T.fecha_turno, T.hora_inicio;
+    ---- Consulta #03: Trigger de insertado que realice la reserva, cambiando el estado de turno a ocupado
+              /*CREATE TRIGGER TR_ValidarYActualizarTurno
+                ON Reserva
+                INSTEAD OF INSERT
+                AS
+                BEGIN
+                    -- Verificar que el turno est√© disponible
+                    IF EXISTS (
+                        SELECT 1
+                        FROM inserted I -- Inserted hace referencia a los objetos reserva que se intentan insertar
+                        JOIN Turno T ON T.id_turno = I.id_turno -- Se juntan todos los turnos a los que las reservas hacen referencia
+                        WHERE T.id_estado_turno <> 1 -- Si el id de su estado es distinto de 1, est√° ocupado o inactivo
+                    )
+                    BEGIN
+                        RAISERROR('El turno ya est√° reservado o no est√° disponible.', 16, 1);
+                        ROLLBACK TRANSACTION;
+                        RETURN;
+                    END;
 
-    3. Trigger de insertado que realice la reserva, cambiando el estado de turno a ocupado
-    CREATE TRIGGER TR_ValidarYActualizarTurno
-    ON Reserva
-    INSTEAD OF INSERT
-    AS
-    BEGIN
-        -- Verificar que el turno estÈ disponible
-        IF EXISTS (
-            SELECT 1
-            FROM inserted I -- Inserted hace referencia a los objetos reserva que se intentan insertar
-            JOIN Turno T ON T.id_turno = I.id_turno -- Se juntan todos los turnos a los que las reservas hacen referencia
-            WHERE T.id_estado_turno <> 1 -- Si el id de su estado es distinto de 1, est· ocupado o inactivo
-        )
-        BEGIN
-            RAISERROR('El turno ya est· reservado o no est· disponible.', 16, 1);
-            ROLLBACK TRANSACTION;
-            RETURN;
-        END;
+                    -- Insertar la reserva
+                    INSERT INTO Reserva (id_turno, id_paciente, motivo_consulta, id_estado)
+                    SELECT id_turno, id_paciente, motivo_consulta, id_estado
+                    FROM inserted;
 
-        -- Insertar la reserva
-        INSERT INTO Reserva (id_turno, id_paciente, motivo_consulta, id_estado)
-        SELECT id_turno, id_paciente, motivo_consulta, id_estado
-        FROM inserted;
+                    -- Actualizar el turno a reservado
+                    UPDATE T
+                    SET T.id_estado_turno = 2
+                    FROM Turno T
+                    INNER JOIN inserted I ON T.id_turno = I.id_turno; /* Inserted puede incluir muchos objetos reserva que se est√°n intentando insertar.
+                                                                             Si queremos cambiar el turno espec√≠fico que fue reservado, hace falta verificar que
+                                                                             coincidan el turno, con la referencia que hace reserva de ese turno, y aplicar ese cambio
+                                                                             a turno.*/
+                END;
+            */
+------------------------------------------------------------------------------------
+----- Funci√≥n #04: Listar Reservas de Pacientes con Filtros ------------------------
+              /*SELECT  
+                    R.id_reserva,
+                    R.motivo_consulta,
+                    R.id_turno,
+                   R.id_paciente,
+                    P.nombre AS NombrePaciente,
+                    P.apellido AS ApellidoPaciente,
+                    P.dni AS DniPaciente,
+                    ET.nombre AS EstadoReserva,
+                    T.fecha_turno,
+                    T.hora_inicio,
+                    T.hora_fin
+                FROM Reserva R
+                JOIN Turno T ON R.id_turno = T.id_turno
+                JOIN Paciente P ON R.id_paciente = P.id_paciente
+                JOIN Estado_Turno ET ON T.id_estado_turno = ET.id_estado_turno
+                WHERE 
+                    T.fecha_turno >= CAST(GETDATE() AS DATE)
+                    AND (@Filtro IS NULL 
+                         OR P.nombre LIKE '%' + @Filtro + '%'
+                         OR P.apellido LIKE '%' + @Filtro + '%'
+                         OR P.dni LIKE '%' + @Filtro + '%')
+                ORDER BY T.fecha_turno ASC, T.hora_inicio ASC;
+                */
+------------------------------------------------------------------------------------
+--==================================================================================
+----- M√©dico =======================================================================
 
-        -- Actualizar el turno a reservado
-        UPDATE T
-        SET T.id_estado_turno = 2
-        FROM Turno T
-        INNER JOIN inserted I ON T.id_turno = I.id_turno; /* Inserted puede incluir muchos objetos reserva que se est·n intentando insertar.
-                                                                 Si queremos cambiar el turno especÌfico que fue reservado, hace falta verificar que
-                                                                 coincidan el turno, con la referencia que hace reserva de ese turno, y aplicar ese cambio
-                                                                 a turno.*/
-    END;
 
-    -- Crear
-    */
+--==================================================================================
+----- Administrador ================================================================
