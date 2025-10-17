@@ -18,7 +18,7 @@ CREATE TABLE Especialidad (
 );
 
 INSERT INTO Especialidad (id_especialidad, nombre)
-VALUES (1, 'Cardiología'), (2, 'Oftalmología'), (3, 'Pediatría'), (4, 'Ginecología'), (5, 'Urología'), (6, 'Atención Primaria');
+VALUES (1, 'Cardiología'), (2, 'Oftalmología'), (3, 'Pediatría'), (4, 'Ginecología'), (5, 'Urología'), (6, 'Medicina General');
 GO
 
 -- =============================================
@@ -43,7 +43,7 @@ CREATE TABLE Usuario (
   apellido VARCHAR(50) NOT NULL,
   dni VARCHAR(15) NOT NULL,
   email VARCHAR(50) NOT NULL,
-  telefono NUMERIC(12),
+  telefono NUMERIC(12) NOT NULL,
   contraseña_hash VARCHAR(100) NOT NULL,
   id_especialidad INT NULL,
   id_rol INT NOT NULL,
@@ -231,7 +231,7 @@ GO
             ORDER BY apellido, nombre;
             */
 ---------------------------------------------------------------------------------------
------ Función #03: Buscar y Reservar Turno --------------------------------------------
+----- Función #03: Flujo de reservar turno --------------------------------------------
     ---- Consulta #01: Búsqueda de médico para reservar un turno
                 /*SELECT
                     U.id_usuario,
@@ -340,7 +340,19 @@ GO
 ------------------------------------------------------------------------------------
 --==================================================================================
 ----- Médico =======================================================================
-
-
+----- Función #01: Crear bloques horarios (con sus respectivos turnos) -------------
+    --- Consulta #01: Crear un bloque horario 
+            /*INSERT INTO Bloque_Horario (fecha_inicio, fecha_fin, hora_inicio, hora_fin, duracion_turnos, id_medico, id_dia)
+            VALUES (@FechaInicio, @FechaFin, @HoraInicio, @HoraFin, @DuracionTurnos, @IdUsuario, @IdDia);
+            */
+    --- Consulta #02: Crear un turno
+          /*INSERT INTO Turno (fecha_turno, hora_inicio, hora_fin, id_bloque)
+            VALUES (@FechaTurno, @HoraInicio, @HoraFin, @IdBloque);
+            */
+    --- Función: Reportes estadísticas del médico
 --==================================================================================
 ----- Administrador ================================================================
+--- Funciones #01: Crear Usuario
+--- Función #02: Listar Usuarios con diferentes filtros
+--- Función #03: Desactivar Usuario
+--- Funciones #04: Reportes de la clínica
