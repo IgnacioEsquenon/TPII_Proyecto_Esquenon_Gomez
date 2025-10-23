@@ -13,11 +13,12 @@ public class Usuario
     public string ContraseñaHash { get; set; } = string.Empty;
     public Rol Rol { get; set; }   
     public Especialidad Especialidad { get; set; } 
+    public bool Estado { get; set; } = true; // true = activo, false = inactivo
 
     // Constructores
     public Usuario() { }
 
-    public Usuario(int idUsuario, string nombre, string apellido, string dni, string email, string contraseñaHash, Rol rol, Especialidad especialidad, string telefono)
+    public Usuario(int idUsuario, string nombre, string apellido, string dni, string email, string contraseñaHash, Rol rol, Especialidad especialidad, string telefono, bool estado)
     {
         IdUsuario = idUsuario;
         Nombre = nombre;
@@ -28,6 +29,7 @@ public class Usuario
         ContraseñaHash = contraseñaHash;
         Rol = rol;
         Especialidad = especialidad;
+        Estado = estado;
     }
 
     // Métodos básicos
