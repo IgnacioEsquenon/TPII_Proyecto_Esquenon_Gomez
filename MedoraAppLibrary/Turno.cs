@@ -5,7 +5,7 @@ namespace MedoraAppLibrary
 {
     public class Turno
     {
-        public int IdTurno { get; set; }           // Autoincremental en la BD
+        public int IdTurno { get; set; }        
         public DateTime FechaTurno { get; set; }
         public TimeSpan HoraInicio { get; set; }
         public TimeSpan HoraFin { get; set; }

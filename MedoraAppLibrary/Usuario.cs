@@ -1,56 +1,66 @@
 ﻿using System;
 using MedoraAppLibrary;
 
-public class Usuario
+namespace MedoraAppLibrary
 {
-    // Atributos 
-    public int IdUsuario { get; set; }
-    public string Nombre { get; set; } = string.Empty;
-    public string Apellido { get; set; } = string.Empty;
-    public string Dni { get; set; } = string.Empty;
-    public string Email { get; set; } = string.Empty;
-    public string Telefono { get; set; }  
-    public string ContraseñaHash { get; set; } = string.Empty;
-    public Rol Rol { get; set; }   
-    public Especialidad Especialidad { get; set; } 
-
-    // Constructores
-    public Usuario() { }
-
-    public Usuario(int idUsuario, string nombre, string apellido, string dni, string email, string contraseñaHash, Rol rol, Especialidad especialidad, string telefono)
+    public abstract class Usuario
     {
-        IdUsuario = idUsuario;
-        Nombre = nombre;
-        Apellido = apellido;
-        Dni = dni;
-        Email = email;
-        Telefono = telefono;
-        ContraseñaHash = contraseñaHash;
-        Rol = rol;
-        Especialidad = especialidad;
-    }
+        // Atributos 
+        public int IdUsuario { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Apellido { get; set; } = string.Empty;
+        public string Dni { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Telefono { get; set; }
+        public string ContraseñaHash { get; set; } = string.Empty;
+        public Rol Rol_Usuario { get; set; }
 
-    // Métodos básicos
+        // Constructores
+        public Usuario() { }
 
-    
-    /// Devuelve el nombre completo del usuario.
+        public Usuario(int idUsuario, string nombre, string apellido, string dni, string email, string contraseñaHash, Rol rol, string telefono)
+        {
+            IdUsuario = idUsuario;
+            Nombre = nombre;
+            Apellido = apellido;
+            Dni = dni;
+            Email = email;
+            Telefono = telefono;
+            ContraseñaHash = contraseñaHash;
+            Rol_Usuario = rol;
+        }
 
-    public string NombreCompleto()
-    {
-        return $"{Nombre} {Apellido}";
-    }
+        // Métodos básicos
 
-    /// Verifica si el usuario es médico.
+        /// Devuelve el nombre completo del usuario.
+        public string NombreCompleto()
+        {
+            return $"{Nombre} {Apellido}";
+        }
 
-    public bool EsMedico()
-    {
-        return Rol == Rol.Medico;
-    }
+        /// Determina si el usuario es médico.
+        public bool EsMedico()
+        {
+            return Rol_Usuario == Rol.Medico;
+        }
 
 
-    public override string ToString()
-    {
-        return $"[{IdUsuario}] {NombreCompleto()} - Rol: {Rol}" +
-               (EsMedico() && Especialidad != null ? $" (Especialidad: {Especialidad.Nombre})" : "");
+        /// Determina si el usuario es recepcionista.
+        public bool EsRecepcionista()
+        {
+            return Rol_Usuario == Rol.Recepcionista;
+        }
+
+
+        /// Determina si el usuario es administrador.
+        public bool EsAdministrador()
+        {
+            return Rol_Usuario == Rol.Administrador;
+        }
+
+        public override string ToString()
+        {
+            return $"[{IdUsuario}] {NombreCompleto()} - Rol: {Rol_Usuario}";
+        }
     }
 }

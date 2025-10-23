@@ -4,8 +4,8 @@ namespace MedoraAppLibrary
 {
     public enum Rol
     {
-        Administrador = 0,
-        Medico = 1,
-        Recepcionista = 2
+        Administrador = 1,
+        Medico = 2,
+        Recepcionista = 3
     }
 }

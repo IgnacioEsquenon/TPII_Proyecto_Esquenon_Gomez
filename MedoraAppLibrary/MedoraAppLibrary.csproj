@@ -164,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bloque_Horario.cs" />
+    <Compile Include="Administrador.cs" />
+    <Compile Include="Medico.cs" />
+    <Compile Include="Recepcionista.cs" />
     <Compile Include="Dia.cs" />
     <Compile Include="Especialidad.cs" />
     <Compile Include="Estado_Reserva.cs" />
