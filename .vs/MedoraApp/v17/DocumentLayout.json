@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,6 +79,35 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary\\Usuario.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary\\Usuario.cs",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary\\Usuario.cs",
+              "RelativeToolTip": "MedoraAppLibrary\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T01:15:40.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormMedico.resx",
+              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\FormMedico.resx",
+              "RelativeDocumentMoniker": "MedoraApp\\FormMedico.resx",
+              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\FormMedico.resx",
+              "RelativeToolTip": "MedoraApp\\FormMedico.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-16T21:53:34.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -130,19 +159,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary\\Usuario.cs",
-              "RelativeDocumentMoniker": "MedoraAppLibrary\\Usuario.cs",
-              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary\\Usuario.cs",
-              "RelativeToolTip": "MedoraAppLibrary\\Usuario.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wB8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:15:40.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Bloque_Horario.cs",
               "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary\\Bloque_Horario.cs",
@@ -175,17 +191,6 @@
               "RelativeToolTip": "MedoraApp\\FormMedico.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T21:53:25.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormMedico.resx",
-              "DocumentMoniker": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\FormMedico.resx",
-              "RelativeDocumentMoniker": "MedoraApp\\FormMedico.resx",
-              "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\FormMedico.resx",
-              "RelativeToolTip": "MedoraApp\\FormMedico.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-10-16T21:53:34.84Z"
             },
             {
               "$type": "Document",

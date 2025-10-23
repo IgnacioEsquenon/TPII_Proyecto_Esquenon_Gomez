@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\medoraapplibrary\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|c:\\users\\igna2\\source\\repos\\ignacioesquenon\\tpii_proyecto_esquenon_gomez\\medoraapplibrary\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\medoraapplibrary\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,12 +90,7 @@
               "RelativeToolTip": "MedoraAppLibrary\\Medico.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:40:50.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-10-13T01:40:50.552Z"
             },
             {
               "$type": "Document",
@@ -141,7 +136,7 @@
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Usuario.cs",
               "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraAppLibrary\\Usuario.cs",
               "RelativeToolTip": "MedoraAppLibrary\\Usuario.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswB8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wB8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-13T01:15:40.056Z",
               "EditorCaption": ""
@@ -156,8 +151,7 @@
               "RelativeToolTip": "MedoraAppLibrary\\Bloque_Horario.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAcwDwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T02:39:32.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T02:39:32.267Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "MedoraAppLibrary\\Recepcionista.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAkwDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:29:24.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T01:29:24.367Z"
             },
             {
               "$type": "Document",
@@ -192,12 +185,7 @@
               "ToolTip": "C:\\Users\\igna2\\source\\repos\\IgnacioEsquenon\\TPII_Proyecto_Esquenon_Gomez\\MedoraApp\\FormMedico.resx",
               "RelativeToolTip": "MedoraApp\\FormMedico.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-10-16T21:53:34.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2025-10-16T21:53:34.84Z"
             },
             {
               "$type": "Document",
