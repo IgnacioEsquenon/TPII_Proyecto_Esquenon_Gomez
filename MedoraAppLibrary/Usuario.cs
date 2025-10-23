@@ -3,34 +3,34 @@ using MedoraAppLibrary;
 
 namespace MedoraAppLibrary
 {
-    // Atributos 
-    public int IdUsuario { get; set; }
-    public string Nombre { get; set; } = string.Empty;
-    public string Apellido { get; set; } = string.Empty;
-    public string Dni { get; set; } = string.Empty;
-    public string Email { get; set; } = string.Empty;
-    public string Telefono { get; set; }  
-    public string ContraseñaHash { get; set; } = string.Empty;
-    public Rol Rol { get; set; }   
-    public Especialidad Especialidad { get; set; } 
-    public bool Estado { get; set; } = true; // true = activo, false = inactivo
+    public abstract class Usuario
+    {
+        // Atributos 
+        public int IdUsuario { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Apellido { get; set; } = string.Empty;
+        public string Dni { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Telefono { get; set; }
+        public string ContraseñaHash { get; set; } = string.Empty;
+        public Rol Rol_Usuario { get; set; }
+        public bool Estado { get; set; } = true; // true = activo, false = inactivo
 
         // Constructores
         public Usuario() { }
 
-    public Usuario(int idUsuario, string nombre, string apellido, string dni, string email, string contraseñaHash, Rol rol, Especialidad especialidad, string telefono, bool estado)
-    {
-        IdUsuario = idUsuario;
-        Nombre = nombre;
-        Apellido = apellido;
-        Dni = dni;
-        Email = email;
-        Telefono = telefono;
-        ContraseñaHash = contraseñaHash;
-        Rol = rol;
-        Especialidad = especialidad;
-        Estado = estado;
-    }
+        public Usuario(int idUsuario, string nombre, string apellido, string dni, string email, string contraseñaHash, Rol rol, Especialidad especialidad, string telefono, bool estado)
+        {
+            IdUsuario = idUsuario;
+            Nombre = nombre;
+            Apellido = apellido;
+            Dni = dni;
+            Email = email;
+            Telefono = telefono;
+            ContraseñaHash = contraseñaHash;
+            Rol_Usuario = rol;
+            Estado = estado;
+        }
 
         // Métodos básicos
 
