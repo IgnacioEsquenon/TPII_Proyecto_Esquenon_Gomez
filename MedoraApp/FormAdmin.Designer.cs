@@ -51,6 +51,8 @@ namespace MedoraApp
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -106,6 +108,7 @@ namespace MedoraApp
             this.btnVerUsuarios.Text = "Ver Usuarios";
             this.btnVerUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVerUsuarios.UseVisualStyleBackColor = false;
+            this.btnVerUsuarios.Click += new System.EventHandler(this.btnVerUsuarios_Click);
             // 
             // btnCrearRecep
             // 
@@ -139,6 +142,7 @@ namespace MedoraApp
             // 
             // btnVolver
             // 
+            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnVolver.BackColor = System.Drawing.Color.Red;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -180,6 +184,9 @@ namespace MedoraApp
             // 
             // panelContenido
             // 
+            this.panelContenido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContenido.BackColor = System.Drawing.Color.White;
             this.panelContenido.Controls.Add(this.label1);
             this.panelContenido.Location = new System.Drawing.Point(143, 2);

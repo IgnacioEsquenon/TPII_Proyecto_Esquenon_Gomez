@@ -5,11 +5,37 @@ using System.Windows.Forms;
 namespace MedoraApp
 {
     public partial class FormMedico : Form
-    {
-        public FormMedico()
+    {   
+        private int _idMedicoActual; //Var para guardar el id del medico actual
+        public FormMedico(int idMedico)
         {
             InitializeComponent();
+            _idMedicoActual = idMedico; //Asignar el id del medico actual
 
+        }
+
+        private void MostrarControl(UserControl controlAMostrar)
+        {
+            // Limpiamos el panel de contenido
+            panelContenido.Controls.Clear();
+
+            // Calculamos el nuevo tamaño que necesita el área visible del formulario.
+            // Ancho = Ancho del menú + Ancho del nuevo control + un pequeño margen
+            // Alto = Alto del nuevo control
+            int nuevoAnchoCliente = panel1.Width + controlAMostrar.Width;
+            int nuevoAltoCliente = controlAMostrar.Height;
+
+            // Asignamos este nuevo tamaño al ClientSize del formulario.
+            // El formulario se redimensionará automáticamente, y gracias al ANCHOR,
+            // los paneles se ajustarán solos de forma perfecta.
+            this.ClientSize = new System.Drawing.Size(nuevoAnchoCliente, nuevoAltoCliente);
+
+            // Centramos la ventana en la pantalla para un efecto profesional.
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            // Añadimos el nuevo control al panel de contenido.
+            controlAMostrar.Dock = DockStyle.Fill;
+            panelContenido.Controls.Add(controlAMostrar);
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -21,15 +47,7 @@ namespace MedoraApp
 
         private void btnBloques_Click(object sender, EventArgs e)
         {
-
-            panelContenido.Controls.Clear();
-
-            UC_MenuBloques uc = new UC_MenuBloques();
-            uc.Dock = DockStyle.Fill;
-
-
-
-            panelContenido.Controls.Add(uc);
+            MostrarControl(new UC_MenuBloques(_idMedicoActual));   
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -79,6 +97,14 @@ namespace MedoraApp
             panelContenido.Controls.Add(uc);*/
         }
 
-        
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -15,9 +15,11 @@ namespace MedoraApp
 {
     public partial class UC_VerBloques : UserControl
     {
-        public UC_VerBloques()
+        private int _idMedicoActual; //Var para guardar el id del medico actual
+        public UC_VerBloques(int idMedicoActual)
         {
             InitializeComponent();
+            _idMedicoActual = idMedicoActual;
         }
 
 
@@ -40,8 +42,11 @@ namespace MedoraApp
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM Bloque_Horario ORDER BY fecha_inicio ASC";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    string query = "SELECT * FROM Bloque_Horario WHERE id_usuario = @idMedico ORDER BY fecha_inicio ASC";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@idMedico", _idMedicoActual);
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     dgvListaBloques.DataSource = dataTable;

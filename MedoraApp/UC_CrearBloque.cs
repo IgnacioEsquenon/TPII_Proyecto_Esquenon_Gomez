@@ -17,9 +17,11 @@ namespace MedoraApp
 {
     public partial class UC_CrearBloque : UserControl
     {
-        public UC_CrearBloque()
+        private int _idMedicoActual; //Var para guardar el id del medico actual
+        public UC_CrearBloque(int idMedico)
         {
             InitializeComponent();
+            _idMedicoActual = idMedico; //Asignar el id del medico actual
         }
 
         private void UC_CrearBloque_Load(object sender, EventArgs e)
@@ -68,7 +70,7 @@ namespace MedoraApp
                     HoraInicio = dtpHoraInicio.Value.TimeOfDay,   // 7:00 AM
                     HoraFin = dtpHoraFin.Value.TimeOfDay,      // 9:00 AM
                     DuracionTurnos = Convert.ToInt32(cmbDuracion.SelectedItem),  // Turnos de 30 minutos
-                    IdUsuario = 5,                        // ID del médico en tabla Usuario
+                    IdUsuario = _idMedicoActual,                 // ID del médico en tabla Usuario
                     IdDia = Convert.ToInt32(cmbDia.SelectedValue)// 1=lunes, 2=martes...
                 };
 

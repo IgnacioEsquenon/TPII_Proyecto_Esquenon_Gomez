@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedoraAppLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,12 @@ namespace MedoraApp
 {
     public partial class UC_CrearRecep : UserControl
     {
-        public UC_CrearRecep()
+        private UsuarioController usuarioController;
+
+        public UC_CrearRecep(string connString)
         {
             InitializeComponent();
+            usuarioController = new UsuarioController(connString);
         }
 
         private void TB_NombreRec_KeyPress(object sender, KeyPressEventArgs e)
@@ -116,8 +120,49 @@ namespace MedoraApp
                 return;
             }
 
-            MessageBox.Show("Recepcionista registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Usuario nuevoRecepcionista = new Usuario
+            {
+                Nombre = TB_NombreRec.Text.Trim(),
+                Apellido = TB_ApellidoRec.Text.Trim(),
+                Dni = TB_DNIRec.Text.Trim(),
+                Email = TB_EmailRec.Text.Trim(),
+                Telefono = TB_TelefonoRec.Text.Trim(),
+                ContraseñaHash = TB_PasswordRec.Text, //Dsp encriptar
+                Rol = Rol.Recepcionista,
+                Especialidad = null // Un recepcionista no tiene especialidad
+            };
+
+            try
+            {
+                //Llama al método del controlador para guardar en la BD
+                bool resultado = usuarioController.CrearUsuario(nuevoRecepcionista);
+
+                //Maneja el resultado de la operación
+                if (resultado)
+                {
+                    MessageBox.Show("✅ Recepcionista registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarCampos(); 
+                }
+                else
+                {
+                    MessageBox.Show("❌ Error al registrar el recepcionista. Verifique la conexión o los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error inesperado: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+        private void LimpiarCampos()
+        {
+            TB_NombreRec.Clear();
+            TB_ApellidoRec.Clear();
+            TB_DNIRec.Clear();
+            TB_EmailRec.Clear();
+            TB_TelefonoRec.Clear();
+            TB_PasswordRec.Clear();
+        }
+
     }
-    }
+ }
 

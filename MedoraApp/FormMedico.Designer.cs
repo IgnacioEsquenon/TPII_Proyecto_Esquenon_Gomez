@@ -57,6 +57,8 @@ namespace MedoraApp
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -70,9 +72,9 @@ namespace MedoraApp
             this.panel1.Controls.Add(this.btnPerfil);
             this.panel1.Controls.Add(this.btnBloques);
             this.panel1.Controls.Add(this.LSubTitulo);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(140, 369);
+            this.panel1.Size = new System.Drawing.Size(140, 412);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox4
@@ -142,10 +144,11 @@ namespace MedoraApp
             // 
             // btnVolver
             // 
+            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnVolver.BackColor = System.Drawing.Color.Red;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVolver.Location = new System.Drawing.Point(9, 325);
+            this.btnVolver.Location = new System.Drawing.Point(9, 372);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(116, 27);
             this.btnVolver.TabIndex = 6;
@@ -238,11 +241,14 @@ namespace MedoraApp
             // 
             // panelContenido
             // 
+            this.panelContenido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContenido.BackColor = System.Drawing.Color.White;
             this.panelContenido.Controls.Add(this.label1);
-            this.panelContenido.Location = new System.Drawing.Point(136, 2);
+            this.panelContenido.Location = new System.Drawing.Point(141, 0);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(668, 372);
+            this.panelContenido.Size = new System.Drawing.Size(663, 412);
             this.panelContenido.TabIndex = 1;
             // 
             // label1
@@ -260,7 +266,7 @@ namespace MedoraApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 373);
+            this.ClientSize = new System.Drawing.Size(804, 411);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelContenido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

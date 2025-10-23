@@ -37,6 +37,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.SandyBrown;
             this.panel1.Controls.Add(this.btnVerBloques);
             this.panel1.Controls.Add(this.btnCrearBloq);
@@ -79,7 +81,10 @@
             // 
             // p_Contenido_Bloq
             // 
-            this.p_Contenido_Bloq.BackColor = System.Drawing.Color.White;
+            this.p_Contenido_Bloq.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.p_Contenido_Bloq.BackColor = System.Drawing.Color.SlateBlue;
             this.p_Contenido_Bloq.Location = new System.Drawing.Point(0, 54);
             this.p_Contenido_Bloq.Name = "p_Contenido_Bloq";
             this.p_Contenido_Bloq.Size = new System.Drawing.Size(668, 323);

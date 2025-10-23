@@ -9,7 +9,7 @@ namespace MedoraAppLibrary
     public class Especialidad
     {
      
-        public int IdEspecialidad { get; set; }
+        public int id_especialidad { get; set; }
         public string Nombre { get; set; }
 
        
@@ -18,14 +18,14 @@ namespace MedoraAppLibrary
        
         public Especialidad(int id, string nombre)
         {
-            IdEspecialidad = id;
+            id_especialidad = id;
             Nombre = nombre;
         }
 
         
         public override string ToString()
         {
-            return $"{IdEspecialidad} - {Nombre}";
+            return $"{id_especialidad} - {Nombre}";
         }
     }
 }

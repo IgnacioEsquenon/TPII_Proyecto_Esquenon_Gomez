@@ -1,4 +1,7 @@
-﻿namespace MedoraApp
+﻿using MedoraAppLibrary;
+using MedoraApp;
+
+namespace MedoraApp
 {
     partial class UC_CrearMedico
     {
@@ -28,6 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,7 +49,9 @@
             this.LB_Especialidad = new System.Windows.Forms.ListBox();
             this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uCCrearMedicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uCCrearMedicoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -186,15 +192,12 @@
             // LB_Especialidad
             // 
             this.LB_Especialidad.FormattingEnabled = true;
-            this.LB_Especialidad.Items.AddRange(new object[] {
-            "Pediatra ",
-            "Cardiologo",
-            "Psiquiatra"});
             this.LB_Especialidad.Location = new System.Drawing.Point(255, 257);
             this.LB_Especialidad.Name = "LB_Especialidad";
             this.LB_Especialidad.Size = new System.Drawing.Size(148, 30);
             this.LB_Especialidad.TabIndex = 14;
             this.LB_Especialidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LB_Especialidad_KeyPress);
+            
             // 
             // btnCrearUsuario
             // 
@@ -214,6 +217,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 48);
             this.panel1.TabIndex = 16;
+            //
             // 
             // UC_CrearMedico
             // 
@@ -240,6 +244,7 @@
             this.Size = new System.Drawing.Size(659, 369);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uCCrearMedicoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +269,6 @@
         private System.Windows.Forms.ListBox LB_Especialidad;
         private System.Windows.Forms.Button btnCrearUsuario;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.BindingSource uCCrearMedicoBindingSource;
     }
 }

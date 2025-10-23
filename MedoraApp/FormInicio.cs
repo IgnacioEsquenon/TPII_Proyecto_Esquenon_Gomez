@@ -51,7 +51,7 @@ namespace MedoraApp
                 {
                     connection.Open();
 
-                    string query = "SELECT id_usuario, nombre, apellido, contraseña_hash, id_rol FROM Usuario WHERE (email = @usuario OR dni = @usuario) AND contraseña_hash = @contraseña";
+                    string query = "SELECT id_usuario, nombre, apellido, contraseña_hash, id_rol FROM Usuario WHERE (email = @usuario OR dni = @usuario) AND contraseña_hash = @contraseña AND estado_usuario = 1";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@usuario", usuario);
                     cmd.Parameters.AddWithValue("@contraseña", contraseña); // contraseña tal cual está en BD
@@ -61,6 +61,7 @@ namespace MedoraApp
                     if (reader.Read())
                     {
                         int rol = Convert.ToInt32(reader["id_rol"]);
+                        int idMedicoLogeado = Convert.ToInt32(reader["id_usuario"]);
                         MessageBox.Show("Inicio de sesión exitoso.");
 
                         // Redirige segun rol
@@ -72,7 +73,7 @@ namespace MedoraApp
                         }
                         else if (rol == 2) // Médico
                         {
-                            FormMedico ventanaMedico = new FormMedico();
+                            FormMedico ventanaMedico = new FormMedico(idMedicoLogeado);
                             ventanaMedico.FormClosed += (s, args) => this.Close();
                             ventanaMedico.Show();
                         }

@@ -1,23 +1,48 @@
-﻿using System;
+﻿using MedoraAppLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
 
 namespace MedoraApp
 {
     public partial class UC_CrearMedico : UserControl
     {
-        public UC_CrearMedico()
+        private EspecialidadesLDD especialidadesLDD;
+        private UsuarioController usuarioController;
+        private string connectionString;
+
+        public UC_CrearMedico(string connString)
         {
             InitializeComponent();
+            connectionString = connString;
+            especialidadesLDD = new EspecialidadesLDD(connectionString);
+            usuarioController = new UsuarioController(connectionString);
+            CargarEspecialidades();
+
         }
 
+        private void CargarEspecialidades()
+        {
+            try
+            {
+                var especialidades = especialidadesLDD.ObtenerEspecialidades();
+                LB_Especialidad.DataSource = especialidades;
+                LB_Especialidad.DisplayMember = "Nombre";
+                LB_Especialidad.ValueMember = "id_especialidad";
+                LB_Especialidad.SelectedIndex = -1; // No seleccionar ninguna por defecto
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar especialidades: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void TB_NombreMed_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -128,8 +153,47 @@ namespace MedoraApp
                 return;
             }
 
-            MessageBox.Show("Médico registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // 🔹 CREAR OBJETO USUARIO
+            Usuario nuevoMedico = new Usuario
+            {
+                Nombre = TB_NombreMed.Text.Trim(),
+                Apellido = TB_ApellidoMed.Text.Trim(),
+                Dni = TB_DNI_Med.Text.Trim(),
+                Email = TB_EmailMed.Text.Trim(),
+                Telefono = TB_TelefonoMed.Text.Trim(),
+                ContraseñaHash = TB_PasswordMed.Text, // más adelante se reemplaza por hash real
+                Rol = Rol.Medico, 
+                Especialidad = new Especialidad { id_especialidad = Convert.ToInt32(LB_Especialidad.SelectedValue) }
+            };
+
+            // 🔹 INSERTAR EN BD
+            bool resultado = usuarioController.CrearUsuario(nuevoMedico);
+
+            if (resultado)
+            {
+                MessageBox.Show("✅ Médico registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpiarCampos();
+            }
+            else
+            {
+                MessageBox.Show("❌ Error al registrar el médico. Verifique la conexión o los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-    } 
+        // 🔹 Método para limpiar los campos tras guardar
+        private void LimpiarCampos()
+        {
+            TB_NombreMed.Clear();
+            TB_ApellidoMed.Clear();
+            TB_DNI_Med.Clear();
+            TB_EmailMed.Clear();
+            TB_TelefonoMed.Clear();
+            TB_PasswordMed.Clear();
+            LB_Especialidad.SelectedIndex = -1;
+        }
+
+       
     }
+
+    } 
+

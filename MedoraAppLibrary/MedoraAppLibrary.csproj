@@ -169,13 +169,19 @@
     <Compile Include="Recepcionista.cs" />
     <Compile Include="Dia.cs" />
     <Compile Include="Especialidad.cs" />
+    <Compile Include="EspecialidadesLDD.cs" />
+    <Compile Include="EstadoUserFiltro.cs" />
     <Compile Include="Estado_Reserva.cs" />
+    <Compile Include="Motivo_consulta.cs" />
+    <Compile Include="Obra_social.cs" />
     <Compile Include="Paciente.cs" />
+    <Compile Include="PacienteController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reserva.cs" />
     <Compile Include="Rol.cs" />
     <Compile Include="Turno.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
