@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_listapacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_listapacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|c:\\users\\gomez\\onedrive\\escritorio\\facultad\\3era\u00F1o\\taller de programacion ii\\tpii_proyecto_esquenon_gomez-main\\medoraapp\\uc_listapacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_listapacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_registrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_registrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formrecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formrecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formrecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formrecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_registrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_registrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\MedoraApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\MedoraApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_ListaPacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_ListaPacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|c:\\users\\gomez\\onedrive\\escritorio\\facultad\\3era\u00F1o\\taller de programacion ii\\tpii_proyecto_esquenon_gomez-main\\medoraapplibrary\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,36 +27,8 @@
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\obra_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,22 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\bloque_horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\bloque_horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\especialidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,38 +51,6 @@
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\estadouserfiltro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearrecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearrecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_gestionusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_gestionusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapplibrary\\estado_reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\estado_reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -151,52 +59,148 @@
       "RelativeMoniker": "D:0:0:{76A471AC-146B-4C44-A2AE-F0AC1E1E70E0}|MedoraAppLibrary\\MedoraAppLibrary.csproj|solutionrelative:medoraapplibrary\\especialidadesldd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formeditarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formeditarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearmedico.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearmedico.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearrecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_crearrecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\bin\\debug\\medoraapp.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\bin\\debug\\medoraapp.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\forminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\forminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A3CB4706-CACF-46E4-B70F-F44EC826296D}|MedoraAppTest\\MedoraAppTest.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapptest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3CB4706-CACF-46E4-B70F-F44EC826296D}|MedoraAppTest\\MedoraAppTest.csproj|solutionrelative:medoraapptest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formmedico.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\formmedico.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_listapacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_listapacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_registrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_registrarpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_menubloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_menubloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formrecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\formrecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_verbloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982F4E75-EAF8-46AE-A8BE-E54658A8DF21}|MedoraApp\\MedoraApp.csproj|solutionrelative:medoraapp\\uc_verbloques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormRecepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_RegistrarPaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_crearmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_CrearMedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_verbloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_GestionUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormInicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormMedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\formmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearrecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_crearrecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_menubloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_VerBloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_MenuBloques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_CrearBloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\uc_crearbloque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_GestionUsuarios.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormAdmin.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\medoraapp\\formeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medoraapp\\formeditarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormEditarUsuario.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormEditarUsuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_CrearMedico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_CrearRecep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\bin\\Debug\\MedoraApp.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\bin\\Debug\\MedoraApp.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormInicio.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\FormMedico.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_MenuBloques.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MedoraApp\\UC_VerBloques.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -206,28 +210,361 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedoraApp.csproj",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\MedoraApp.csproj",
+              "RelativeDocumentMoniker": "MedoraApp\\MedoraApp.csproj",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\MedoraApp.csproj*",
+              "RelativeToolTip": "MedoraApp\\MedoraApp.csproj*",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAgwKsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T20:10:47.348Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UC_ListaPacientes.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_ListaPacientes.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_ListaPacientes.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_ListaPacientes.cs",
               "RelativeToolTip": "MedoraApp\\UC_ListaPacientes.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T23:04:22.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\PacienteController.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary\\PacienteController.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\PacienteController.cs",
+              "RelativeToolTip": "MedoraAppLibrary\\PacienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:42:44.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "MedoraAppLibrary\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\UsuarioController.cs",
+              "RelativeToolTip": "MedoraAppLibrary\\UsuarioController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T15:06:02.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UC_RegistrarPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_RegistrarPaciente.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs",
+              "RelativeToolTip": "MedoraApp\\UC_RegistrarPaciente.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAIEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:56:14.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormRecepcionista.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormRecepcionista.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs",
+              "RelativeToolTip": "MedoraApp\\FormRecepcionista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T00:56:40.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UC_CrearMedico.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearMedico.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs",
+              "RelativeToolTip": "MedoraApp\\UC_CrearMedico.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T15:18:52.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs",
+              "RelativeToolTip": "MedoraApp\\FormAdmin.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:47:29.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UC_GestionUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_GestionUsuarios.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs",
+              "RelativeToolTip": "MedoraApp\\UC_GestionUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T22:23:35.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FormInicio.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormInicio.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs",
+              "RelativeToolTip": "MedoraApp\\FormInicio.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T20:27:49.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FormMedico.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormMedico.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs",
+              "RelativeToolTip": "MedoraApp\\FormMedico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T23:01:51.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UC_VerBloques.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_VerBloques.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs",
+              "RelativeToolTip": "MedoraApp\\UC_VerBloques.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:07:05.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UC_MenuBloques.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_MenuBloques.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs",
+              "RelativeToolTip": "MedoraApp\\UC_MenuBloques.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T14:54:52.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UC_CrearBloque.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearBloque.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs",
+              "RelativeToolTip": "MedoraApp\\UC_CrearBloque.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:10:15.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UC_GestionUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_GestionUsuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\UC_GestionUsuarios.Designer.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T22:23:47.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "FormAdmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormAdmin.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\FormAdmin.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T20:18:11.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FormEditarUsuario.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormEditarUsuario.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\FormEditarUsuario.Designer.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAqwOIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T00:00:01.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "FormEditarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormEditarUsuario.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs",
+              "RelativeToolTip": "MedoraApp\\FormEditarUsuario.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T23:55:39.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UC_CrearMedico.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearMedico.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\UC_CrearMedico.Designer.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAAJYAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:43:05.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UC_CrearRecep.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearRecep.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs",
+              "RelativeToolTip": "MedoraApp\\UC_CrearRecep.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJ4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T21:51:17.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MedoraApp.exe.config",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
+              "RelativeDocumentMoniker": "MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
+              "RelativeToolTip": "MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-12T16:01:33.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FormInicio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormInicio.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\FormInicio.Designer.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAAKcAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T20:53:37.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FormMedico.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\FormMedico.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\FormMedico.Designer.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAAJkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T20:55:55.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\Program.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\Program.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\Program.cs",
+              "RelativeToolTip": "MedoraApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:00:50.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UC_MenuBloques.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_MenuBloques.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\UC_MenuBloques.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:05:05.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "UC_VerBloques.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.Designer.cs",
+              "RelativeDocumentMoniker": "MedoraApp\\UC_VerBloques.Designer.cs",
+              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.Designer.cs",
+              "RelativeToolTip": "MedoraApp\\UC_VerBloques.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:07:59.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "UC_ListaPacientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_ListaPacientes.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_ListaPacientes.cs",
@@ -239,78 +576,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "UC_RegistrarPaciente.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_RegistrarPaciente.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_RegistrarPaciente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:58:01.483Z"
+              "WhenOpened": "2025-10-20T14:58:01.483Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PacienteController.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\PacienteController.cs",
-              "RelativeDocumentMoniker": "MedoraAppLibrary\\PacienteController.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\PacienteController.cs",
-              "RelativeToolTip": "MedoraAppLibrary\\PacienteController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T14:42:44.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "FormRecepcionista.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs",
               "RelativeDocumentMoniker": "MedoraApp\\FormRecepcionista.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\FormRecepcionista.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T23:03:29.53Z"
+              "WhenOpened": "2025-09-21T23:03:29.53Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormRecepcionista.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormRecepcionista.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormRecepcionista.cs",
-              "RelativeToolTip": "MedoraApp\\FormRecepcionista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T00:56:40.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UC_RegistrarPaciente.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_RegistrarPaciente.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_RegistrarPaciente.cs",
-              "RelativeToolTip": "MedoraApp\\UC_RegistrarPaciente.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAIEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T15:56:14.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "MedoraAppLibrary\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\UsuarioController.cs",
-              "RelativeToolTip": "MedoraAppLibrary\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T15:06:02.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Paciente.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Paciente.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Paciente.cs",
@@ -322,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "Obra_social.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Obra_social.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Obra_social.cs",
@@ -334,52 +624,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "UC_CrearMedico.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_CrearMedico.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_CrearMedico.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T23:05:19.989Z"
+              "WhenOpened": "2025-10-05T23:05:19.989Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UC_CrearMedico.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearMedico.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.cs",
-              "RelativeToolTip": "MedoraApp\\UC_CrearMedico.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T15:18:52.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "UC_VerBloques.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_VerBloques.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_VerBloques.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:07:02.841Z"
+              "WhenOpened": "2025-09-14T21:07:02.841Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "UC_GestionUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_GestionUsuarios.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_GestionUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:32:32.052Z"
+              "WhenOpened": "2025-10-20T20:32:32.052Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "Turno.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Turno.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Turno.cs",
@@ -391,54 +672,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "FormAdmin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs",
               "RelativeDocumentMoniker": "MedoraApp\\FormAdmin.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\FormAdmin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T16:47:18.91Z"
+              "WhenOpened": "2025-10-06T16:47:18.91Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.cs",
-              "RelativeToolTip": "MedoraApp\\FormAdmin.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T16:47:29.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UC_GestionUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_GestionUsuarios.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.cs",
-              "RelativeToolTip": "MedoraApp\\UC_GestionUsuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T22:23:35.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormInicio.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormInicio.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs",
-              "RelativeToolTip": "MedoraApp\\FormInicio.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:27:49.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 8,
               "Title": "Bloque_Horario.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Bloque_Horario.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Bloque_Horario.cs",
@@ -450,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 7,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Usuario.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Usuario.cs",
@@ -462,41 +708,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FormMedico.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormMedico.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs",
-              "RelativeToolTip": "MedoraApp\\FormMedico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T23:01:51.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "FormMedico.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs",
               "RelativeDocumentMoniker": "MedoraApp\\FormMedico.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\FormMedico.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:58:49.929Z"
+              "WhenOpened": "2025-09-14T20:58:49.929Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "FormInicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs",
               "RelativeDocumentMoniker": "MedoraApp\\FormInicio.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\FormInicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T22:56:48.285Z"
+              "WhenOpened": "2025-10-05T22:56:48.285Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 9,
               "Title": "Especialidad.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Especialidad.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Especialidad.cs",
@@ -508,7 +744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 10,
               "Title": "Rol.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Rol.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Rol.cs",
@@ -520,7 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 11,
               "Title": "EstadoUserFiltro.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\EstadoUserFiltro.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\EstadoUserFiltro.cs",
@@ -532,100 +768,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "UC_CrearRecep.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_CrearRecep.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_CrearRecep.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T21:51:14.583Z"
+              "WhenOpened": "2025-10-12T21:51:14.583Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "UC_MenuBloques.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_MenuBloques.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_MenuBloques.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T14:54:49.533Z"
+              "WhenOpened": "2025-10-06T14:54:49.533Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UC_VerBloques.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_VerBloques.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.cs",
-              "RelativeToolTip": "MedoraApp\\UC_VerBloques.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:07:05.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UC_MenuBloques.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_MenuBloques.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.cs",
-              "RelativeToolTip": "MedoraApp\\UC_MenuBloques.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T14:54:52.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UC_CrearBloque.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearBloque.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs",
-              "RelativeToolTip": "MedoraApp\\UC_CrearBloque.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEgAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:10:15.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "UC_CrearBloque.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs",
               "RelativeDocumentMoniker": "MedoraApp\\UC_CrearBloque.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearBloque.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\UC_CrearBloque.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T14:55:01.618Z"
+              "WhenOpened": "2025-10-06T14:55:01.618Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UC_GestionUsuarios.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_GestionUsuarios.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_GestionUsuarios.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\UC_GestionUsuarios.Designer.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T22:23:47.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "FormAdmin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormAdmin.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormAdmin.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\FormAdmin.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T20:18:11.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 12,
               "Title": "Estado_Reserva.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\Estado_Reserva.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\Estado_Reserva.cs",
@@ -637,7 +816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 13,
               "Title": "EspecialidadesLDD.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppLibrary\\EspecialidadesLDD.cs",
               "RelativeDocumentMoniker": "MedoraAppLibrary\\EspecialidadesLDD.cs",
@@ -649,90 +828,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "FormEditarUsuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs",
               "RelativeDocumentMoniker": "MedoraApp\\FormEditarUsuario.cs",
               "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs [Dise\u00F1o]",
               "RelativeToolTip": "MedoraApp\\FormEditarUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T23:32:24.176Z"
+              "WhenOpened": "2025-10-12T23:32:24.176Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "FormEditarUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormEditarUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\FormEditarUsuario.Designer.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAqwOIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T00:00:01.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "FormEditarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormEditarUsuario.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormEditarUsuario.cs",
-              "RelativeToolTip": "MedoraApp\\FormEditarUsuario.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T23:55:39.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UC_CrearMedico.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearMedico.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearMedico.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\UC_CrearMedico.Designer.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAAAJYAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T16:43:05.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UC_CrearRecep.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_CrearRecep.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_CrearRecep.cs",
-              "RelativeToolTip": "MedoraApp\\UC_CrearRecep.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJ4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T21:51:17.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "MedoraApp.exe.config",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
-              "RelativeDocumentMoniker": "MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
-              "RelativeToolTip": "MedoraApp\\bin\\Debug\\MedoraApp.exe.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-12T16:01:33.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "FormInicio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormInicio.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormInicio.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\FormInicio.Designer.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAAAKcAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:53:37.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraAppTest\\Program.cs",
               "RelativeDocumentMoniker": "MedoraAppTest\\Program.cs",
@@ -741,54 +849,6 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAAACgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T19:58:36.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "FormMedico.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\FormMedico.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\FormMedico.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\FormMedico.Designer.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAAAJkAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T20:55:55.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\Program.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\Program.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\Program.cs",
-              "RelativeToolTip": "MedoraApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:00:50.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "UC_MenuBloques.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_MenuBloques.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_MenuBloques.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\UC_MenuBloques.Designer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:05:05.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "UC_VerBloques.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.Designer.cs",
-              "RelativeDocumentMoniker": "MedoraApp\\UC_VerBloques.Designer.cs",
-              "ToolTip": "C:\\Users\\gomez\\OneDrive\\Escritorio\\Facultad\\3erA\u00F1o\\Taller de Programacion II\\TPII_Proyecto_Esquenon_Gomez-main\\MedoraApp\\UC_VerBloques.Designer.cs",
-              "RelativeToolTip": "MedoraApp\\UC_VerBloques.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T21:07:59.258Z"
             }
           ]
         }

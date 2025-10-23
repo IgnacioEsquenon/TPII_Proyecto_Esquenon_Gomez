@@ -56,15 +56,12 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="FormEditarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEditarUsuario.Designer.cs">
       <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> f474cfe78fd05529755ec9531806953e0fc706e8
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,7 +101,6 @@
     <Compile Include="UC_CrearRecep.Designer.cs">
       <DependentUpon>UC_CrearRecep.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="UC_GestionUsuarios.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,23 +113,18 @@
     <Compile Include="UC_ListaPacientes.Designer.cs">
       <DependentUpon>UC_ListaPacientes.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> f474cfe78fd05529755ec9531806953e0fc706e8
     <Compile Include="UC_MenuBloques.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_MenuBloques.Designer.cs">
       <DependentUpon>UC_MenuBloques.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="UC_RegistrarPaciente.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_RegistrarPaciente.Designer.cs">
       <DependentUpon>UC_RegistrarPaciente.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> f474cfe78fd05529755ec9531806953e0fc706e8
     <Compile Include="UC_VerBloques.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,12 +134,9 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="FormEditarUsuario.resx">
       <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> f474cfe78fd05529755ec9531806953e0fc706e8
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,7 +172,6 @@
     <EmbeddedResource Include="UC_CrearRecep.resx">
       <DependentUpon>UC_CrearRecep.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="UC_GestionUsuarios.resx">
       <DependentUpon>UC_GestionUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,11 +184,6 @@
     <EmbeddedResource Include="UC_RegistrarPaciente.resx">
       <DependentUpon>UC_RegistrarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-=======
-    <EmbeddedResource Include="UC_MenuBloques.resx">
-      <DependentUpon>UC_MenuBloques.cs</DependentUpon>
-    </EmbeddedResource>
->>>>>>> f474cfe78fd05529755ec9531806953e0fc706e8
     <EmbeddedResource Include="UC_VerBloques.resx">
       <DependentUpon>UC_VerBloques.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,10 +194,7 @@
     <None Include="obj\Debug\MedoraApp.csproj.AssemblyReference.cache" />
     <None Include="obj\Debug\MedoraApp.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Debug\MedoraApp.csproj.GenerateResource.cache" />
-<<<<<<< HEAD
     <None Include="Properties\DataSources\UC_CrearMedico.datasource" />
-=======
->>>>>>> f474cfe78fd05529755ec9531806953e0fc706e8
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
