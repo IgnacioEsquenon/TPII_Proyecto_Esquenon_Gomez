@@ -337,21 +337,16 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT  
-                        R.id_reserva,
                         R.motivo_consulta,
-                        R.id_turno,
-                        R.id_paciente,
                         P.nombre AS NombrePaciente,
                         P.apellido AS ApellidoPaciente,
                         P.dni AS DniPaciente,
-                        ER.nombre AS EstadoReserva,
                         T.fecha_turno,
                         T.hora_inicio,
                         T.hora_fin
                     FROM Reserva R
                     JOIN Turno T ON R.id_turno = T.id_turno
                     JOIN Paciente P ON R.id_paciente = P.id_paciente
-                    JOIN Estado_Reserva ER ON R.id_estado = ER.id_estado
                     WHERE 
                         T.fecha_turno >= CAST(GETDATE() AS DATE)
                         AND (
@@ -738,10 +733,10 @@ GO
 
 ----- Procedimiento #09: Reportes estadísticas del médico ---------------------------------------------
 --=====================================================================================================
------ Administrador ==========================================================================
---- Funciones #01: Crear Usuario
---- Función #02: Listar Usuarios con diferentes filtros
---- Función #03: Desactivar Usuario
---- Funciones #04: Reportes de la clínica
+----- Administrador ===================================================================================
+--- Procedimiento #01: Crear Usuario
+--- Procedimiento #02: Listar Usuarios con diferentes filtros
+--- Procedimiento #03: Desactivar Usuario
+--- Procedimiento #04: Reportes de la clínica
 
 
