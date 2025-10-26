@@ -176,6 +176,77 @@ CREATE TABLE Reserva (
   CONSTRAINT FK_Paciente_Reserva FOREIGN KEY (id_paciente) REFERENCES Paciente(id_paciente),
   CONSTRAINT UK_Turno UNIQUE (id_turno)
 );
+
+--   TABLA: Motivo_Consulta 
+  CREATE TABLE Motivo_Consulta (
+    id_motivo_consulta INT PRIMARY KEY IDENTITY(1,1),
+    descripcion VARCHAR(255) NOT NULL,
+    id_especialidad INT NOT NULL,
+
+    CONSTRAINT FK_MotivoConsulta_Especialidad
+    FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad)
+);
+
+-- Insert para Cardiologia --
+INSERT INTO Motivo_Consulta 
+VALUES  ('Dolor de Pecho',1), 
+        ('Mareos',1), 
+        ('Falta de Aire',1), 
+        ('Taquicardia',1), 
+        ('Arritmia',1);
+
+--Insert para Pediatria -- 
+INSERT INTO Motivo_Consulta 
+VALUES  ('Fiebre',2), 
+        ('Diarrea',2), 
+        ('Constipacion',2), 
+        ('Vomitos',2), 
+        ('Dificultad para Caminar',2);
+
+--Insert para Dermatologia -- 
+INSERT INTO Motivo_Consulta 
+VALUES  ('Quemaduras',3), 
+        ('Urticarias',3), 
+        ('Acne',3), 
+        ('Picaduras',3), 
+        ('Despigmentacion',3); 
+
+--Insert para Traumatologia --
+INSERT INTO Motivo_Consulta 
+VALUES  ('Fractura',6), 
+        ('Dolor Lumbar',6), 
+        ('Artrosis',6), 
+        ('Dolor de Cervicales',6), 
+        ('Vertigo',6); 
+
+--Insert para Clinica Medica -- 
+INSERT INTO Motivo_Consulta 
+VALUES  ('Dolor Abdominal',7), 
+        ('Cefaleas',7), 
+        ('Sintoma Gastrointestinal',7), 
+        ('Hipoglucemia',7), 
+        ('Hipertension Arterial',7);
+
+
+-- TABLA: Obra_Social ---------
+
+CREATE TABLE Obra_Social (
+    id_obra_social INT PRIMARY KEY IDENTITY(1,1),
+    nombre VARCHAR(100) NOT NULL UNIQUE
+); 
+
+INSERT INTO Obra_Social (nombre) VALUES
+('IOSCOR'),
+('PAMI'),
+('OSDE'),
+('SWISS MEDICAL');
+
+-- Agrego la nueva columna que guardará el ID numérico
+ALTER TABLE Paciente
+ADD id_obra_social INT NULL,
+CONSTRAINT FK_Paciente_Obra_Social
+FOREIGN KEY (id_obra_social) REFERENCES Obra_Social(id_obra_social);
+
 GO
 
 ----- Procedimientos ================================================================================
@@ -743,5 +814,6 @@ GO
 --- Función #02: Listar Usuarios con diferentes filtros
 --- Función #03: Desactivar Usuario
 --- Funciones #04: Reportes de la clínica
+
 
 
