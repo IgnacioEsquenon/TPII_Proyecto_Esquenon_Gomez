@@ -1,6 +1,6 @@
--- =============================================
+--================================================================================
 
---   CREACIÓN DE BASE DE DATOS MEDORA
+----- Creación de la Base de Datos 'MedoraDB' ================================================================================
 
 CREATE DATABASE MedoraDB;
 GO
@@ -8,121 +8,122 @@ GO
 USE MedoraDB;
 GO
 
--- =================== ESTRUCTURA ==========================
+----- Estructura ================================================================================
+----- Tablas ====================================================================================
+    -- Especialidad -----------------------------------------------------------------------------
+        CREATE TABLE Especialidad (
+          id_especialidad INT IDENTITY(1,1),
+          nombre VARCHAR(50) NOT NULL,
+          CONSTRAINT PK_Especialidad PRIMARY KEY (id_especialidad),
+          CONSTRAINT UK_Especialidad_Unica UNIQUE (nombre)
+        );
 
---   TABLA: Especialidad
-CREATE TABLE Especialidad (
-  id_especialidad INT NOT NULL,
-  nombre VARCHAR(50) NOT NULL,
-  CONSTRAINT PK_Especialidad PRIMARY KEY (id_especialidad)
-);
+        INSERT INTO Especialidad (nombre)
+        VALUES ('Cardiología'), ('Pediatria'), ('Dermatologia'), ('Ginecología'), ('Urología'), ('Traumatologia'), ('Clinica Medica'); 
+        GO
 
-INSERT INTO Especialidad (id_especialidad, nombre)
-VALUES (1, 'Cardiología'), (2, 'Oftalmología'), (3, 'Pediatría'), (4, 'Ginecología'), (5, 'Urología'), (6, 'Medicina General');
-GO
+    -- Rol --------------------------------------------------------------------------------------
+        CREATE TABLE Rol (
+          id_rol INT NOT NULL,
+          nombre VARCHAR(30) NOT NULL,
+          CONSTRAINT PK_Rol PRIMARY KEY (id_rol)
+        );
+    
+        INSERT INTO Rol (id_rol, nombre)
+        VALUES (1, 'Administrador'), (2, 'Médico'), (3, 'Recepcionista');
+        GO
+          
+    -- Usuario ----------------------------------------------------------------------------------
+        CREATE TABLE Usuario (
+          id_usuario INT IDENTITY(1,1),
+          nombre VARCHAR(50) NOT NULL,
+          apellido VARCHAR(50) NOT NULL,
+          dni VARCHAR(15) NOT NULL,
+          email VARCHAR(50) NOT NULL,
+          telefono VARCHAR(20) NOT NULL,
+          contraseña_hash VARCHAR(100) NOT NULL,
+          estado_usuario BIT NOT NULL DEFAULT 1,
+          id_especialidad INT NULL,
+          id_rol INT NOT NULL,
+          CONSTRAINT PK_Usuario PRIMARY KEY (id_usuario),
+          CONSTRAINT FK_Especialidad_Medico FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad),
+          CONSTRAINT FK_Rol_Usuario FOREIGN KEY (id_rol) REFERENCES Rol(id_rol),
+          CONSTRAINT UK_Dni_Usuario UNIQUE (dni),
+          CONSTRAINT UK_Email_Usuario UNIQUE (email),
+          CONSTRAINT UK_Telefono_Usuario UNIQUE (telefono),
+        );
+    
+          INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
+          VALUES ('Roberto', 'Sanchez', '212348124', 'admin@mail.com', '36412312', 'hash123', NULL, 1); -- Administrador
+    
+          INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
+          VALUES ('Juan', 'Pérez', '26938124', 'med1@mail.com', '3682193212', 'hash123', 1, 2); -- Cardiólogo
+    
+          INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
+          VALUES ('Mirna', 'Mettini', '2134623', 'med2@mail.com', '32146342', 'hash123', 2, 2); -- Pediatra
+    
+          INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
+          VALUES ('Laura', 'Juarez', '32194823', 'med3@mail.com', '381264812', 'hash123', 3, 2); -- Dermatóloga
+    
+          INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
+          VALUES ('Romina', 'Marquez', '299383514', 'recep@mail.com', '321874923', 'hash123', NULL, 3); -- Recepcionista
+        GO
+          
+    -- Día --------------------------------------------------------------------------------------
+        CREATE TABLE Día (
+          id_dia INT NOT NULL,
+          nombre VARCHAR(15) NOT NULL,
+          CONSTRAINT PK_Dia PRIMARY KEY (id_dia)
+        );
+    
+        INSERT INTO Día (id_dia, nombre)
+        VALUES (1, 'Lunes'), (2, 'Martes'), (3, 'Miércoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'Sábado');
+        GO
+    
+    -- Bloque Horario ----------------------------------------------------------------------------
+        CREATE TABLE Bloque_Horario (
+          id_bloque INT IDENTITY(1,1) PRIMARY KEY,
+          fecha_inicio DATE NOT NULL,
+          fecha_fin DATE NOT NULL,
+          hora_inicio TIME NOT NULL,
+          hora_fin TIME NOT NULL,
+          duracion_turnos INT NOT NULL,
+          activo BIT DEFAULT 1,
+          id_medico INT NOT NULL,
+          id_dia INT NOT NULL,
+          CONSTRAINT FK_Usuario_Bloque FOREIGN KEY (id_medico) REFERENCES Usuario(id_usuario),
+          CONSTRAINT FK_Dia_Bloque FOREIGN KEY (id_dia) REFERENCES Día(id_dia),
+          CONSTRAINT CK_DuracionNoNula CHECK (duracion_turnos > 0),
+          CONSTRAINT CK_FechaValida CHECK (fecha_inicio < fecha_fin),
+          CONSTRAINT CK_DuracionMinimaDeJornada CHECK (datediff (minute, [hora_inicio], [hora_fin]) >= [duracion_turnos])
+        );
+        GO
+      
+    -- Estado de Turno ---------------------------------------------------------------------------
+        CREATE TABLE Estado_Turno (
+          id_estado_turno INT NOT NULL,
+          nombre VARCHAR(20) NOT NULL,
+          CONSTRAINT PK_Estado_Turno PRIMARY KEY (id_estado_turno)
+        );
 
--- =============================================
+        INSERT INTO Estado_Turno (id_estado_turno, nombre)
+        VALUES (1, 'Disponible'), (2, 'Reservado'), (3, 'Inactivo');
+        GO
 
---   TABLA: Rol
-CREATE TABLE Rol (
-  id_rol INT NOT NULL,
-  nombre VARCHAR(30) NOT NULL,
-  CONSTRAINT PK_Rol PRIMARY KEY (id_rol)
-);
-
-INSERT INTO Rol (id_rol, nombre)
-VALUES (1, 'Administrador'), (2, 'Médico'), (3, 'Recepcionista');
-GO
-
--- =============================================
-
---   TABLA: Usuario
-CREATE TABLE Usuario (
-  id_usuario INT IDENTITY(1,1),
-  nombre VARCHAR(50) NOT NULL,
-  apellido VARCHAR(50) NOT NULL,
-  dni VARCHAR(15) NOT NULL,
-  email VARCHAR(50) NOT NULL,
-  telefono VARCHAR(20) NOT NULL,
-  contraseña_hash VARCHAR(100) NOT NULL,
-  id_especialidad INT NULL,
-  id_rol INT NOT NULL,
-  CONSTRAINT PK_Usuario PRIMARY KEY (id_usuario),
-  CONSTRAINT FK_Especialidad_Medico FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad),
-  CONSTRAINT FK_Rol_Usuario FOREIGN KEY (id_rol) REFERENCES Rol(id_rol),
-  CONSTRAINT UK_Dni_Usuario UNIQUE (dni),
-  CONSTRAINT UK_Email_Usuario UNIQUE (email),
-  CONSTRAINT UK_Telefono_Usuario UNIQUE (telefono),
-);
-
-  INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
-  VALUES ('Juan', 'Pérez', '26938124', 'juan@mail.com', '3682193212', 'hash123', 6, 2);
-GO
-
--- =============================================
-
---   TABLA: Día
-CREATE TABLE Día (
-  id_dia INT NOT NULL,
-  nombre VARCHAR(15) NOT NULL,
-  CONSTRAINT PK_Dia PRIMARY KEY (id_dia)
-);
-
-INSERT INTO Día (id_dia, nombre)
-VALUES (1, 'Lunes'), (2, 'Martes'), (3, 'Miércoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'Sábado');
-GO
-
-
--- =============================================
-
---   TABLA: Bloque_Horario
-CREATE TABLE Bloque_Horario (
-  id_bloque INT IDENTITY(1,1) PRIMARY KEY,
-  fecha_inicio DATE NOT NULL,
-  fecha_fin DATE NOT NULL,
-  hora_inicio TIME NOT NULL,
-  hora_fin TIME NOT NULL,
-  duracion_turnos INT NOT NULL,
-  activo BIT DEFAULT 1,
-  id_medico INT NOT NULL,
-  id_dia INT NOT NULL,
-  CONSTRAINT FK_Usuario_Bloque FOREIGN KEY (id_medico) REFERENCES Usuario(id_usuario),
-  CONSTRAINT FK_Dia_Bloque FOREIGN KEY (id_dia) REFERENCES Día(id_dia),
-  CONSTRAINT CK_DuracionNoNula CHECK (duracion_turnos > 0),
-  CONSTRAINT CK_FechaValida CHECK (fecha_inicio < fecha_fin),
-  CONSTRAINT CK_DuracionMinimaDeJornada CHECK (datediff (minute, [hora_inicio], [hora_fin]) >= [duracion_turnos])
-);
-GO
-
--- =============================================
-
---   TABLA: Estado_Turno
-CREATE TABLE Estado_Turno (
-  id_estado_turno INT NOT NULL,
-  nombre VARCHAR(20) NOT NULL,
-  CONSTRAINT PK_Estado_Turno PRIMARY KEY (id_estado_turno)
-);
-
-INSERT INTO Estado_Turno (id_estado_turno, nombre)
-VALUES (1, 'Disponible'), (2, 'Reservado'), (3, 'Inactivo');
-GO
-
--- =============================================
-
---   TABLA: Turno
-CREATE TABLE Turno (
-  id_turno INT IDENTITY(1,1),
-  fecha_turno DATE NOT NULL,
-  hora_inicio TIME NOT NULL,
-  hora_fin TIME NOT NULL,
-  id_bloque INT NOT NULL,
-  id_estado_turno INT NOT NULL DEFAULT 1,
-  CONSTRAINT PK_Turno PRIMARY KEY (id_turno),
-  CONSTRAINT FK_Bloque_Turno FOREIGN KEY (id_bloque) REFERENCES Bloque_Horario(id_bloque),
-  CONSTRAINT FK_Estado_Turno FOREIGN KEY (id_estado_turno) REFERENCES Estado_Turno(id_estado_turno),
-  CONSTRAINT CK_HorarioValido CHECK (hora_inicio < hora_fin)
-);
-GO
+    -- Turno ----------------------------------------------------------------------------
+        CREATE TABLE Turno (
+          id_turno INT IDENTITY(1,1),
+          fecha_turno DATE NOT NULL,
+          hora_inicio TIME NOT NULL,
+          hora_fin TIME NOT NULL,
+          id_bloque INT NOT NULL,
+          id_estado_turno INT NOT NULL DEFAULT 1,
+          CONSTRAINT PK_Turno PRIMARY KEY (id_turno),
+          CONSTRAINT FK_Bloque_Turno FOREIGN KEY (id_bloque) REFERENCES Bloque_Horario(id_bloque),
+          CONSTRAINT FK_Estado_Turno FOREIGN KEY (id_estado_turno) REFERENCES Estado_Turno(id_estado_turno),
+          CONSTRAINT CK_HorarioValido CHECK (hora_inicio < hora_fin)
+        );
+        GO
 
 -- =============================================
 
@@ -146,6 +147,7 @@ CREATE TABLE Paciente (
   id_paciente INT IDENTITY(1,1),
   nombre VARCHAR(50) NOT NULL,
   apellido VARCHAR(50) NOT NULL,
+  fecha_nacimiento DATE NOT NULL,
   dni VARCHAR(15) NOT NULL,
   email VARCHAR(50) NOT NULL,
   telefono VARCHAR(20) NOT NULL,
@@ -155,8 +157,8 @@ CREATE TABLE Paciente (
   CONSTRAINT UK_Telefono_Paciente UNIQUE (telefono)
 );
 
-INSERT INTO Paciente (nombre, apellido, dni, email, telefono)
-VALUES ('Ramón', 'Méndez', '22837412', 'ramon@mail.com', '3682191232')
+INSERT INTO Paciente (nombre, apellido, fecha_nacimiento dni, email, telefono)
+VALUES ('Ramón', 'Méndez', '22837412', '', 'ramon@mail.com', '3682191232')
 GO
 
 -- =============================================
@@ -712,30 +714,24 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT
-                        R.motivo_consulta,
+                        T.fecha_turno AS [Fecha del Turno],
 
-                        T.fecha_turno,
-                        T.hora_inicio,
-                        T.hora_fin,
+                        MC.descripcion AS [Motivo de Consulta],
 
-                        U.nombre AS medico_nombre,
-                        U.apellido AS medico_apellido,
-                        Esp.nombre AS especialidad_medico,
-
-                        P.nombre AS paciente_nombre,
-                        P.apellido AS paciente_apellido,
-                        P.dni AS paciente_dni
-
+                        U.nombre + ' ' + U.apellido AS [Nombre del Médico],
+                        Esp.nombre AS Especialidad,
+                        R.diagnostico AS Diagnóstico
                     FROM Reserva R
                     INNER JOIN Turno T ON R.id_turno = T.id_turno
                     INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
                     INNER JOIN Usuario U ON BH.id_medico = U.id_usuario
                     INNER JOIN Paciente P ON R.id_paciente = P.id_paciente
                     LEFT JOIN Especialidad Esp ON U.id_especialidad = Esp.id_especialidad
+                    INNER JOIN Motivo_Consulta MC ON MC.id_motivo_consulta = R.id_motivo_consulta
 
                     WHERE
                         R.id_paciente = @IdPaciente
-                        AND R.id_estado = (SELECT id_estado FROM Estado_Reserva WHERE nombre = 'Atendida')
+                        AND R.id_estado <> 2 -- Que no sea una reserva cancelada
                         AND (@FechaDesde IS NULL OR T.fecha_turno >= @FechaDesde)
                         AND (@FechaHasta IS NULL OR T.fecha_turno <= @FechaHasta)
 
@@ -745,35 +741,39 @@ GO
                 END;
                 GO
 
+                /* Ejemplo
+                EXEC med_ObtenerHistorialPaciente
+                    @IdPaciente = 1,
+                    @FechaDesde = NULL,
+                    @FechaHasta = NULL;
+                */
 ----- Procedimiento #07: Función que permite acceder al historial del médico --------------------------
                 CREATE OR ALTER PROCEDURE med_ListarHistorialMedico
                     @IdMedico INT,
                     @FechaDesde DATE = NULL,
                     @FechaHasta DATE = NULL,
-                    @IdPaciente INT = NULL,
+                    @IdPaciente INT = NULL
                 AS
                 BEGIN
                     SET NOCOUNT ON;
 
                     SELECT
-                        R.motivo_consulta,
-                        R.diagnostico,
+                        T.fecha_turno AS [Fecha del Turno],
 
-                        T.fecha_turno,
-                        T.hora_inicio,
-                        T.hora_fin,
+                        P.nombre + ' ' + P.apellido AS [Nombre del Paciente],
+                        P.dni AS DNI,
 
-                        P.nombre AS paciente_nombre,
-                        P.apellido AS paciente_apellido,
-                        P.dni AS paciente_dni
+                        MC.descripcion AS [Motivo de Consulta],
+                        R.diagnostico AS Diagnóstico
                     FROM Reserva R
                     INNER JOIN Turno T ON R.id_turno = T.id_turno
                     INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
                     INNER JOIN Paciente P ON R.id_paciente = P.id_paciente
+                    INNER JOIN Motivo_Consulta MC ON MC.id_motivo_consulta = R.id_motivo_consulta
                     WHERE
                         BH.id_medico = @IdMedico
                         AND T.fecha_turno < CAST(GETDATE() AS DATE)
-                        AND R.id_estado <> 2 -- Excluir canceladas
+                        AND R.id_estado <> 2 -- Que no sea una reserva cancelada
                         AND (@FechaDesde IS NULL OR T.fecha_turno >= @FechaDesde)
                         AND (@FechaHasta IS NULL OR T.fecha_turno <= @FechaHasta)
                         AND (@IdPaciente IS NULL OR P.id_paciente = @IdPaciente)
@@ -782,6 +782,14 @@ GO
                         T.hora_inicio ASC;
                 END;
                 GO
+
+                /* Ejemplo
+                EXEC med_ListarHistorialMedico
+                    @IdMedico = 3,
+                    @FechaDesde = NULL,
+                    @FechaHasta = NULL,
+                    @IdPaciente = NULL;
+                */
 
 ----- Procedimiento #08: Función que permite a un médico dar por atendida una reserva, con opción de agregar un diagnótico -
                 CREATE OR ALTER PROCEDURE med_FinalizarReserva
@@ -814,6 +822,7 @@ GO
 --- Función #02: Listar Usuarios con diferentes filtros
 --- Función #03: Desactivar Usuario
 --- Funciones #04: Reportes de la clínica
+
 
 
 
