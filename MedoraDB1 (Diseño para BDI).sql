@@ -14,6 +14,7 @@ GO
         CREATE TABLE Especialidad (
           id_especialidad INT IDENTITY(1,1),
           nombre VARCHAR(50) NOT NULL,
+
           CONSTRAINT PK_Especialidad PRIMARY KEY (id_especialidad),
           CONSTRAINT UK_Especialidad_Unica UNIQUE (nombre)
         );
@@ -26,13 +27,14 @@ GO
         CREATE TABLE Rol (
           id_rol INT NOT NULL,
           nombre VARCHAR(30) NOT NULL,
+
           CONSTRAINT PK_Rol PRIMARY KEY (id_rol)
         );
-    
+
         INSERT INTO Rol (id_rol, nombre)
         VALUES (1, 'Administrador'), (2, 'Médico'), (3, 'Recepcionista');
         GO
-          
+
     -- Usuario ----------------------------------------------------------------------------------
         CREATE TABLE Usuario (
           id_usuario INT IDENTITY(1,1),
@@ -42,9 +44,10 @@ GO
           email VARCHAR(50) NOT NULL,
           telefono VARCHAR(20) NOT NULL,
           contraseña_hash VARCHAR(100) NOT NULL,
-          estado_usuario BIT NOT NULL DEFAULT 1,
+          estado_usuario BIT DEFAULT 1,
           id_especialidad INT NULL,
           id_rol INT NOT NULL,
+
           CONSTRAINT PK_Usuario PRIMARY KEY (id_usuario),
           CONSTRAINT FK_Especialidad_Medico FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad),
           CONSTRAINT FK_Rol_Usuario FOREIGN KEY (id_rol) REFERENCES Rol(id_rol),
@@ -52,34 +55,35 @@ GO
           CONSTRAINT UK_Email_Usuario UNIQUE (email),
           CONSTRAINT UK_Telefono_Usuario UNIQUE (telefono),
         );
-    
+
           INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
           VALUES ('Roberto', 'Sanchez', '212348124', 'admin@mail.com', '36412312', 'hash123', NULL, 1); -- Administrador
-    
+
           INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
           VALUES ('Juan', 'Pérez', '26938124', 'med1@mail.com', '3682193212', 'hash123', 1, 2); -- Cardiólogo
-    
+
           INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
           VALUES ('Mirna', 'Mettini', '2134623', 'med2@mail.com', '32146342', 'hash123', 2, 2); -- Pediatra
-    
+
           INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
           VALUES ('Laura', 'Juarez', '32194823', 'med3@mail.com', '381264812', 'hash123', 3, 2); -- Dermatóloga
-    
+
           INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_especialidad, id_rol)
           VALUES ('Romina', 'Marquez', '299383514', 'recep@mail.com', '321874923', 'hash123', NULL, 3); -- Recepcionista
         GO
-          
+
     -- Día --------------------------------------------------------------------------------------
         CREATE TABLE Día (
           id_dia INT NOT NULL,
           nombre VARCHAR(15) NOT NULL,
+
           CONSTRAINT PK_Dia PRIMARY KEY (id_dia)
         );
-    
+
         INSERT INTO Día (id_dia, nombre)
         VALUES (1, 'Lunes'), (2, 'Martes'), (3, 'Miércoles'), (4, 'Jueves'), (5, 'Viernes'), (6, 'Sábado');
         GO
-    
+
     -- Bloque Horario ----------------------------------------------------------------------------
         CREATE TABLE Bloque_Horario (
           id_bloque INT IDENTITY(1,1) PRIMARY KEY,
@@ -91,6 +95,7 @@ GO
           activo BIT DEFAULT 1,
           id_medico INT NOT NULL,
           id_dia INT NOT NULL,
+
           CONSTRAINT FK_Usuario_Bloque FOREIGN KEY (id_medico) REFERENCES Usuario(id_usuario),
           CONSTRAINT FK_Dia_Bloque FOREIGN KEY (id_dia) REFERENCES Día(id_dia),
           CONSTRAINT CK_DuracionNoNula CHECK (duracion_turnos > 0),
@@ -98,11 +103,12 @@ GO
           CONSTRAINT CK_DuracionMinimaDeJornada CHECK (datediff (minute, [hora_inicio], [hora_fin]) >= [duracion_turnos])
         );
         GO
-      
+
     -- Estado de Turno ---------------------------------------------------------------------------
         CREATE TABLE Estado_Turno (
           id_estado_turno INT NOT NULL,
           nombre VARCHAR(20) NOT NULL,
+
           CONSTRAINT PK_Estado_Turno PRIMARY KEY (id_estado_turno)
         );
 
@@ -118,6 +124,7 @@ GO
           hora_fin TIME NOT NULL,
           id_bloque INT NOT NULL,
           id_estado_turno INT NOT NULL DEFAULT 1,
+
           CONSTRAINT PK_Turno PRIMARY KEY (id_turno),
           CONSTRAINT FK_Bloque_Turno FOREIGN KEY (id_bloque) REFERENCES Bloque_Horario(id_bloque),
           CONSTRAINT FK_Estado_Turno FOREIGN KEY (id_estado_turno) REFERENCES Estado_Turno(id_estado_turno),
@@ -125,132 +132,134 @@ GO
         );
         GO
 
--- =============================================
+    -- Estado de Reserva ----------------------------------------------------------------
+        CREATE TABLE Estado_Reserva (
+          id_estado INT NOT NULL,
+          nombre VARCHAR(20) NOT NULL,
 
---   TABLA: Estado_Reserva
+          CONSTRAINT PK_Estado_Reserva PRIMARY KEY (id_estado)
+        );
 
-CREATE TABLE Estado_Reserva (
-  id_estado INT NOT NULL,
-  nombre VARCHAR(20) NOT NULL
-  CONSTRAINT PK_Estado_Reserva PRIMARY KEY (id_estado)
-);
+        INSERT INTO Estado_Reserva (id_estado, nombre)
+        VALUES (1, 'Activa'), (2, 'Cancelada'), (3, 'Atendida');
+        GO
 
-INSERT INTO Estado_Reserva (id_estado, nombre)
-VALUES (1, 'Activa'), (2, 'Cancelada'), (3, 'Atendida');
-GO
+    -- Obra Social ----------------------------------------------------------------------
+        CREATE TABLE Obra_Social (
+            id_obra_social INT IDENTITY(1,1),
+            nombre VARCHAR(100) NOT NULL,
 
--- =============================================
+            CONSTRAINT PK_Obra_Social PRIMARY KEY (id_obra_social),
+            CONSTRAINT UK_ObraSocial_Unica UNIQUE (nombre)
+        ); 
 
---   TABLA: Paciente
+        INSERT INTO Obra_Social (nombre) VALUES
+        ('IOSCOR'),
+        ('PAMI'),
+        ('OSDE'),
+        ('SWISS MEDICAL');
 
-CREATE TABLE Paciente (
-  id_paciente INT IDENTITY(1,1),
-  nombre VARCHAR(50) NOT NULL,
-  apellido VARCHAR(50) NOT NULL,
-  fecha_nacimiento DATE NOT NULL,
-  dni VARCHAR(15) NOT NULL,
-  email VARCHAR(50) NOT NULL,
-  telefono VARCHAR(20) NOT NULL,
-  CONSTRAINT PK_Paciente PRIMARY KEY (id_paciente),
-  CONSTRAINT UK_Dni_Paciente UNIQUE (dni),
-  CONSTRAINT UK_Email_Paciente UNIQUE (email),
-  CONSTRAINT UK_Telefono_Paciente UNIQUE (telefono)
-);
+        GO
 
-INSERT INTO Paciente (nombre, apellido, fecha_nacimiento dni, email, telefono)
-VALUES ('Ramón', 'Méndez', '22837412', '', 'ramon@mail.com', '3682191232')
-GO
+    -- Paciente ----------------------------------------------------------------
 
--- =============================================
+        CREATE TABLE Paciente (
+          id_paciente INT IDENTITY(1,1),
+          nombre VARCHAR(50) NOT NULL,
+          apellido VARCHAR(50) NOT NULL,
+          dni VARCHAR(15) NOT NULL,
+          email VARCHAR(50) NOT NULL,
+          telefono VARCHAR(20) NOT NULL,
+          fecha_nacimiento DATE NOT NULL,
+          id_obra_social INT,
 
---   TABLA: Reserva
+          CONSTRAINT PK_Paciente PRIMARY KEY (id_paciente),
+          CONSTRAINT UK_Dni_Paciente UNIQUE (dni),
+          CONSTRAINT UK_Email_Paciente UNIQUE (email),
+          CONSTRAINT UK_Telefono_Paciente UNIQUE (telefono),
+          CONSTRAINT FK_ObraSocial_Paciente FOREIGN KEY (id_obra_social) REFERENCES Obra_Social(id_obra_social)
+        );
 
-CREATE TABLE Reserva (
-  id_reserva INT IDENTITY(1,1),
-  motivo_consulta VARCHAR(200) NOT NULL,
-  diagnostico VARCHAR(500) DEFAULT NULL,
-  id_estado INT NOT NULL DEFAULT 1,
-  id_turno INT NOT NULL,
-  id_paciente INT NOT NULL,
-  CONSTRAINT PK_Reserva PRIMARY KEY (id_reserva),
-  CONSTRAINT FK_Estado_Reserva FOREIGN KEY (id_estado) REFERENCES Estado_Reserva(id_estado),
-  CONSTRAINT FK_Turno_Reserva FOREIGN KEY (id_turno) REFERENCES Turno(id_turno),
-  CONSTRAINT FK_Paciente_Reserva FOREIGN KEY (id_paciente) REFERENCES Paciente(id_paciente),
-  CONSTRAINT UK_Turno UNIQUE (id_turno)
-);
+        INSERT INTO Paciente (nombre, apellido, dni, email, telefono, id_obra_social)
+        VALUES ('Ramón', 'Méndez', '22837412', 'ramon@mail.com', '3682191232', 1);
 
---   TABLA: Motivo_Consulta 
-  CREATE TABLE Motivo_Consulta (
-    id_motivo_consulta INT PRIMARY KEY IDENTITY(1,1),
-    descripcion VARCHAR(255) NOT NULL,
-    id_especialidad INT NOT NULL,
+        INSERT INTO Paciente (nombre, apellido, dni, email, telefono, id_obra_social)
+        VALUES ('Juan', 'Lopez', '22835122', 'juan@mail.com', '32142321', 2);
 
-    CONSTRAINT FK_MotivoConsulta_Especialidad
-    FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad)
-);
+        INSERT INTO Paciente (nombre, apellido, dni, email, telefono, id_obra_social)
+        VALUES ('Carla', 'Fernandez', '3214231', 'carla@mail.com', '31242132', NULL);
+        GO
 
--- Insert para Cardiologia --
-INSERT INTO Motivo_Consulta 
-VALUES  ('Dolor de Pecho',1), 
-        ('Mareos',1), 
-        ('Falta de Aire',1), 
-        ('Taquicardia',1), 
-        ('Arritmia',1);
+    -- Motivo de Consulta --------------------------------------------------------
+        CREATE TABLE Motivo_Consulta (
+          id_motivo_consulta INT IDENTITY(1,1),
+          descripcion VARCHAR(255) NOT NULL,
+          id_especialidad INT NOT NULL,
 
---Insert para Pediatria -- 
-INSERT INTO Motivo_Consulta 
-VALUES  ('Fiebre',2), 
-        ('Diarrea',2), 
-        ('Constipacion',2), 
-        ('Vomitos',2), 
-        ('Dificultad para Caminar',2);
+          CONSTRAINT PK_Motivo_Consulta PRIMARY KEY (id_motivo_consulta),
+          CONSTRAINT FK_Especialidad_MotivoConsulta FOREIGN KEY (id_especialidad) REFERENCES Especialidad(id_especialidad)
+        );
+        
 
---Insert para Dermatologia -- 
-INSERT INTO Motivo_Consulta 
-VALUES  ('Quemaduras',3), 
-        ('Urticarias',3), 
-        ('Acne',3), 
-        ('Picaduras',3), 
-        ('Despigmentacion',3); 
+        -- Insert para Cardiologia --
+        INSERT INTO Motivo_Consulta 
+        VALUES  ('Dolor de Pecho',1), 
+                ('Mareos',1), 
+                ('Falta de Aire',1), 
+                ('Taquicardia',1), 
+                ('Arritmia',1);
 
---Insert para Traumatologia --
-INSERT INTO Motivo_Consulta 
-VALUES  ('Fractura',6), 
-        ('Dolor Lumbar',6), 
-        ('Artrosis',6), 
-        ('Dolor de Cervicales',6), 
-        ('Vertigo',6); 
+        --Insert para Pediatria -- 
+        INSERT INTO Motivo_Consulta 
+        VALUES  ('Fiebre',2), 
+                ('Diarrea',2), 
+                ('Constipacion',2), 
+                ('Vomitos',2), 
+                ('Dificultad para Caminar',2);
 
---Insert para Clinica Medica -- 
-INSERT INTO Motivo_Consulta 
-VALUES  ('Dolor Abdominal',7), 
-        ('Cefaleas',7), 
-        ('Sintoma Gastrointestinal',7), 
-        ('Hipoglucemia',7), 
-        ('Hipertension Arterial',7);
+        --Insert para Dermatologia -- 
+        INSERT INTO Motivo_Consulta 
+        VALUES  ('Quemaduras',3), 
+                ('Urticarias',3), 
+                ('Acne',3), 
+                ('Picaduras',3), 
+                ('Despigmentacion',3); 
 
+        --Insert para Traumatologia --
+        INSERT INTO Motivo_Consulta 
+        VALUES  ('Fractura',6), 
+                ('Dolor Lumbar',6), 
+                ('Artrosis',6), 
+                ('Dolor de Cervicales',6), 
+                ('Vertigo',6); 
 
--- TABLA: Obra_Social ---------
+        --Insert para Clinica Medica -- 
+        INSERT INTO Motivo_Consulta 
+        VALUES  ('Dolor Abdominal',7), 
+                ('Cefaleas',7), 
+                ('Sintoma Gastrointestinal',7), 
+                ('Hipoglucemia',7), 
+                ('Hipertension Arterial',7);
+        GO
 
-CREATE TABLE Obra_Social (
-    id_obra_social INT PRIMARY KEY IDENTITY(1,1),
-    nombre VARCHAR(100) NOT NULL UNIQUE
-); 
+    -- Reserva ------------------------------------------------------------------
+        CREATE TABLE Reserva (
+          id_reserva INT IDENTITY(1,1),
+          diagnostico VARCHAR(500) DEFAULT NULL,
+          id_estado INT NOT NULL DEFAULT 1,
+          id_turno INT NOT NULL,
+          id_paciente INT NOT NULL,
+          id_motivo_consulta INT NOT NULL,
 
-INSERT INTO Obra_Social (nombre) VALUES
-('IOSCOR'),
-('PAMI'),
-('OSDE'),
-('SWISS MEDICAL');
+          CONSTRAINT PK_Reserva PRIMARY KEY (id_reserva),
+          CONSTRAINT FK_Estado_Reserva FOREIGN KEY (id_estado) REFERENCES Estado_Reserva(id_estado),
+          CONSTRAINT FK_Turno_Reserva FOREIGN KEY (id_turno) REFERENCES Turno(id_turno),
+          CONSTRAINT FK_Paciente_Reserva FOREIGN KEY (id_paciente) REFERENCES Paciente(id_paciente),
+          CONSTRAINT FK_Motivo_Reserva FOREIGN KEY (id_motivo_consulta) REFERENCES Motivo_Consulta(id_motivo_consulta)
+        );
+        GO
 
--- Agrego la nueva columna que guardará el ID numérico
-ALTER TABLE Paciente
-ADD id_obra_social INT NULL,
-CONSTRAINT FK_Paciente_Obra_Social
-FOREIGN KEY (id_obra_social) REFERENCES Obra_Social(id_obra_social);
-
-GO
-
+-----------------------------------------------------------------------------------------------------
 ----- Procedimientos ================================================================================
 ----- Recepcionista =================================================================================
 ----- Procedimiento #01: Registrar Paciente ---------------------------------------------------------
@@ -286,47 +295,52 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT
+                        P.id_paciente AS id_paciente,
                         P.nombre AS Nombre,
                         P.apellido AS Apellido,
                         P.dni AS DNI,
                         P.telefono AS Telefono,
                         P.email AS Email,
+                        YEAR(CAST(GETDATE() AS DATE)) - YEAR(P.fecha_nacimiento) AS Edad,
                         CASE
                           WHEN OS.nombre IS NULL THEN 'No posee' -- Si el nombre de la obra social es NULL se muestra ese mensaje.
                           ELSE OS.nombre                         -- De lo contrario, muestra el nombre de la obra social
-                        END AS obra_social                       
+                        END AS [Obra Social]                      
                     FROM Paciente P
                     LEFT JOIN Obra_Social OS ON P.id_obra_social = OS.id_obra_social
                     WHERE
                         @Filtro IS NULL -- Si es null, la evaluación dará verdadera y mostrará todas las tuplas.
-                        OR UPPER(P.nombre) LIKE '%' + UPPER(@Filtro) + '%'   -- Ejemplo, si P.nombre = Juan y @Filtro = Juan, realiza: UPPER(Juan) LIKE %UPPER(Juan)%
-                        OR UPPER(P.apellido) LIKE '%' + UPPER(@Filtro) + '%' --                                                        JUAN LIKE %JUAN% (Esto evalúa true y va a estar en la lista)
+                        OR UPPER(P.nombre) + ' ' + UPPER(P.apellido) LIKE '%' + UPPER(@Filtro) + '%'   -- Ejemplo, si P.nombre = Juan y @Filtro = Juan, realiza: UPPER(Juan) LIKE %UPPER(Juan)%
+                                                                                                       --                                                        JUAN LIKE %JUAN% (Esto evalúa true y va a estar en la lista)
                         OR P.dni LIKE '%' + @Filtro + '%'                    -- '%' Se usa para buscar en cualquier parte de una cadena.
                     ORDER BY P.apellido, P.nombre;                           -- Por ejemplo, podría buscar '%ua%' y me aparecería 'Juan' ya que contiene en el medio esos caracteres.
-                END;
-                GO
+                END;                                                         -- TRIM se utiliza para eliminar espacios, por ejemplo si tiene apellido doble, solo buscará las coincidencias 
+                GO                                                           -- que coincidan con los caracteres del apellido, ignorando si existe un espacio.
                 
                 --------------------------------------------
                 /* Ejemplo de uso: EXEC rec_ListarPacientes; -- Muestra todos los pacientes
-                                   EXEC rec_ListarPacientes @Filtro = 'juan'; -- Muestra pacientes que se llamen 'juan'
+                                   EXEC rec_ListarPacientes @Filtro = 'juan lop'; -- Muestra pacientes que coincidan con el nombre 'juan lop'
                                    EXEC rec_ListarPacientes @Filtro = '45678900'; -- Muestra al paciente con DNI 45678900*/
 -----------------------------------------------------------------------------------------------------
 ----- Procedimiento #03: Flujo de reservar turno ----------------------------------------------------
     ----  3.1: Búsqueda de médico para reservar un turno
               CREATE OR ALTER PROCEDURE rec_BuscarMedico
                     @IdEspecialidad INT = NULL,
-                    @TextoBusquedaNombre VARCHAR(50) = NULL
+                    @TextoBusquedaNombre VARCHAR(50) = NULL,
+                    @MotivoConsulta VARCHAR(50) = NULL
                 AS
                 BEGIN
                     SET NOCOUNT ON;
 
                     SELECT
+                        U.id_usuario AS id_usuario,
                         U.nombre AS Nombre,
                         U.apellido AS Apellido,
                         E.nombre AS Especialidad
                     FROM Usuario U
                     JOIN Rol R ON U.id_rol = R.id_rol
                     JOIN Especialidad E ON U.id_especialidad = E.id_especialidad
+                    LEFT JOIN Motivo_Consulta MC ON MC.id_especialidad = U.id_especialidad
                     WHERE
                         U.id_rol = 2 -- Médico
                         AND (@IdEspecialidad IS NULL OR E.id_especialidad = @IdEspecialidad)
@@ -334,11 +348,15 @@ GO
                             @TextoBusquedaNombre IS NULL
                             OR UPPER(TRIM(U.nombre)) LIKE '%' + UPPER(TRIM(@TextoBusquedaNombre)) + '%'
                             OR UPPER(TRIM(U.apellido)) LIKE '%' + UPPER(TRIM(@TextoBusquedaNombre)) + '%'
+                            OR UPPER(TRIM(@MotivoConsulta)) IS NULL OR UPPER(TRIM(MC.descripcion)) LIKE UPPER(TRIM('%' + @MotivoConsulta + '%'))
                         )
                     ORDER BY U.apellido, U.nombre;
                 END;
                 GO
                 
+                /* Ejemplo de primer paso:
+                EXEC rec_BuscarMedico @TextoBusquedaNombre = 'Mettini';
+                */
     ---- 3.2: Mostrar turnos disponibles para un médico seleccionado con diferentes filtrados opcionales
                CREATE OR ALTER PROCEDURE rec_ObtenerTurnosDisponibles
                     @IdMedico INT,
@@ -350,12 +368,11 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT
-                        T.id_turno,
-                        T.fecha_turno,
-                        T.hora_inicio,
-                        T.hora_fin,
-                        D.nombre AS DiaSemana,
-                        ET.nombre AS EstadoTurno
+                        T.id_turno AS id_turno,
+                        T.fecha_turno AS [Fecha del Turno],
+                        D.nombre AS Día,
+                        T.hora_inicio AS [Hora de Inicio],
+                        T.hora_fin as [Hora de Fin]
                     FROM Turno T
                     JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
                     JOIN Día D ON BH.id_dia = D.id_dia
@@ -372,6 +389,21 @@ GO
                 END;
                 GO
                 
+                /* Ejemplo de segundo paso:
+                DECLARE @IdMedico INT;
+
+                -- Asignamos a una variable el valor del médico que buscamos
+                SELECT @IdMedico = U.id_usuario 
+                FROM Usuario U 
+                WHERE UPPER(U.apellido) LIKE UPPER('mettini');
+
+                -- Pasamos esa variable como parámetro para el segundo paso del flujo
+                EXEC rec_ObtenerTurnosDisponibles
+                    @IdMedico,
+                    @FechaInicio = '2026-11-01',
+                    @FechaFin = '2026-11-7', -- Ver turnos de la primer semana de noviembre
+                    @IdDia = NULL;
+                */
 
     ---- 3.3: Función que inserta la reserva, cambiando el estado de turno a ocupado
               CREATE OR ALTER PROCEDURE rec_RegistrarReserva
@@ -390,7 +422,7 @@ GO
                     END;
 
                     -- Insertar la reserva
-                    INSERT INTO Reserva (id_turno, id_paciente, motivo_consulta, id_estado)
+                    INSERT INTO Reserva (id_turno, id_paciente, id_motivo_consulta, id_estado)
                     VALUES (@IdTurno, @IdPaciente, @MotivoConsulta, 1); -- 1 = Activa
 
                     -- Actualizar estado del turno
@@ -399,6 +431,20 @@ GO
                     WHERE id_turno = @IdTurno;
                 END;
                 GO
+
+                /*Ejemplo de tercer paso del flujo de reserva:
+                -- Seleccionamos el turno con id 33 de los resultados anteriores
+                SELECT
+                    MC.id_motivo_consulta,
+                    MC.descripcion
+                FROM Motivo_Consulta MC
+                JOIN Usuario U ON MC.id_especialidad = U.id_especialidad
+                WHERE UPPER(U.apellido) LIKE UPPER('Mettini'); -- Para ver qué posibles motivos de consulta se le pueden asignar al paciente
+
+                EXEC rec_RegistrarReserva
+                    @IdTurno = 33,
+                    @IdPaciente = 1, -- Uno cualquiera
+                    @MotivoConsulta = 6; -- Fiebre
                 */
             
 ----------------------------------------------------------------------------------------------------
@@ -410,34 +456,72 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT  
-                        R.id_reserva,
-                        R.motivo_consulta,
-                        R.id_turno,
-                        R.id_paciente,
-                        P.nombre AS NombrePaciente,
-                        P.apellido AS ApellidoPaciente,
-                        P.dni AS DniPaciente,
-                        ER.nombre AS EstadoReserva,
-                        T.fecha_turno,
-                        T.hora_inicio,
-                        T.hora_fin
+                        P.id_paciente AS id_paciente,
+                        P.nombre AS Nombre,
+                        P.apellido AS Apellido,
+                        P.dni AS DNI,
+                        T.fecha_turno AS [Fecha del Turno],
+                        T.hora_inicio AS [Hora de Inicio],
+                        T.hora_fin AS [Hora de Fin],
+                        MC.descripcion AS [Motivo de Consulta]
                     FROM Reserva R
                     JOIN Turno T ON R.id_turno = T.id_turno
                     JOIN Paciente P ON R.id_paciente = P.id_paciente
-                    JOIN Estado_Reserva ER ON R.id_estado = ER.id_estado
+                    JOIN Motivo_Consulta MC ON MC.id_motivo_consulta = R.id_motivo_consulta
                     WHERE 
                         T.fecha_turno >= CAST(GETDATE() AS DATE)
                         AND (
                             @Filtro IS NULL 
-                            OR P.nombre LIKE '%' + @Filtro + '%'
-                            OR P.apellido LIKE '%' + @Filtro + '%'
+                            OR UPPER(P.nombre) + ' ' + UPPER(P.apellido) LIKE '%' + UPPER(@Filtro) + '%'                                                                     --                                                        JUAN LIKE %JUAN% (Esto evalúa true y va a estar en la lista)
                             OR P.dni LIKE '%' + @Filtro + '%'
                         )
                     ORDER BY T.fecha_turno ASC, T.hora_inicio ASC;
                 END;
                 GO
                 
+                /* Ejemplo 
+                EXEC rec_ListarReservasPacientes;
+                */
+                
 ----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----- Procedimiento #05: Cancelar una reserva, cambiando su estado de reserva y liberando el turno -
+                CREATE OR ALTER PROCEDURE rec_CancelarReserva
+                    @IdReserva INT
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    DECLARE @IdTurno INT;
+
+                    IF NOT EXISTS (SELECT 1 FROM Reserva WHERE id_reserva = @IdReserva AND id_estado = 1)
+                    BEGIN
+                        RAISERROR('La reserva no existe o ya fue cancelada/atendida.', 16, 1);
+                        RETURN;
+                    END;
+
+                    -- Obtener el turno asociado a la reserva
+                    SELECT @IdTurno = id_turno FROM Reserva WHERE id_reserva = @IdReserva;
+
+                    -- Cambiar el estado de la reserva a "Cancelada" (2)
+                    UPDATE Reserva
+                    SET id_estado = 2
+                    WHERE id_reserva = @IdReserva;
+
+                    -- Cambiar el estado del turno a "Disponible" (1)
+                    UPDATE Turno
+                    SET id_estado_turno = 1
+                    WHERE id_turno = @IdTurno;
+
+                    PRINT 'La reserva fue cancelada correctamente y el turno se liberó.';
+                END;
+                GO
+
+                /* Ejemplo
+                EXEC rec_CancelarReserva
+                    @IdReserva = 8;
+                */
+                    
 --==================================================================================================
 ----- Médico =======================================================================================
 ----- Procedimiento #01: Crear bloques horarios (con sus respectivos turnos) -----------------------
@@ -502,6 +586,32 @@ GO
                     PRINT 'Bloque horario creado correctamente.';
                 END;
                 GO
+                /* Ejemplos:
+                EXEC med_CrearBloqueHorario
+                    @FechaInicio = '2026-11-01',
+                    @FechaFin = '2026-11-30',
+                    @HoraInicio = '08:00',
+                    @HoraFin = '12:00',
+                    @DuracionTurnos = 30,
+                    @IdMedico = 2,
+                    @IdDia = 1; -- Lunes
+                EXEC med_CrearBloqueHorario
+                    @FechaInicio = '2026-11-01',
+                    @FechaFin = '2026-11-30',
+                    @HoraInicio = '08:00',
+                    @HoraFin = '12:00',
+                    @DuracionTurnos = 30,
+                    @IdMedico = 3,
+                    @IdDia = 3; -- Miércoles
+                EXEC med_CrearBloqueHorario
+                    @FechaInicio = '2026-11-01',
+                    @FechaFin = '2026-11-30',
+                    @HoraInicio = '08:00',
+                    @HoraFin = '12:00',
+                    @DuracionTurnos = 30,
+                    @IdMedico = 4,
+                    @IdDia = 5; -- Viernes
+                */
     --- 1.2: Procedimiento que calcula e inserta todos los turnos de un bloque dado.
                 CREATE OR ALTER PROCEDURE med_GenerarTurnosPorBloque
                     @IdBloque INT
@@ -572,6 +682,7 @@ GO
                 END;
                 GO
                 
+-------------------------------------------------------------------------------------------------------                
 ----- Procedimiento #02: Listar bloques horarios con diferentes opciones de filtrado ------------------
                 CREATE OR ALTER PROCEDURE med_ListarBloquesMedico
                     @IdMedico INT, -- Obligatorio
@@ -585,11 +696,11 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT
-                        BH.fecha_inicio AS FechaInicio,
-                        BH.fecha_fin AS FechaFin,
-                        BH.hora_inicio AS HoraInicio,
-                        BH.hora_fin AS HoraFin,
-                        D.nombre AS DiaSemana
+                        BH.fecha_inicio AS [Fecha de Inicio],
+                        BH.fecha_fin AS [Fecha de Fin],
+                        BH.hora_inicio AS [Hora de Inicio],
+                        BH.hora_fin AS [Hora de Fin],
+                        D.nombre AS [Día]
                     FROM Bloque_Horario BH
                     JOIN Día D ON D.id_dia = BH.id_dia
                     WHERE
@@ -605,7 +716,17 @@ GO
                         BH.hora_inicio ASC;
                 END;
                 GO
-                
+
+                /* Ejemplo
+                EXEC med_ListarBloquesMedico
+                    @IdMedico = 3,
+                    @FechaDesde = NULL,
+                    @FechaHasta = NULL,
+                    @HoraDesde = '8:00',
+                    @HoraHasta = '12:00',
+                    @IdDia = NULL;
+                */
+-------------------------------------------------------------------------------------------------------                
 ----- Procedimiento #03: Desactivar bloques horarios y sus turnos asociados (menos los reservados) ----
               CREATE OR ALTER PROCEDURE med_EliminarBloqueHorario
                     @IdBloque INT
@@ -646,7 +767,12 @@ GO
                     END CATCH;
                 END;
                 GO
-                
+
+                /* Ejemplo:
+                EXEC med_EliminarBloqueHorario
+                    @IdBloque = 2;
+                */
+-------------------------------------------------------------------------------------------------------                
 ----- Procedimiento #05: Función que lista las reservas próximas del médico con diferentes filtros ----
                 CREATE OR ALTER PROCEDURE med_ListarAgendaMedico
                     @IdMedico INT,                     
@@ -655,38 +781,27 @@ GO
                     @IdPaciente INT = NULL,            
                     @IdDia INT = NULL,                 
                     @HoraDesde TIME = NULL,            
-                    @HoraHasta TIME = NULL,            
+                    @HoraHasta TIME = NULL            
                 AS
                 BEGIN
                     SET NOCOUNT ON;
 
                     SELECT
-                        R.id_reserva,
-                        R.motivo_consulta,
-                        R.id_estado AS id_estado_reserva,
-                        ER.nombre AS estado_reserva,
-                        T.id_turno,
-                        T.fecha_turno,
-                        T.hora_inicio,
-                        T.hora_fin,
-                        BH.id_bloque,
-                        BH.fecha_inicio AS bloque_fecha_inicio,
-                        BH.fecha_fin   AS bloque_fecha_fin,
-                        D.nombre AS nombre_dia,
-                        P.id_paciente,
-                        P.nombre AS paciente_nombre,
-                        P.apellido AS paciente_apellido,
-                        P.dni AS paciente_dni,
-                        P.email AS paciente_email,
-                        P.telefono AS paciente_telefono,
-                        OS.id_obra_social,
-                        OS.nombre AS obra_social
+                        T.fecha_turno AS [Fecha del Turno],
+                        T.hora_inicio AS [Hora de Inicio],
+                        P.nombre + ' ' + P.apellido AS [Nombre del Paciente],
+                        P.dni AS DNI,
+                        P.email AS Email,
+                        P.telefono AS Teléfono,
+                        OS.nombre AS [Obra Social],
+                        MC.descripcion AS [Motivo de Consulta]
                     FROM Reserva R
                     INNER JOIN Turno T ON R.id_turno = T.id_turno
                     INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
                     INNER JOIN Usuario U ON BH.id_medico = U.id_usuario
                     INNER JOIN Paciente P ON R.id_paciente = P.id_paciente
-                    LEFT JOIN Obra_Social OS ON R.id_obra_social = OS.id_obra_social -- opcional
+                    INNER JOIN Motivo_Consulta MC ON MC.id_motivo_consulta = R.id_motivo_consulta
+                    LEFT JOIN Obra_Social OS ON P.id_obra_social = OS.id_obra_social -- opcional
                     LEFT JOIN Estado_Reserva ER ON R.id_estado = ER.id_estado
                     LEFT JOIN Día D ON BH.id_dia = D.id_dia
                     WHERE
@@ -703,7 +818,18 @@ GO
                         T.hora_inicio ASC;
                 END;
                 GO
-                
+
+                /*Ejemplo
+                EXEC med_ListarAgendaMedico
+                    @IdMedico = 3,                     
+                    @FechaDesde = NULL,           
+                    @FechaHasta = NULL,           
+                    @IdPaciente = NULL,            
+                    @IdDia = NULL,                 
+                    @HoraDesde = NULL,            
+                    @HoraHasta = NULL;
+                 */
+-------------------------------------------------------------------------------------------------------                
 ----- Procedimiento #06: Función que permite acceder al historial del paciente ------------------------
                 CREATE OR ALTER PROCEDURE med_ObtenerHistorialPaciente
                     @IdPaciente INT,
@@ -731,7 +857,7 @@ GO
 
                     WHERE
                         R.id_paciente = @IdPaciente
-                        AND R.id_estado <> 2 -- Que no sea una reserva cancelada
+                        AND R.id_estado = 3 -- Que esté atendido
                         AND (@FechaDesde IS NULL OR T.fecha_turno >= @FechaDesde)
                         AND (@FechaHasta IS NULL OR T.fecha_turno <= @FechaHasta)
 
@@ -747,6 +873,7 @@ GO
                     @FechaDesde = NULL,
                     @FechaHasta = NULL;
                 */
+-------------------------------------------------------------------------------------------------------
 ----- Procedimiento #07: Función que permite acceder al historial del médico --------------------------
                 CREATE OR ALTER PROCEDURE med_ListarHistorialMedico
                     @IdMedico INT,
@@ -772,8 +899,8 @@ GO
                     INNER JOIN Motivo_Consulta MC ON MC.id_motivo_consulta = R.id_motivo_consulta
                     WHERE
                         BH.id_medico = @IdMedico
-                        AND T.fecha_turno < CAST(GETDATE() AS DATE)
-                        AND R.id_estado <> 2 -- Que no sea una reserva cancelada
+                        AND T.fecha_turno <= CAST(GETDATE() AS DATE)
+                        AND R.id_estado = 3 -- Que esté atendido (manualmente por el médico)
                         AND (@FechaDesde IS NULL OR T.fecha_turno >= @FechaDesde)
                         AND (@FechaHasta IS NULL OR T.fecha_turno <= @FechaHasta)
                         AND (@IdPaciente IS NULL OR P.id_paciente = @IdPaciente)
@@ -790,7 +917,7 @@ GO
                     @FechaHasta = NULL,
                     @IdPaciente = NULL;
                 */
-
+-------------------------------------------------------------------------------------------------------
 ----- Procedimiento #08: Función que permite a un médico dar por atendida una reserva, con opción de agregar un diagnótico -
                 CREATE OR ALTER PROCEDURE med_FinalizarReserva
                     @IdReserva INT,
@@ -815,13 +942,125 @@ GO
                 END;
                 GO
 
+                /* Ejemplo
+                EXEC med_FinalizarReserva
+                    @IdReserva = 7,
+                    @Diagnostico = 'Diarrea producida por bacteria, receta con antibióticos';
+                */
+-------------------------------------------------------------------------------------------------------
 ----- Procedimiento #09: Reportes estadísticas del médico ---------------------------------------------
 --=====================================================================================================
------ Administrador ==========================================================================
---- Funciones #01: Crear Usuario
---- Función #02: Listar Usuarios con diferentes filtros
---- Función #03: Desactivar Usuario
---- Funciones #04: Reportes de la clínica
+
+----- Administrador ===================================================================================
+--- Procedimiento #01: Crear Usuario
+                CREATE OR ALTER PROCEDURE admin_CrearUsuario
+                    @nombre VARCHAR(50),
+                    @apellido VARCHAR(50),
+                    @dni VARCHAR(15),
+                    @correo VARCHAR(50),
+                    @telefono VARCHAR(20),
+                    @contraseña VARCHAR(100),
+                    @rol INT,
+                    @especialidad INT = NULL -- puede ser NULL si no es médico
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    IF EXISTS (SELECT 1 FROM Usuario WHERE dni = @dni OR email = @correo OR telefono = @telefono)
+                    BEGIN
+                        RAISERROR('El usuario ya existe con el mismo DNI, email o teléfono.', 16, 1);
+                        RETURN;
+                    END
+
+                    INSERT INTO Usuario (nombre, apellido, dni, email, telefono, contraseña_hash, id_rol, id_especialidad)
+                    VALUES (@nombre, @apellido, @dni, @correo, @telefono, @contraseña, @rol, @especialidad);
+
+                    PRINT 'Usuario creado correctamente.';
+                END;
+                /* Ejemplo
+                EXEC admin_CrearUsuario
+                    @nombre = 'Leandro',
+                    @apellido = 'Martinez',
+                    @dni = '430129418',
+                    @correo = 'med4@mail.com',
+                    @telefono = '3777-123912',
+                    @contraseña = 'hash123',
+                    @rol = 2,
+                    @especialidad = 4;
+                */
+                GO
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #02: Listar Usuarios con diferentes filtros
+                CREATE OR ALTER PROCEDURE admin_ListarUsuarios
+                    @idRol INT = NULL,
+                    @idEspecialidad INT = NULL,
+                    @busqueda VARCHAR(50) = NULL,
+                    @estadoUsuario BIT = NULL
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    SELECT 
+                        u.id_usuario,
+                        u.nombre + ' ' + u.apellido  AS [Nombre Completo],
+                        u.dni AS DNI,
+                        u.email AS Email,
+                        u.telefono AS Telefono,
+                        r.nombre AS Rol,
+                        e.nombre AS Especialidad,
+                        u.estado_usuario AS Estado
+                    FROM Usuario AS u
+                    LEFT JOIN Rol AS r ON u.id_rol = r.id_rol
+                    LEFT JOIN Especialidad AS e ON u.id_especialidad = e.id_especialidad
+                    WHERE 
+                        (@idRol IS NULL OR u.id_rol = @idRol)
+                        AND (@idEspecialidad IS NULL OR u.id_especialidad = @idEspecialidad)
+                        AND (@estadoUsuario IS NULL OR u.estado_usuario = @estadoUsuario)
+                        AND (
+                            @busqueda IS NULL 
+                            OR UPPER(u.nombre) + ' ' + UPPER(u.apellido) LIKE '%' + UPPER(@busqueda) + '%'                                                                     --                                                        JUAN LIKE %JUAN% (Esto evalúa true y va a estar en la lista)
+                            OR u.dni LIKE '%' + @busqueda + '%'
+                        )
+                    ORDER BY u.apellido, u.nombre;
+                END;
+
+                /*
+                EXEC admin_ListarUsuarios
+                    @idRol = null,
+                    @idEspecialidad = null,
+                    @busqueda = '',
+                    @estadoUsuario = null;
+                */
+                GO
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #03: Desactivar Usuario
+                CREATE OR ALTER PROCEDURE admin_DesactivarUsuario
+                    @idUsuario INT
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    IF NOT EXISTS (SELECT 1 FROM Usuario WHERE id_usuario = @idUsuario)
+                    BEGIN
+                        RAISERROR('El usuario no existe.', 16, 1);
+                        RETURN;
+                    END
+
+                    UPDATE Usuario
+                    SET estado_usuario = 0
+                    WHERE id_usuario = @idUsuario;
+
+                    PRINT 'Usuario desactivado correctamente.';
+                END;
+
+                 /*
+                EXEC admin_DesactivarUsuario
+                    @idUsuario = 6
+                */
+                GO
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #04: Reportes de la clínica
+
 
 
 
