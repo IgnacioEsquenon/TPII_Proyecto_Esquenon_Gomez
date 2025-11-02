@@ -948,7 +948,126 @@ GO
                     @Diagnostico = 'Diarrea producida por bacteria, receta con antibióticos';
                 */
 -------------------------------------------------------------------------------------------------------
------ Procedimiento #09: Reportes estadísticas del médico ---------------------------------------------
+--- Procedimiento #09: Procedimiento que muestra el total y porcertanje de reservas programadas, atendidas, canceladas o ausentadas,
+                   -- y a su vez el promedio semanal de pacientes atendidos en un rango de fechas dado.
+                CREATE OR ALTER PROCEDURE med_EstadisticaActividadMedico
+                    @IdMedico INT,
+                    @FechaInicio DATE,
+                    @FechaFin DATE
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    -- 1) Variable que calcula la cantidad de semanas dentro del rango de fechas pasado como parámetros.
+                    DECLARE @TotalSemanas DECIMAL(5,2) = (DATEDIFF(DAY, @FechaInicio, @FechaFin) + 1) / 7.0; -- Esto es un aproximado, ya que los meses no tienen una cantidad entera de semanas.
+                                                                                                             -- Sumo 1 porque por ejemplo, para noviembre me dio 29 de resultado, pero hay un día más que no se cuenta.
+                    -- Los parámetros para DECIMAL(p, s), p es la cantidad de dígitos en total, s la cantidad de dígitos después de la coma.
+                    -- Ejemplo: 999,99 se podría guardar en DECIMAL(5,2), pero 1132,11 no, ya que su cantidad de dígitos en total (p) es 6 teniendo en cuenta decimales.
+
+                    -- 2) Variables de agregados básicos
+                    DECLARE @TotalProgramados INT = 0; -- Turnos con reservas programadas.
+                    DECLARE @TotalAtendidos INT = 0;   -- Turnos cuyas reservas hayan sido atendidas.
+                    DECLARE @TotalCancelados INT = 0;  -- Turnos cuyas reservas hayan sido canceladas.
+                    DECLARE @TotalAusencias INT = 0;   -- Turnos cuyas reservas no fueron atendidas debido a la ausencia del paciente.
+
+                    -- 3) Con la cláusula with se crea una tabla temporal (CTE) para almacenar todos los turnos del médico que hayan tenido una reserva en el mes establecido.
+                    WITH TurnosMedico AS (
+                        SELECT
+                            T.id_turno,
+                            T.fecha_turno,
+                            R.id_estado AS EstadoReserva
+                        FROM Turno T
+                        INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque -- Turnos de cada bloque horario específico.
+                        INNER JOIN Reserva R ON T.id_turno = R.id_turno            -- Que a su vez existan en reserva.
+                        WHERE 
+                            BH.id_medico = @IdMedico                               -- Que sean todos los bloques asociados al médico específico.
+                            AND T.fecha_turno BETWEEN @FechaInicio AND @FechaFin   -- Y que la fecha coincida con el rango establecido para el análisis.
+                    )
+                    -- 4) Calcular y asignar agregados usando la CTE luego de definirla con WITH.
+                    SELECT -- ** ACLARACIÓN ** La tabla temporal 'TurnosMedico' actúa como un grupo en sí mismo, es por eso que se pueden aplicar funciones de agregación.
+                        @TotalProgramados = COUNT(*), -- Total de turnos reservados con el filtrado de la tabla temporal.
+                        @TotalAtendidos =  SUM(CASE WHEN EstadoReserva = 3 THEN 1 ELSE 0 END), -- Atendidos (Estado 3)
+                        @TotalCancelados = SUM(CASE WHEN EstadoReserva = 2 THEN 1 ELSE 0 END), -- Cancelados (Estado 2)
+                        @TotalAusencias =  SUM(CASE WHEN EstadoReserva = 1 AND T.fecha_turno < CAST(GETDATE() AS DATE)
+                                                                           THEN 1 ELSE 0 END)  -- Se asume ausencia cuando el médico no finaliza una atención manualmente,
+                                                                                               -- por tanto, expiraría la fecha pero mantendría su estado de activo (Estado 1).
+                    FROM TurnosMedico T;
+
+                    -- 5) Devolver resultados calculados
+                    SELECT
+                        @TotalProgramados AS [Reservas Programadas],
+                        @TotalAtendidos  AS [Reservas Atendidas],
+                        @TotalCancelados AS [Reservas Canceladas],
+                        @TotalAusencias  AS Ausencias,
+                        CASE 
+                            WHEN @TotalProgramados = 0 THEN CAST(0 AS DECIMAL(6,2))
+                            ELSE CAST(@TotalAtendidos * 100.0 / @TotalProgramados AS DECIMAL(6,2))
+                        END AS [Porcentaje de Asistencia],
+                        CASE
+                            WHEN @TotalSemanas <= 0 THEN CAST(0 AS DECIMAL(6,2))
+                            ELSE CAST(@TotalAtendidos / @TotalSemanas AS DECIMAL(6,2))
+                        END AS [Promedio Semanal de Pacientes Atendidos];
+                END;
+                GO
+
+                /* Ejemplo
+                EXEC med_EstadisticaActividadMedico
+                    @IdMedico = 3,
+                    @FechaInicio = '2025-11-01',
+                    @FechaFin = '2025-11-30';
+                */
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #10: Procedimiento que muestra el ranking de motivos de consulta más frecuentes
+                    -- atendidos por un médico en un rango de fechas determinado, incluyendo el porcentaje de participación
+                    -- de cada motivo respecto al total de consultas realizadas.
+                CREATE OR ALTER PROCEDURE med_EstadisticaMotivosMedico
+                    @IdMedico INT,
+                    @FechaInicio DATE,
+                    @FechaFin DATE
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    -- 1) Descripción general:
+                    -- Este procedimiento devuelve un listado ordenado de los motivos de consulta más registrados por el médico.
+                    -- El cálculo se realiza considerando únicamente las reservas atendidas (id_estado = 3),
+                    -- dentro del rango de fechas indicado por los parámetros.
+
+                    -- 2) CTE: se extraen todas las atenciones realizadas por el médico en el rango indicado.
+                    WITH ConsultasMedico AS (
+                        SELECT
+                            MC.id_motivo_consulta,
+                            MC.descripcion AS MotivoConsulta,
+                            R.id_reserva
+                        FROM Reserva R
+                        INNER JOIN Turno T ON R.id_turno = T.id_turno
+                        INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
+                        INNER JOIN Motivo_Consulta MC ON R.id_motivo_consulta = MC.id_motivo_consulta
+                        WHERE
+                            BH.id_medico = @IdMedico
+                            AND R.id_estado = 3                              -- Solo reservas atendidas.
+                            AND T.fecha_turno BETWEEN @FechaInicio AND @FechaFin
+                    )
+
+                    -- 3) Consulta principal: cálculo del ranking de motivos y su porcentaje relativo.
+                    SELECT
+                        C.MotivoConsulta AS [Motivo de Consulta],
+                        COUNT(*) AS [Cantidad de Atenciones],                                                     -- 3. Se cuenta la cantidad de tuplas de cada grupo definido,
+                        CAST(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER() AS DECIMAL(6,2)) AS [Porcentaje sobre Total] -- 4. Por último, esa cantidad se divide por el total de consultas atendidas, 
+                                                                                                                  --    OVER() Sirve para evaluar los siguientes grupos, realizando lo mismo que el paso 3, pero sumando todos esos resultados.
+                    FROM ConsultasMedico C                                                                        -- 1. En base a las reservas tomadas de arriba,
+                    GROUP BY C.MotivoConsulta                                                                     -- 2. Se agrupan las reservas con mismos motivos de consulta,
+                    ORDER BY [Cantidad de Atenciones] DESC;
+
+                END;
+                GO
+
+                /* Ejemplo de uso:
+                EXEC med_EstadisticaMotivosMedico
+                    @IdMedico = 3,
+                    @FechaInicio = '2025-11-01',
+                    @FechaFin = '2025-11-30';
+                */
 --=====================================================================================================
 
 ----- Administrador ===================================================================================
@@ -1060,6 +1179,7 @@ GO
                 GO
 -------------------------------------------------------------------------------------------------------
 --- Procedimiento #04: Reportes de la clínica
+
 
 
 
