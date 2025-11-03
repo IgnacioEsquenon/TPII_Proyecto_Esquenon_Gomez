@@ -521,7 +521,105 @@ GO
                 EXEC rec_CancelarReserva
                     @IdReserva = 8;
                 */
-                    
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #06: Procedimiento que muestra estadísticas generales sobre los pacientes que realizaron
+                    -- reservas dentro de un rango de fechas determinado. Incluye promedio de edad, distribución etaria
+                    -- y porcentaje de pacientes con o sin obra social.
+                CREATE OR ALTER PROCEDURE rec_EstadisticaPacientes
+                    @FechaInicio DATE,
+                    @FechaFin DATE
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    -- 1) Descripción general:
+                    -- Este procedimiento analiza el perfil poblacional de los pacientes que realizaron reservas
+                    -- dentro del rango de fechas establecido. Se calcula:
+                    --  - Promedio de edad
+                    --  - Distribución por rangos de edad (menores, adultos, mayores)
+                    --  - Porcentaje de pacientes con y sin obra social.
+
+                    -- 2) CTE: obtener pacientes únicos con reserva en el rango.
+                    WITH PacientesReserva AS (
+                        SELECT DISTINCT
+                            P.id_paciente,
+                            P.fecha_nacimiento,
+                            P.id_obra_social,
+                            DATEDIFF(YEAR, P.fecha_nacimiento, GETDATE()) AS Edad
+                        FROM Paciente P
+                        INNER JOIN Reserva R ON P.id_paciente = R.id_paciente
+                        INNER JOIN Turno T ON R.id_turno = T.id_turno
+                        WHERE T.fecha_turno BETWEEN @FechaInicio AND @FechaFin
+                    )
+
+                    -- 3) Cálculo de agregados principales
+                    SELECT
+                        CAST(AVG(Edad * 1.0) AS DECIMAL(5,2))                                            AS [Promedio de Edad],
+                        SUM(CASE WHEN Edad < 18 THEN 1 ELSE 0 END)                                          AS [Menores (<18)],
+                        SUM(CASE WHEN Edad BETWEEN 18 AND 64 THEN 1 ELSE 0 END)                             AS [Adultos (18-64)],
+                        SUM(CASE WHEN Edad >= 65 THEN 1 ELSE 0 END)                                         AS [Mayores (65+)],
+                        CAST(SUM(CASE WHEN Edad < 18 THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(5,2))              AS [Porcentaje de Menores],
+                        CAST(SUM(CASE WHEN Edad BETWEEN 18 AND 64 THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(5,2)) AS [Porcentaje de Adultos],
+                        CAST(SUM(CASE WHEN Edad >= 65 THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(5,2))             AS [Porcentaje de Mayores],
+                        SUM(CASE WHEN id_obra_social IS NOT NULL THEN 1 ELSE 0 END)                                          AS [Pacientes con Obra Social],
+                        SUM(CASE WHEN id_obra_social IS NULL THEN 1 ELSE 0 END)                                              AS [Pacientes sin Obra Social],
+                        CAST(SUM(CASE WHEN id_obra_social IS NOT NULL THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(5,2)) AS [Porcentaje Con Obra Social],
+                        CAST(SUM(CASE WHEN id_obra_social IS NULL THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(5,2))     AS [Porcentaje Sin Obra Social]
+                    FROM PacientesReserva;
+                END;
+                GO
+
+                /* Ejemplo de uso:
+                EXEC rec_EstadisticaPacientes
+                    @FechaInicio = '2025-11-01',
+                    @FechaFin = '2025-11-30';
+                */
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #07: Procedimiento que muestra el ranking de las obras sociales más utilizadas
+                    -- por los pacientes que realizaron reservas dentro de un rango de fechas, indicando su
+                    -- participación porcentual respecto al total de pacientes con obra social.
+                CREATE OR ALTER PROCEDURE rec_EstadisticaObrasSociales
+                    @FechaInicio DATE,
+                    @FechaFin DATE
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    -- 1) Descripción general:
+                    -- Este procedimiento analiza la distribución de los pacientes con obra social
+                    -- que realizaron reservas dentro del rango de fechas indicado.
+                    -- Devuelve un ranking de obras sociales y su porcentaje sobre el total.
+
+                    -- 2) CTE: obtener pacientes con obra social y reserva en el rango.
+                    WITH PacientesObra AS (
+                        SELECT DISTINCT
+                            P.id_paciente,
+                            OS.id_obra_social,
+                            OS.nombre AS ObraSocial
+                        FROM Paciente P
+                        INNER JOIN Reserva R ON P.id_paciente = R.id_paciente
+                        INNER JOIN Turno T ON R.id_turno = T.id_turno
+                        INNER JOIN Obra_Social OS ON P.id_obra_social = OS.id_obra_social
+                        WHERE T.fecha_turno BETWEEN @FechaInicio AND @FechaFin
+                    )
+
+                    -- 3) Ranking de obras sociales por cantidad de pacientes
+                    SELECT
+                        ObraSocial AS [Obra Social],
+                        COUNT(*) AS [Cantidad de Pacientes],
+                        CAST(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER() AS DECIMAL(6,2)) AS [Porcentaje sobre Total]
+                    FROM PacientesObra
+                    GROUP BY ObraSocial
+                    ORDER BY [Cantidad de Pacientes] DESC;
+                END;
+                GO
+
+                /* Ejemplo de uso:
+                EXEC rec_EstadisticaObrasSociales
+                    @FechaInicio = '2025-11-01',
+                    @FechaFin = '2025-11-30';
+                */
+-------------------------------------------------------------------------------------------------------
 --==================================================================================================
 ----- Médico =======================================================================================
 ----- Procedimiento #01: Crear bloques horarios (con sus respectivos turnos) -----------------------
@@ -1178,7 +1276,134 @@ GO
                 */
                 GO
 -------------------------------------------------------------------------------------------------------
---- Procedimiento #04: Reportes de la clínica
+--- Procedimiento #04: Procedimiento que muestra indicadores generales de la clínica.
+                    -- Incluye la cantidad total de reservas programadas, atendidas, canceladas y ausentes, así como
+                    -- el porcentaje de cada tipo y el promedio de reservas atendidas por médico.
+                CREATE OR ALTER PROCEDURE admin_EstadisticaClinicaGeneral
+                    @FechaInicio DATE,
+                    @FechaFin DATE
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    -- 1) Variables de agregados globales
+                    DECLARE @TotalProgramados INT = 0;
+                    DECLARE @TotalAtendidos INT = 0;
+                    DECLARE @TotalCancelados INT = 0;
+                    DECLARE @TotalAusencias INT = 0;
+                    DECLARE @TotalMedicos INT = 0;
+
+                    -- 2) CTE que reúne todas las reservas del período analizado
+                    WITH ReservasClinica AS (
+                        SELECT
+                            R.id_reserva,
+                            R.id_estado,
+                            T.fecha_turno,
+                            BH.id_medico
+                        FROM Reserva R
+                        INNER JOIN Turno T ON R.id_turno = T.id_turno
+                        INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
+                        WHERE T.fecha_turno BETWEEN @FechaInicio AND @FechaFin
+                    )
+                    -- 3) Asignar agregados
+                    SELECT
+                        @TotalProgramados = COUNT(*),
+                        @TotalAtendidos = SUM(CASE WHEN id_estado = 3 THEN 1 ELSE 0 END),
+                        @TotalCancelados = SUM(CASE WHEN id_estado = 2 THEN 1 ELSE 0 END),
+                        @TotalAusencias = SUM(CASE WHEN id_estado = 1 AND fecha_turno < CAST(GETDATE() AS DATE)
+                                                   THEN 1 ELSE 0 END),
+                        @TotalMedicos = COUNT(DISTINCT id_medico)
+                    FROM ReservasClinica;
+
+                    -- 4) Devolver resultados
+                    SELECT
+                        @TotalProgramados AS [Reservas Programadas],
+                        @TotalAtendidos  AS [Reservas Atendidas],
+                        @TotalCancelados AS [Reservas Canceladas],
+                        @TotalAusencias  AS [Reservas con Ausencia],
+                        CASE WHEN @TotalProgramados = 0 THEN 0
+                             ELSE CAST(@TotalAtendidos * 100.0 / @TotalProgramados AS DECIMAL(6,2))
+                        END AS [% Atendidas],
+                        CASE WHEN @TotalProgramados = 0 THEN 0
+                             ELSE CAST(@TotalCancelados * 100.0 / @TotalProgramados AS DECIMAL(6,2))
+                        END AS [% Canceladas],
+                        CASE WHEN @TotalProgramados = 0 THEN 0
+                             ELSE CAST(@TotalAusencias * 100.0 / @TotalProgramados AS DECIMAL(6,2))
+                        END AS [% Ausencias],
+                        CASE WHEN @TotalMedicos = 0 THEN 0
+                             ELSE CAST(@TotalAtendidos * 1.0 / @TotalMedicos AS DECIMAL(6,2))
+                        END AS [Promedio de Reservas Atendidas por Médico];
+                END;
+                GO
+
+                /* Ejemplo de uso:
+                EXEC admin_EstadisticaClinicaGeneral
+                    @FechaInicio = '2025-11-01',
+                    @FechaFin = '2025-11-30';
+                */
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+--- Procedimiento #05: Procedimiento que muestra el ranking de especialidades más demandadas
+                    -- según la cantidad de reservas realizadas en un rango de fechas. También muestra el motivo
+                    -- de consulta más frecuente dentro de cada especialidad.
+                CREATE OR ALTER PROCEDURE admin_EstadisticaEspecialidades
+                    @FechaInicio DATE,
+                    @FechaFin DATE
+                AS
+                BEGIN
+                    SET NOCOUNT ON;
+
+                    -- 1) Descripción general:
+                    -- Este procedimiento analiza la demanda por especialidad dentro del rango de fechas dado,
+                    -- mostrando el total de reservas por especialidad, su porcentaje respecto al total y el
+                    -- motivo de consulta más frecuente asociado a cada especialidad.
+
+                    -- 2) CTE principal: reservas con su especialidad y motivo
+                    WITH ReservasEspecialidad AS (
+                        SELECT
+                            E.id_especialidad,
+                            E.nombre AS Especialidad,
+                            MC.descripcion AS MotivoConsulta,
+                            R.id_reserva
+                        FROM Reserva R
+                        INNER JOIN Turno T ON R.id_turno = T.id_turno
+                        INNER JOIN Bloque_Horario BH ON T.id_bloque = BH.id_bloque
+                        INNER JOIN Usuario M ON BH.id_medico = M.id_usuario
+                        INNER JOIN Especialidad E ON M.id_especialidad = E.id_especialidad
+                        LEFT JOIN Motivo_Consulta MC ON R.id_motivo_consulta = MC.id_motivo_consulta
+                        WHERE T.fecha_turno BETWEEN @FechaInicio AND @FechaFin
+                    ),
+                    -- 3) Ranking de motivos dentro de cada especialidad
+                    MotivosFrecuentes AS (
+                        SELECT
+                            id_especialidad,
+                            MotivoConsulta,
+                            ROW_NUMBER() OVER (PARTITION BY id_especialidad ORDER BY COUNT(*) DESC) AS rn
+                        FROM ReservasEspecialidad
+                        WHERE MotivoConsulta IS NOT NULL
+                        GROUP BY id_especialidad, MotivoConsulta
+                    )
+                    -- 4) Resultado final: resumen por especialidad
+                    SELECT
+                        RE.Especialidad,
+                        COUNT(*) AS [Cantidad de Reservas],
+                        CAST(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER() AS DECIMAL(6,2)) AS [% sobre Total],
+                        MF.MotivoConsulta AS [Motivo Más Frecuente]
+                    FROM ReservasEspecialidad RE
+                    LEFT JOIN MotivosFrecuentes MF
+                        ON RE.id_especialidad = MF.id_especialidad AND MF.rn = 1
+                    GROUP BY RE.Especialidad, MF.MotivoConsulta
+                    ORDER BY [Cantidad de Reservas] DESC;
+                END;
+                GO
+
+                /* Ejemplo de uso:
+                EXEC admin_EstadisticaEspecialidades
+                    @FechaInicio = '2025-11-01',
+                    @FechaFin = '2025-11-30';
+                */
+-------------------------------------------------------------------------------------------------------
+
 
 
 
