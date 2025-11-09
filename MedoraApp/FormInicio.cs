@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedoraAppLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -15,9 +16,12 @@ namespace MedoraApp
 {
     public partial class FormInicio : Form
     {
+        private UsuarioController _usuarioController;
         public FormInicio()
         {
             InitializeComponent();
+            string connString = ConfigurationManager.ConnectionStrings["MedoraDB"].ConnectionString;
+            _usuarioController = new UsuarioController(connString);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -41,76 +45,50 @@ namespace MedoraApp
                 return;
             }
 
-            string connectionString = ConfigurationManager
-                            .ConnectionStrings["MedoraDB"]
-                            .ConnectionString;
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                try
+                
+                Usuario usuarioValidado = _usuarioController.ValidarYObtenerUsuario(usuario, contraseña);
+                if (usuarioValidado != null)
                 {
-                    connection.Open();
+                    
+                    MessageBox.Show($"¡Bienvenido, {usuarioValidado.Nombre}!", "Inicio de sesión exitoso");
 
-                    string query = "SELECT id_usuario, nombre, apellido, contraseña_hash, id_rol FROM Usuario WHERE (email = @usuario OR dni = @usuario) AND contraseña_hash = @contraseña AND estado_usuario = 1";
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@usuario", usuario);
-                    cmd.Parameters.AddWithValue("@contraseña", contraseña); // contraseña tal cual está en BD
+                    int rol = (int)usuarioValidado.Rol;
+                    int idMedicoLogeado = usuarioValidado.IdUsuario;
 
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    if (reader.Read())
+                    
+                    if (rol == 1) // Admin
                     {
-                        int rol = Convert.ToInt32(reader["id_rol"]);
-                        int idMedicoLogeado = Convert.ToInt32(reader["id_usuario"]);
-                        MessageBox.Show("Inicio de sesión exitoso.");
-
-                        // Redirige segun rol
-                        if (rol == 1) // Admin
-                        {
-                            FormAdmin ventanaAdmin = new FormAdmin();
-                            ventanaAdmin.FormClosed += (s, args) => this.Close();
-                            ventanaAdmin.Show();
-                        }
-                        else if (rol == 2) // Médico
-                        {
-                            FormMedico ventanaMedico = new FormMedico(idMedicoLogeado);
-                            ventanaMedico.FormClosed += (s, args) => this.Close();
-                            ventanaMedico.Show();
-                        }
-                        else if (rol == 3) // Recepcionista
-                        {
-                            FormRecepcionista ventanaRecep = new FormRecepcionista();
-                            ventanaRecep.FormClosed += (s, args) => this.Close();
-                            ventanaRecep.Show();
-                        }
-                        this.Hide();
+                        FormAdmin ventanaAdmin = new FormAdmin();
+                        ventanaAdmin.FormClosed += (s, args) => this.Close();
+                        ventanaAdmin.Show();
                     }
-                    else
+                    else if (rol == 2) // Médico
                     {
-                        MessageBox.Show("Usuario o contraseña incorrectos.");
+                        FormMedico ventanaMedico = new FormMedico(idMedicoLogeado);
+                        ventanaMedico.FormClosed += (s, args) => this.Close();
+                        ventanaMedico.Show();
                     }
+                    else if (rol == 3) // Recepcionista
+                    {
+                        FormRecepcionista ventanaRecep = new FormRecepcionista();
+                        ventanaRecep.FormClosed += (s, args) => this.Close();
+                        ventanaRecep.Show();
+                    }
+                    this.Hide();
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Usuario o contraseña incorrectos.");
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar con la base de datos: " + ex.Message);
             }
         }
 
-
-
-
-        /*private string CalcularContraHash(string texto)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(texto));
-                StringBuilder sb = new StringBuilder();
-                foreach (byte b in bytes)
-                    sb.Append(b.ToString("x2"));
-                return sb.ToString();
-            }
-        }*/
     }
 
 }

@@ -18,81 +18,77 @@ namespace MedoraApp
     public partial class UC_CrearBloque : UserControl
     {
         private int _idMedicoActual; //Var para guardar el id del medico actual
-        public UC_CrearBloque(int idMedico)
+        private TurnoController _turnoController;
+        public UC_CrearBloque(int idMedico, TurnoController turnoController)
         {
             InitializeComponent();
             _idMedicoActual = idMedico; //Asignar el id del medico actual
+            _turnoController = turnoController;
         }
 
         private void UC_CrearBloque_Load(object sender, EventArgs e)
         {
             CargarDias();
+            dtpHoraInicio.Format = DateTimePickerFormat.Time;
+            dtpHoraInicio.ShowUpDown = true;
+            dtpHoraFin.Format = DateTimePickerFormat.Time;
+            dtpHoraFin.ShowUpDown = true;
         }
 
         private void CargarDias()
         {
-            string connectionString = ConfigurationManager
-                            .ConnectionStrings["MedoraDB"]
-                            .ConnectionString;
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    string query = "SELECT id_dia, nombre FROM Día"; // id y nombre del día
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-
-                    cmbDia.DataSource = dt;
-                    cmbDia.DisplayMember = "nombre"; // lo que se muestra
-                    cmbDia.ValueMember = "id_dia";   // el valor real que se usa en la BD
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar los días: " + ex.Message);
-                }
-            }
-
-        }
-
-        private void GuardarBloque()
-        {
-            string connectionString = @"Server=SEBAADMIN\SQLEXPRESS;Database=MedoraDB;Trusted_Connection=True;";
-
             try
             {
-                BloqueHorario bloque = new BloqueHorario
-                {
-                    FechaInicio = dtpFechaInicio.Value.Date,
-                    FechaFin = dtpFechaFin.Value.Date,
-                    HoraInicio = dtpHoraInicio.Value.TimeOfDay,   // 7:00 AM
-                    HoraFin = dtpHoraFin.Value.TimeOfDay,      // 9:00 AM
-                    DuracionTurnos = Convert.ToInt32(cmbDuracion.SelectedItem),  // Turnos de 30 minutos
-                    IdUsuario = _idMedicoActual,                 // ID del médico en tabla Usuario
-                    IdDia = Convert.ToInt32(cmbDia.SelectedValue)// 1=lunes, 2=martes...
-                };
-
-                // Guardar el bloque en la base de datos
-                bloque.GuardarEnBD(connectionString);
-                MessageBox.Show("Bloque guardado correctamente."); 
-
-                // Generar y guardar turnos automáticamente
-                bloque.GenerarYGuardarTurnos(connectionString);
-                MessageBox.Show("✅ Turnos generados y guardados correctamente.");
+                
+                cmbDia.DataSource = _turnoController.ObtenerDiasSemana();
+                cmbDia.DisplayMember = "nombre";
+                cmbDia.ValueMember = "id_dia";
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al guardar el bloque: " + ex.Message);
+                MessageBox.Show("Error al cargar los días: " + ex.Message);
             }
 
         }
 
-            
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            GuardarBloque();
+            
+            if (dtpFechaInicio.Value.Date > dtpFechaFin.Value.Date)
+            {
+                MessageBox.Show("La fecha de inicio no puede ser posterior a la fecha de fin.", "Error de Fechas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (dtpHoraInicio.Value >= dtpHoraFin.Value)
+            {
+                MessageBox.Show("La hora de inicio debe ser anterior a la hora de fin.", "Error de Horas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (Convert.ToInt32(cmbDuracion.SelectedItem) <= 0)
+            {
+                MessageBox.Show("La duración de los turnos debe ser mayor a cero.", "Error de Duración", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DateTime fechaInicio = dtpFechaInicio.Value.Date;
+            DateTime fechaFin = dtpFechaFin.Value.Date;
+            TimeSpan horaInicio = dtpHoraInicio.Value.TimeOfDay;
+            TimeSpan horaFin = dtpHoraFin.Value.TimeOfDay;
+            int duracion = Convert.ToInt32(cmbDuracion.SelectedItem);
+            int idDia = Convert.ToInt32(cmbDia.SelectedValue);
+
+            bool exito = _turnoController.CrearBloqueHorario(
+                fechaInicio, fechaFin, horaInicio, horaFin,
+                duracion, _idMedicoActual, idDia
+            );
+
+            if (exito)
+            {
+                MessageBox.Show("¡Bloque horario y turnos generados con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            // Si no fue exitoso, el controlador ya mostró el mensaje de error específico (ej: bloque solapado).
         }
     }
-}
+  }
+

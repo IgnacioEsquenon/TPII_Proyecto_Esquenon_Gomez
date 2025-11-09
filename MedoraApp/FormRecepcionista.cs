@@ -15,6 +15,8 @@ namespace MedoraApp
     public partial class FormRecepcionista : Form
     {
         private PacienteController pacienteController;
+        private TurnoController turnoController;
+        private EstadisticasController estadisticasController;
         public FormRecepcionista()
         {
             InitializeComponent();
@@ -23,28 +25,25 @@ namespace MedoraApp
                                         ConnectionString;
 
             pacienteController = new PacienteController(connectionString);
+            turnoController = new TurnoController(connectionString);
+            estadisticasController = new EstadisticasController(connectionString);
         }
+
 
         private void MostrarControl(UserControl controlAMostrar)
         {
-            // Limpiamos el panel de contenido
+           
             panelContenido.Controls.Clear();
 
-            // Calculamos el nuevo tamaño que necesita el área visible del formulario.
-            // Ancho = Ancho del menú + Ancho del nuevo control + un pequeño margen
-            // Alto = Alto del nuevo control
             int nuevoAnchoCliente = panel1.Width + controlAMostrar.Width;
             int nuevoAltoCliente = controlAMostrar.Height;
 
-            // Asignamos este nuevo tamaño al ClientSize del formulario.
-            // El formulario se redimensionará automáticamente, y gracias al ANCHOR,
-            // los paneles se ajustarán solos de forma perfecta.
             this.ClientSize = new System.Drawing.Size(nuevoAnchoCliente, nuevoAltoCliente);
 
-            // Centramos la ventana en la pantalla para un efecto profesional.
+            
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Añadimos el nuevo control al panel de contenido.
+           
             controlAMostrar.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(controlAMostrar);
         }
@@ -65,6 +64,22 @@ namespace MedoraApp
         private void btnListaPacientes_Click(object sender, EventArgs e)
         {
             MostrarControl(new UC_ListaPacientes(pacienteController));
+        }
+
+        private void btnReservarTurno_Click(object sender, EventArgs e)
+        {
+            MostrarControl(new UC_GestionTurnos(turnoController, pacienteController));
+                
+        }
+
+        private void btnListaReservas_Click(object sender, EventArgs e)
+        {
+            MostrarControl(new UC_GestionReservas(turnoController));
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            MostrarControl(new UC_RecepDashboard(estadisticasController));
         }
     }
 }

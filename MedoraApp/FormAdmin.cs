@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedoraAppLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,36 +11,34 @@ using System.Windows.Forms;
 
 namespace MedoraApp
 {
+
     public partial class FormAdmin : Form
     {
         string connectionString = System.Configuration.ConfigurationManager
                                      .ConnectionStrings["MedoraDB"]
                                      .ConnectionString;
+       
+        private TurnoController _turnoController;
+        private EstadisticasController _estadisticasController;
         public FormAdmin()
         {
             InitializeComponent();
+            _turnoController = new TurnoController(connectionString);
+            _estadisticasController = new EstadisticasController(connectionString);
         }
 
         private void MostrarControl(UserControl controlAMostrar)
         {
-            // Limpiamos el panel de contenido
+            
             panelContenido.Controls.Clear();
 
-            // Calculamos el nuevo tamaño que necesita el área visible del formulario.
-            // Ancho = Ancho del menú + Ancho del nuevo control + un pequeño margen
-            // Alto = Alto del nuevo control
             int nuevoAnchoCliente = panel1.Width + controlAMostrar.Width;
             int nuevoAltoCliente = controlAMostrar.Height;
 
-            // Asignamos este nuevo tamaño al ClientSize del formulario.
-            // El formulario se redimensionará automáticamente, y gracias al ANCHOR,
-            // los paneles se ajustarán solos de forma perfecta.
             this.ClientSize = new System.Drawing.Size(nuevoAnchoCliente, nuevoAltoCliente);
 
-            // Centramos la ventana en la pantalla para un efecto profesional.
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Añadimos el nuevo control al panel de contenido.
             controlAMostrar.Dock = DockStyle.Fill;
             panelContenido.Controls.Add(controlAMostrar);
         }
@@ -64,6 +63,40 @@ namespace MedoraApp
         private void btnVerUsuarios_Click(object sender, EventArgs e)
         {
             MostrarControl(new UC_GestionUsuarios(connectionString));
+        }
+
+        private void btnRealizarBackup_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Filter = "Archivos de Backup (*.bak)|*.bak";
+            saveDialog.Title = "Guardar Backup Completo de la Base de Datos";
+            saveDialog.FileName = $"MedoraDB_Backup_{DateTime.Now:yyyyMMdd_HHmm}.bak";
+
+            
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                
+                string rutaElegidaPorUsuario = saveDialog.FileName;
+
+                
+                this.Cursor = Cursors.WaitCursor;
+
+                bool exito = _turnoController.RealizarBackupCompleto(rutaElegidaPorUsuario);
+
+                this.Cursor = Cursors.Default;
+
+                if (exito)
+                {
+                    MessageBox.Show("¡Backup completo realizado con éxito!\n\nArchivo guardado en:\n" + rutaElegidaPorUsuario,
+                                    "Backup Completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                
+            }
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            MostrarControl(new UC_AdminDashboard(_estadisticasController));
         }
     }
 }

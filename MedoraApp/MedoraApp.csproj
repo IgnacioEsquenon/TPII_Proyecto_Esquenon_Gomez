@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,12 +57,6 @@
     </Compile>
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormEditarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEditarUsuario.Designer.cs">
-      <DependentUpon>FormEditarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
@@ -80,9 +76,33 @@
     <Compile Include="FormRecepcionista.Designer.cs">
       <DependentUpon>FormRecepcionista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ConfirmarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ConfirmarReserva.Designer.cs">
+      <DependentUpon>Form_ConfirmarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_FinalizarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FinalizarConsulta.Designer.cs">
+      <DependentUpon>Form_FinalizarConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_AdminDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AdminDashboard.Designer.cs">
+      <DependentUpon>UC_AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AgendaTurnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AgendaTurnos.Designer.cs">
+      <DependentUpon>UC_AgendaTurnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_CrearBloque.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,11 +121,29 @@
     <Compile Include="UC_CrearRecep.Designer.cs">
       <DependentUpon>UC_CrearRecep.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_GestionReservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_GestionReservas.Designer.cs">
+      <DependentUpon>UC_GestionReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_GestionTurnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_GestionTurnos.Designer.cs">
+      <DependentUpon>UC_GestionTurnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_GestionUsuarios.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_GestionUsuarios.Designer.cs">
       <DependentUpon>UC_GestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_HistorialTurnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_HistorialTurnos.Designer.cs">
+      <DependentUpon>UC_HistorialTurnos.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_ListaPacientes.cs">
       <SubType>UserControl</SubType>
@@ -113,11 +151,23 @@
     <Compile Include="UC_ListaPacientes.Designer.cs">
       <DependentUpon>UC_ListaPacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_MedicoDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_MedicoDashboard.Designer.cs">
+      <DependentUpon>UC_MedicoDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_MenuBloques.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_MenuBloques.Designer.cs">
       <DependentUpon>UC_MenuBloques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_RecepDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_RecepDashboard.Designer.cs">
+      <DependentUpon>UC_RecepDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_RegistrarPaciente.cs">
       <SubType>UserControl</SubType>
@@ -134,9 +184,6 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEditarUsuario.resx">
-      <DependentUpon>FormEditarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRecepcionista.resx">
       <DependentUpon>FormRecepcionista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ConfirmarReserva.resx">
+      <DependentUpon>Form_ConfirmarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_FinalizarConsulta.resx">
+      <DependentUpon>Form_FinalizarConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\MedoraApp.FormAdmin.resources" />
     <EmbeddedResource Include="obj\Debug\MedoraApp.FormInicio.resources" />
@@ -163,6 +216,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_AdminDashboard.resx">
+      <DependentUpon>UC_AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AgendaTurnos.resx">
+      <DependentUpon>UC_AgendaTurnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_CrearBloque.resx">
       <DependentUpon>UC_CrearBloque.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,14 +231,29 @@
     <EmbeddedResource Include="UC_CrearRecep.resx">
       <DependentUpon>UC_CrearRecep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_GestionReservas.resx">
+      <DependentUpon>UC_GestionReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_GestionTurnos.resx">
+      <DependentUpon>UC_GestionTurnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_GestionUsuarios.resx">
       <DependentUpon>UC_GestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_HistorialTurnos.resx">
+      <DependentUpon>UC_HistorialTurnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_ListaPacientes.resx">
       <DependentUpon>UC_ListaPacientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_MedicoDashboard.resx">
+      <DependentUpon>UC_MedicoDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_MenuBloques.resx">
       <DependentUpon>UC_MenuBloques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_RecepDashboard.resx">
+      <DependentUpon>UC_RecepDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_RegistrarPaciente.resx">
       <DependentUpon>UC_RegistrarPaciente.cs</DependentUpon>

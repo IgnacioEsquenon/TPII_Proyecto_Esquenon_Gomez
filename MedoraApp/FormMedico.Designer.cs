@@ -35,13 +35,11 @@ namespace MedoraApp
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PB_icon_med = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
-            this.btnTurnos = new System.Windows.Forms.Button();
-            this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnAgenda = new System.Windows.Forms.Button();
             this.btnBloques = new System.Windows.Forms.Button();
             this.LSubTitulo = new System.Windows.Forms.Label();
             this.panelContenido = new System.Windows.Forms.Panel();
@@ -50,7 +48,6 @@ namespace MedoraApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_icon_med)).BeginInit();
             this.panelContenido.SuspendLayout();
             this.SuspendLayout();
@@ -63,18 +60,16 @@ namespace MedoraApp
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.PB_icon_med);
             this.panel1.Controls.Add(this.btnVolver);
             this.panel1.Controls.Add(this.btnReportes);
             this.panel1.Controls.Add(this.btnHistorial);
-            this.panel1.Controls.Add(this.btnTurnos);
-            this.panel1.Controls.Add(this.btnPerfil);
+            this.panel1.Controls.Add(this.btnAgenda);
             this.panel1.Controls.Add(this.btnBloques);
             this.panel1.Controls.Add(this.LSubTitulo);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(140, 412);
+            this.panel1.Size = new System.Drawing.Size(140, 453);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox4
@@ -83,7 +78,7 @@ namespace MedoraApp
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox4.Enabled = false;
             this.pictureBox4.Image = global::MedoraApp.Properties.Resources.report;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 260);
+            this.pictureBox4.Location = new System.Drawing.Point(18, 251);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 24);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -96,7 +91,7 @@ namespace MedoraApp
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox3.Enabled = false;
             this.pictureBox3.Image = global::MedoraApp.Properties.Resources.file;
-            this.pictureBox3.Location = new System.Drawing.Point(18, 207);
+            this.pictureBox3.Location = new System.Drawing.Point(18, 189);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,25 +104,12 @@ namespace MedoraApp
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Enabled = false;
             this.pictureBox2.Image = global::MedoraApp.Properties.Resources.agenda;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 158);
+            this.pictureBox2.Location = new System.Drawing.Point(18, 118);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::MedoraApp.Properties.Resources.profile_user;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 114);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // PB_icon_med
             // 
@@ -148,7 +130,7 @@ namespace MedoraApp
             this.btnVolver.BackColor = System.Drawing.Color.Red;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVolver.Location = new System.Drawing.Point(9, 372);
+            this.btnVolver.Location = new System.Drawing.Point(9, 413);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(116, 27);
             this.btnVolver.TabIndex = 6;
@@ -162,54 +144,43 @@ namespace MedoraApp
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnReportes.Location = new System.Drawing.Point(9, 250);
+            this.btnReportes.Location = new System.Drawing.Point(9, 241);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(110, 43);
+            this.btnReportes.Size = new System.Drawing.Size(108, 43);
             this.btnReportes.TabIndex = 5;
             this.btnReportes.Text = "Informes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnHistorial
             // 
             this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistorial.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnHistorial.Location = new System.Drawing.Point(9, 202);
+            this.btnHistorial.Location = new System.Drawing.Point(9, 176);
             this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(110, 39);
+            this.btnHistorial.Size = new System.Drawing.Size(108, 48);
             this.btnHistorial.TabIndex = 4;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
-            // btnTurnos
+            // btnAgenda
             // 
-            this.btnTurnos.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnTurnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTurnos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTurnos.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnTurnos.Location = new System.Drawing.Point(9, 153);
-            this.btnTurnos.Name = "btnTurnos";
-            this.btnTurnos.Size = new System.Drawing.Size(110, 39);
-            this.btnTurnos.TabIndex = 3;
-            this.btnTurnos.Text = "Agenda";
-            this.btnTurnos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTurnos.UseVisualStyleBackColor = false;
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfil.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnPerfil.Location = new System.Drawing.Point(9, 105);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(110, 39);
-            this.btnPerfil.TabIndex = 2;
-            this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPerfil.UseVisualStyleBackColor = false;
+            this.btnAgenda.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgenda.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgenda.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnAgenda.Location = new System.Drawing.Point(9, 108);
+            this.btnAgenda.Name = "btnAgenda";
+            this.btnAgenda.Size = new System.Drawing.Size(108, 53);
+            this.btnAgenda.TabIndex = 3;
+            this.btnAgenda.Text = "Agenda";
+            this.btnAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgenda.UseVisualStyleBackColor = false;
+            this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
             // btnBloques
             // 
@@ -221,7 +192,7 @@ namespace MedoraApp
             this.btnBloques.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBloques.Location = new System.Drawing.Point(9, 56);
             this.btnBloques.Name = "btnBloques";
-            this.btnBloques.Size = new System.Drawing.Size(110, 43);
+            this.btnBloques.Size = new System.Drawing.Size(108, 43);
             this.btnBloques.TabIndex = 1;
             this.btnBloques.Text = "Bloques Horarios";
             this.btnBloques.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -248,7 +219,7 @@ namespace MedoraApp
             this.panelContenido.Controls.Add(this.label1);
             this.panelContenido.Location = new System.Drawing.Point(141, 0);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(663, 412);
+            this.panelContenido.Size = new System.Drawing.Size(663, 453);
             this.panelContenido.TabIndex = 1;
             // 
             // label1
@@ -266,7 +237,7 @@ namespace MedoraApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 411);
+            this.ClientSize = new System.Drawing.Size(804, 452);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelContenido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -277,7 +248,6 @@ namespace MedoraApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_icon_med)).EndInit();
             this.panelContenido.ResumeLayout(false);
             this.panelContenido.PerformLayout();
@@ -291,14 +261,12 @@ namespace MedoraApp
         private Label LSubTitulo;
         private Button btnReportes;
         private Button btnHistorial;
-        private Button btnTurnos;
-        private Button btnPerfil;
+        private Button btnAgenda;
         private Button btnBloques;
         private Button btnVolver;
         private Panel panelContenido;
         private Label label1;
         private PictureBox PB_icon_med;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;

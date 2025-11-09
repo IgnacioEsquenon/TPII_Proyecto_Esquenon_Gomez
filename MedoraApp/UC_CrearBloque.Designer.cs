@@ -65,12 +65,12 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(27, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(615, 271);
+            this.panel1.Size = new System.Drawing.Size(615, 290);
             this.panel1.TabIndex = 0;
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(262, 217);
+            this.btnCrear.Location = new System.Drawing.Point(262, 236);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(120, 40);
             this.btnCrear.TabIndex = 14;
@@ -211,7 +211,7 @@
             this.BackColor = System.Drawing.Color.SlateBlue;
             this.Controls.Add(this.panel1);
             this.Name = "UC_CrearBloque";
-            this.Size = new System.Drawing.Size(668, 323);
+            this.Size = new System.Drawing.Size(668, 382);
             this.Load += new System.EventHandler(this.UC_CrearBloque_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

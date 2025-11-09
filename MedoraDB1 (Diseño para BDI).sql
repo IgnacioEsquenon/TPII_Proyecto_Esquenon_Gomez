@@ -385,7 +385,7 @@ GO
                     IF EXISTS (
                         SELECT 1
                         FROM Bloque_Horario bh
-                        WHERE bh.id_medico = @IdMedico
+                        WHERE bh.id_usuario = @IdMedico
                           AND bh.id_dia = @IdDia -- Si un mismo médico intenta crear el bloque en un mismo día,
                           AND ( -- (Entonces se debe ver si coinciden en rango de fechas. Ej: Se tiene guardado [1/10 - 31/10], y se intenta insertar [15/10 - 15/11] ó [15/09 - 15/10])
                                 -- Rango de fechas superpuesto
@@ -412,7 +412,7 @@ GO
                         hora_fin,
                         duracion_turnos,
                         activo,
-                        id_medico,
+                        id_usuario,
                         id_dia
                     )
                     VALUES (
@@ -452,7 +452,7 @@ GO
                         @HoraInicio = BH.hora_inicio,
                         @HoraFin = BH.hora_fin,
                         @DuracionTurnos = BH.duracion_turnos,
-                        @IdMedico = BH.id_medico,
+                        @IdMedico = BH.id_usuario,
                         @IdDia = BH.id_dia
                     FROM Bloque_Horario BH
                     WHERE BH.id_bloque = @IdBloque;
@@ -512,6 +512,7 @@ GO
                     SET NOCOUNT ON;
 
                     SELECT
+                        BH.id_bloque,
                         BH.fecha_inicio AS FechaInicio,
                         BH.fecha_fin AS FechaFin,
                         BH.hora_inicio AS HoraInicio,
@@ -520,7 +521,7 @@ GO
                     FROM Bloque_Horario BH
                     JOIN Día D ON D.id_dia = BH.id_dia
                     WHERE
-                        BH.id_medico = @IdMedico
+                        BH.id_usuario = @IdMedico
                         AND BH.activo = 1
                         AND (@FechaDesde IS NULL OR BH.fecha_inicio >= @FechaDesde)
                         AND (@FechaHasta IS NULL OR BH.fecha_fin <= @FechaHasta)

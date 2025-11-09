@@ -98,10 +98,10 @@
             this.Email,
             this.Telefono,
             this.Obra_social});
-            this.DGV_Pacientes.Location = new System.Drawing.Point(9, 108);
+            this.DGV_Pacientes.Location = new System.Drawing.Point(9, 100);
             this.DGV_Pacientes.Name = "DGV_Pacientes";
             this.DGV_Pacientes.ReadOnly = true;
-            this.DGV_Pacientes.Size = new System.Drawing.Size(742, 294);
+            this.DGV_Pacientes.Size = new System.Drawing.Size(744, 294);
             this.DGV_Pacientes.TabIndex = 32;
             // 
             // ID
@@ -109,6 +109,7 @@
             this.ID.DataPropertyName = "id_paciente";
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             this.ID.Visible = false;
             // 
             // Apellido
@@ -116,42 +117,49 @@
             this.Apellido.DataPropertyName = "apellido";
             this.Apellido.HeaderText = "Apellido";
             this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
             // 
             // Nombre
             // 
             this.Nombre.DataPropertyName = "nombre";
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             // 
             // DNI
             // 
             this.DNI.DataPropertyName = "dni";
             this.DNI.HeaderText = "DNI";
             this.DNI.Name = "DNI";
+            this.DNI.ReadOnly = true;
             // 
             // Edad
             // 
             this.Edad.DataPropertyName = "edad";
             this.Edad.HeaderText = "Edad";
             this.Edad.Name = "Edad";
+            this.Edad.ReadOnly = true;
             // 
             // Email
             // 
             this.Email.DataPropertyName = "email";
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             // 
             // Telefono
             // 
             this.Telefono.DataPropertyName = "telefono";
             this.Telefono.HeaderText = "Telefono";
             this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
             // 
             // Obra_social
             // 
-            this.Obra_social.DataPropertyName = "nombre_obra_social";
+            this.Obra_social.DataPropertyName = "obra_social";
             this.Obra_social.HeaderText = "Obra Social";
             this.Obra_social.Name = "Obra_social";
+            this.Obra_social.ReadOnly = true;
             // 
             // UC_ListaPacientes
             // 

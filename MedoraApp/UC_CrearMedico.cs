@@ -153,7 +153,7 @@ namespace MedoraApp
                 return;
             }
 
-            // 🔹 CREAR OBJETO USUARIO
+            
             Usuario nuevoMedico = new Usuario
             {
                 Nombre = TB_NombreMed.Text.Trim(),
@@ -161,12 +161,12 @@ namespace MedoraApp
                 Dni = TB_DNI_Med.Text.Trim(),
                 Email = TB_EmailMed.Text.Trim(),
                 Telefono = TB_TelefonoMed.Text.Trim(),
-                ContraseñaHash = TB_PasswordMed.Text, // más adelante se reemplaza por hash real
+                ContraseñaHash = ContrasenaHelper.HashPassword(TB_PasswordMed.Text),
                 Rol = Rol.Medico, 
                 Especialidad = new Especialidad { id_especialidad = Convert.ToInt32(LB_Especialidad.SelectedValue) }
             };
 
-            // 🔹 INSERTAR EN BD
+            
             bool resultado = usuarioController.CrearUsuario(nuevoMedico);
 
             if (resultado)
@@ -180,7 +180,6 @@ namespace MedoraApp
             }
         }
 
-        // 🔹 Método para limpiar los campos tras guardar
         private void LimpiarCampos()
         {
             TB_NombreMed.Clear();

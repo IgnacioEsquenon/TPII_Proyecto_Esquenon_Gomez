@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedoraAppLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -16,90 +17,65 @@ namespace MedoraApp
     public partial class UC_VerBloques : UserControl
     {
         private int _idMedicoActual; //Var para guardar el id del medico actual
-        public UC_VerBloques(int idMedicoActual)
+        private TurnoController _turnoController;
+        public UC_VerBloques(int idMedicoActual, TurnoController turnoController)
         {
             InitializeComponent();
             _idMedicoActual = idMedicoActual;
+            _turnoController = turnoController; 
+            dgvListaBloques.AutoGenerateColumns = false; // Asegura que no se generen columnas automáticamente
         }
 
 
         private void UC_VerBloques_Load(object sender, EventArgs e)
         {
-
             CargarBloques();
-            AgregarBotones();
+            
         }
 
         private void CargarBloques()
         {
-            //Conexión a la base de datos
-            string connectionString = ConfigurationManager
-                            .ConnectionStrings["MedoraDB"]
-                            .ConnectionString;
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    connection.Open();
-                    string query = "SELECT * FROM Bloque_Horario WHERE id_usuario = @idMedico ORDER BY fecha_inicio ASC";
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@idMedico", _idMedicoActual);
-
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-                    dgvListaBloques.DataSource = dataTable;
-                    dgvListaBloques.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-                    //dgvListaBloques.Columns["hora_inicio"].DefaultCellStyle.Format = "HH:mm";
-                    //dgvListaBloques.Columns["hora_fin"].DefaultCellStyle.Format = "HH:mm";
-
-                    
-                    string[] columnasOcultas = { "id_bloque", "duracion_turnos", "id_usuario", "id_dia" };
-
-                    foreach (string col in columnasOcultas)
-                    {
-                        if (dgvListaBloques.Columns.Contains(col))
-                            dgvListaBloques.Columns[col].Visible = false;
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar los bloques: " + ex.Message);
-                }
+                // Pide los datos al controlador, en lugar de ir a la BD directamente
+                dgvListaBloques.DataSource = _turnoController.ListarBloquesMedico(_idMedicoActual);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los bloques: " + ex.Message);
             }
         }
 
-        private void AgregarBotones()
+        // El evento CellContentClick ahora maneja ambos botones
+        private void dgvListaBloques_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Evita agregar los botones dos veces
-            if (dgvListaBloques.Columns.Contains("btnModificar")) return;
+            // Ignorar clics en la cabecera
+            if (e.RowIndex < 0) return;
 
-            // Botón Modificar
-            DataGridViewButtonColumn btnModificar = new DataGridViewButtonColumn();
-            btnModificar.Name = "btnModificar";
-            btnModificar.HeaderText = "Acciones";
-            btnModificar.Text = "Modificar";
-            btnModificar.UseColumnTextForButtonValue = true;
-            btnModificar.DefaultCellStyle.BackColor = Color.Orange;
-            btnModificar.DefaultCellStyle.ForeColor = Color.DarkBlue;
-            btnModificar.DefaultCellStyle.SelectionBackColor = Color.DodgerBlue;
-            btnModificar.DefaultCellStyle.SelectionForeColor = Color.White;
-            dgvListaBloques.Columns.Add(btnModificar);
- 
-            // Botón Eliminar
-            DataGridViewButtonColumn btnEliminar = new DataGridViewButtonColumn();
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.HeaderText = "";
-            btnEliminar.Text = "Eliminar";
-            btnEliminar.UseColumnTextForButtonValue = true;
-            btnEliminar.DefaultCellStyle.BackColor = Color.LightCoral;
-            btnEliminar.DefaultCellStyle.ForeColor = Color.White;
-            btnEliminar.DefaultCellStyle.SelectionBackColor = Color.Red;
-            btnEliminar.DefaultCellStyle.SelectionForeColor = Color.White;
-            dgvListaBloques.Columns.Add(btnEliminar);
+            // Si se hizo clic en el botón de Eliminar
+            if (dgvListaBloques.Columns[e.ColumnIndex].Name == "colEliminar")
+            {
+                var confirmacion = MessageBox.Show(
+                    "¿Está seguro de que desea eliminar este bloque horario?",
+                    "Confirmar Eliminación",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (confirmacion == DialogResult.Yes)
+                {
+                    int idBloque = Convert.ToInt32(dgvListaBloques.Rows[e.RowIndex].Cells["colIdBloque"].Value);
+
+                    // Llamamos al método del controlador que ya creamos
+                    bool exito = _turnoController.EliminarBloqueHorario(idBloque);
+
+                    if (exito)
+                    {
+                        MessageBox.Show("Bloque horario eliminado con éxito.", "Éxito");
+                        CargarBloques(); // Recargamos la grilla para que se actualice
+                    }
+                }
+            }
         }
     }
 }

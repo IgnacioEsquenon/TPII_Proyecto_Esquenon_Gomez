@@ -87,7 +87,7 @@
             this.p_Contenido_Bloq.BackColor = System.Drawing.Color.SlateBlue;
             this.p_Contenido_Bloq.Location = new System.Drawing.Point(0, 54);
             this.p_Contenido_Bloq.Name = "p_Contenido_Bloq";
-            this.p_Contenido_Bloq.Size = new System.Drawing.Size(668, 323);
+            this.p_Contenido_Bloq.Size = new System.Drawing.Size(668, 383);
             this.p_Contenido_Bloq.TabIndex = 1;
             // 
             // UC_MenuBloques
@@ -97,7 +97,7 @@
             this.Controls.Add(this.p_Contenido_Bloq);
             this.Controls.Add(this.panel1);
             this.Name = "UC_MenuBloques";
-            this.Size = new System.Drawing.Size(668, 372);
+            this.Size = new System.Drawing.Size(668, 432);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

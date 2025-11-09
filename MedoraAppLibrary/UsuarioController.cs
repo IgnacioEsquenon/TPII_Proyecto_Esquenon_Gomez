@@ -54,10 +54,59 @@ namespace MedoraAppLibrary
                 }
                 catch (Exception ex)
                 {
-                    // Podés loguear o mostrar el error según corresponda
+                    
                     Console.WriteLine("Error al crear usuario: " + ex.Message);
                     return false;
                 }
+            }
+        }
+
+        public Usuario ValidarYObtenerUsuario(string usuario, string passwordIngresada)
+        {
+            Usuario usuarioEncontrado = null;
+            string hashGuardado = "";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = "SELECT id_usuario, nombre, apellido, contraseña_hash, id_rol, id_especialidad " +
+                               "FROM Usuario WHERE (email = @usuario OR dni = @usuario) AND estado_usuario = 1";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@usuario", usuario);
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                       
+                        hashGuardado = reader["contraseña_hash"].ToString();
+                        usuarioEncontrado = new Usuario
+                        {
+                            IdUsuario = Convert.ToInt32(reader["id_usuario"]),
+                            Nombre = reader["nombre"].ToString(),
+                            Apellido = reader["apellido"].ToString(),
+                            Rol = (Rol)Convert.ToInt32(reader["id_rol"]),
+                            Especialidad = new Especialidad { id_especialidad = reader["id_especialidad"] == DBNull.Value ? 0 : Convert.ToInt32(reader["id_especialidad"]) }
+                        };
+                    }
+                }
+            }
+
+            
+            if (usuarioEncontrado == null)
+            {
+                return null;
+            }
+
+           
+            if (ContrasenaHelper.VerifyPassword(passwordIngresada, hashGuardado))
+            {
+                return usuarioEncontrado; 
+            }
+            else
+            {
+                return null; 
             }
         }
 
@@ -100,7 +149,6 @@ namespace MedoraAppLibrary
                             break;
                     }
 
-                    // Creo el comando y le paso el parámetro
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@filtro", valorFiltro);
 
@@ -109,7 +157,6 @@ namespace MedoraAppLibrary
                 }
                 catch (Exception ex)
                 {
-                    // Muestra un error detallado si algo sale mal.
                     Console.WriteLine("Error al obtener usuarios: " + ex.Message);
                     
                 }
@@ -117,58 +164,6 @@ namespace MedoraAppLibrary
                 return dt;
             }
         }
-
-       /* public bool EmailYaExiste(string email)
-        {
-            // Define la consulta para contar los registros con el email dado.
-            string query = "SELECT COUNT(*) FROM Usuario WHERE email = @email";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand(query, connection);
-                // Usa un parámetro para evitar la inyección de SQL (?) tengo que investigar dsp porque hace esto
-                cmd.Parameters.AddWithValue("@email", email);
-
-                try
-                {
-                    connection.Open();
-                    // ExecuteScalar devuelve el primer valor de la primera fila.
-                    int count = (int)cmd.ExecuteScalar();
-                    return count > 0; // Si count es mayor que 0, el email ya existe.
-                }
-                catch (Exception ex)
-                {
-                    // Maneja errores de conexión o de la base de datos.
-                    Console.WriteLine("Error al verificar el email: " + ex.Message);
-                    return true; // Devuelve true para prevenir la creación si hay un error.
-                }
-            }
-        }*/
-
-        /*public bool DniYaExiste(string dni)
-        {
-            // Consulta para contar cuántos usuarios tienen el DNI especificado.
-            string query = "SELECT COUNT(*) FROM Usuario WHERE dni = @dni";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand(query, connection);
-                // Usa un parámetro para prevenir la inyección de SQL again
-                cmd.Parameters.AddWithValue("@dni", dni);
-
-                try
-                {
-                    connection.Open();
-                    int count = (int)cmd.ExecuteScalar();
-                    return count > 0; // Si count es mayor que 0, el DNI ya existe.
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error al verificar el DNI: " + ex.Message);
-                    return true; // Devuelve true para prevenir la creación si hay un error.
-                }
-            }
-        }*/
 
         public bool EliminarUsuario(int idUsuario)
         {
@@ -191,8 +186,6 @@ namespace MedoraAppLibrary
                     return false;
                 }
             }
-            //Cambiar la eliminacion fisica a logica (activo o inactivo) 
-            //Agregar campo "estado" en la tabla Usuario en sql
         }
     }
     }

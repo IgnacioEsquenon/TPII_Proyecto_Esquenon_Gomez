@@ -1,42 +1,35 @@
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraApp.exe.config
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraApp.exe
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraApp.pdb
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.AssemblyReference.cache
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormAdmin.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormInicio.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormMedico.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.Properties.Resources.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearBloque.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_MenuBloques.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_VerBloques.resources
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.GenerateResource.cache
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.CoreCompileInputs.cache
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.exe
-C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.pdb
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraApp.exe.config
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraApp.exe
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraApp.pdb
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary.dll
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary.pdb
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary.dll.config
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.AssemblyReference.cache
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormAdmin.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormInicio.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormMedico.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormRecepcionista.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.Properties.Resources.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearBloque.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearMedico.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearRecep.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_GestionUsuarios.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_ListaPacientes.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_MenuBloques.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_RegistrarPaciente.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_VerBloques.resources
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.GenerateResource.cache
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.CoreCompileInputs.cache
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.Up2Date
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.exe
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.pdb
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.exe.config
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary1.dll
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary1.pdb
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\bin\Debug\MedoraAppLibrary1.dll.config
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.csproj.Up2Date
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearMedico.resources
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormRecepcionista.resources
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_CrearRecep.resources
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.FormEditarUsuario.resources
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_GestionUsuarios.resources
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_RegistrarPaciente.resources
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_ListaPacientes.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.Form_ConfirmarReserva.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_GestionTurnos.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_AgendaTurnos.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_HistorialTurnos.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.Form_FinalizarConsulta.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_GestionReservas.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_MedicoDashboard.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_AdminDashboard.resources
+C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraApp\obj\Debug\MedoraApp.UC_RecepDashboard.resources

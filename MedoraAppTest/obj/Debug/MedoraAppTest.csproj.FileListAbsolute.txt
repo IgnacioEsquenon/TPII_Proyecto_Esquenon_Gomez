@@ -33,14 +33,5 @@ C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTe
 C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAp.867F67D9.Up2Date
 C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAppTest.exe
 C:\Users\gomez\OneDrive\Escritorio\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAppTest.pdb
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\bin\Debug\MedoraAppTest.exe.config
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\bin\Debug\MedoraAppTest.exe
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\bin\Debug\MedoraAppTest.pdb
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\bin\Debug\MedoraAppLibrary1.dll
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\bin\Debug\MedoraAppLibrary1.pdb
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\bin\Debug\MedoraAppLibrary1.dll.config
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAppTest.csproj.AssemblyReference.cache
 C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAppTest.csproj.CoreCompileInputs.cache
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAp.867F67D9.Up2Date
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAppTest.exe
-C:\Users\gomez\OneDrive\Escritorio\Facultad\3erAño\Taller de Programacion II\TPII_Proyecto_Esquenon_Gomez-main\MedoraAppTest\obj\Debug\MedoraAppTest.pdb
