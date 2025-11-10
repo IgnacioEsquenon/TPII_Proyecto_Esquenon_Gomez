@@ -31,12 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvHistorial = new System.Windows.Forms.DataGridView();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Paciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MotivoConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDiagnosticoData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VerDiagnostico = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +40,12 @@
             this.TB_FiltroPaciente = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.btnLimpiarFiltros = new System.Windows.Forms.Button();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Paciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MotivoConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiagnosticoData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colVerDiagnostico = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(734, 54);
+            this.panel1.Size = new System.Drawing.Size(778, 54);
             this.panel1.TabIndex = 21;
             // 
             // label1
@@ -81,56 +81,14 @@
             this.DNI,
             this.MotivoConsulta,
             this.colDiagnosticoData,
-            this.VerDiagnostico});
+            this.colVerDiagnostico});
             this.dgvHistorial.Location = new System.Drawing.Point(15, 236);
             this.dgvHistorial.Name = "dgvHistorial";
             this.dgvHistorial.ReadOnly = true;
-            this.dgvHistorial.Size = new System.Drawing.Size(694, 201);
+            this.dgvHistorial.Size = new System.Drawing.Size(746, 201);
             this.dgvHistorial.TabIndex = 22;
             this.dgvHistorial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorial_CellContentClick);
             this.dgvHistorial.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvHistorial_CellFormatting);
-            // 
-            // Fecha
-            // 
-            this.Fecha.DataPropertyName = "Fecha del Turno";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            // 
-            // Paciente
-            // 
-            this.Paciente.DataPropertyName = "Nombre del Paciente";
-            this.Paciente.HeaderText = "Nombre del Paciente";
-            this.Paciente.Name = "Paciente";
-            this.Paciente.ReadOnly = true;
-            // 
-            // DNI
-            // 
-            this.DNI.DataPropertyName = "DNI";
-            this.DNI.HeaderText = "DNI";
-            this.DNI.Name = "DNI";
-            this.DNI.ReadOnly = true;
-            // 
-            // MotivoConsulta
-            // 
-            this.MotivoConsulta.DataPropertyName = "Motivo de Consulta";
-            this.MotivoConsulta.HeaderText = "Motivo de la Consulta";
-            this.MotivoConsulta.Name = "MotivoConsulta";
-            this.MotivoConsulta.ReadOnly = true;
-            // 
-            // colDiagnosticoData
-            // 
-            this.colDiagnosticoData.DataPropertyName = "Diagnóstico";
-            this.colDiagnosticoData.HeaderText = "Diagnostico";
-            this.colDiagnosticoData.Name = "colDiagnosticoData";
-            this.colDiagnosticoData.ReadOnly = true;
-            this.colDiagnosticoData.Width = 150;
-            // 
-            // VerDiagnostico
-            // 
-            this.VerDiagnostico.HeaderText = "Ver Diagnostico";
-            this.VerDiagnostico.Name = "VerDiagnostico";
-            this.VerDiagnostico.ReadOnly = true;
             // 
             // label2
             // 
@@ -217,6 +175,49 @@
             this.btnLimpiarFiltros.UseVisualStyleBackColor = true;
             this.btnLimpiarFiltros.Click += new System.EventHandler(this.btnLimpiarFiltros_Click);
             // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha del Turno";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            // 
+            // Paciente
+            // 
+            this.Paciente.DataPropertyName = "Nombre del Paciente";
+            this.Paciente.HeaderText = "Nombre del Paciente";
+            this.Paciente.Name = "Paciente";
+            this.Paciente.ReadOnly = true;
+            // 
+            // DNI
+            // 
+            this.DNI.DataPropertyName = "DNI";
+            this.DNI.HeaderText = "DNI";
+            this.DNI.Name = "DNI";
+            this.DNI.ReadOnly = true;
+            // 
+            // MotivoConsulta
+            // 
+            this.MotivoConsulta.DataPropertyName = "Motivo de Consulta";
+            this.MotivoConsulta.HeaderText = "Motivo de la Consulta";
+            this.MotivoConsulta.Name = "MotivoConsulta";
+            this.MotivoConsulta.ReadOnly = true;
+            // 
+            // colDiagnosticoData
+            // 
+            this.colDiagnosticoData.DataPropertyName = "Diagnóstico";
+            this.colDiagnosticoData.HeaderText = "Diagnostico";
+            this.colDiagnosticoData.Name = "colDiagnosticoData";
+            this.colDiagnosticoData.ReadOnly = true;
+            this.colDiagnosticoData.Width = 150;
+            // 
+            // colVerDiagnostico
+            // 
+            this.colVerDiagnostico.HeaderText = "Ver Diagnostico";
+            this.colVerDiagnostico.Name = "colVerDiagnostico";
+            this.colVerDiagnostico.ReadOnly = true;
+            this.colVerDiagnostico.Width = 150;
+            // 
             // UC_HistorialTurnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,7 +235,7 @@
             this.Controls.Add(this.dgvHistorial);
             this.Controls.Add(this.panel1);
             this.Name = "UC_HistorialTurnos";
-            this.Size = new System.Drawing.Size(734, 482);
+            this.Size = new System.Drawing.Size(778, 482);
             this.Load += new System.EventHandler(this.UC_HistorialTurnos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -263,6 +264,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
         private System.Windows.Forms.DataGridViewTextBoxColumn MotivoConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDiagnosticoData;
-        private System.Windows.Forms.DataGridViewButtonColumn VerDiagnostico;
+        private System.Windows.Forms.DataGridViewButtonColumn colVerDiagnostico;
     }
 }

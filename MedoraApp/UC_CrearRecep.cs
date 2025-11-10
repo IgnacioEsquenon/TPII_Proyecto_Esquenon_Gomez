@@ -127,7 +127,7 @@ namespace MedoraApp
                 Dni = TB_DNIRec.Text.Trim(),
                 Email = TB_EmailRec.Text.Trim(),
                 Telefono = TB_TelefonoRec.Text.Trim(),
-                ContraseñaHash = TB_PasswordRec.Text, //Dsp encriptar
+                ContraseñaHash = ContrasenaHelper.HashPassword(TB_PasswordRec.Text),//Dsp encriptar
                 Rol = Rol.Recepcionista,
                 Especialidad = null // Un recepcionista no tiene especialidad
             };

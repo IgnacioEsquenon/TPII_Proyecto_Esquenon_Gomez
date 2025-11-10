@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -143,9 +143,9 @@
             // 
             // dtpDesde
             // 
-            this.dtpDesde.Location = new System.Drawing.Point(198, 77);
+            this.dtpDesde.Location = new System.Drawing.Point(193, 77);
             this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(200, 20);
+            this.dtpDesde.Size = new System.Drawing.Size(205, 20);
             this.dtpDesde.TabIndex = 31;
             // 
             // label3
@@ -153,7 +153,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(122, 76);
+            this.label3.Location = new System.Drawing.Point(105, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 21);
             this.label3.TabIndex = 30;
@@ -183,17 +183,17 @@
             // 
             // chartObrasSociales
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartObrasSociales.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartObrasSociales.Legends.Add(legend1);
+            chartArea19.Name = "ChartArea1";
+            this.chartObrasSociales.ChartAreas.Add(chartArea19);
+            legend19.Name = "Legend1";
+            this.chartObrasSociales.Legends.Add(legend19);
             this.chartObrasSociales.Location = new System.Drawing.Point(36, 47);
             this.chartObrasSociales.Name = "chartObrasSociales";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartObrasSociales.Series.Add(series1);
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series19.Legend = "Legend1";
+            series19.Name = "Series1";
+            this.chartObrasSociales.Series.Add(series19);
             this.chartObrasSociales.Size = new System.Drawing.Size(392, 187);
             this.chartObrasSociales.TabIndex = 3;
             this.chartObrasSociales.Text = "chart1";
@@ -231,18 +231,18 @@
             // chartDiasSemana
             // 
             this.chartDiasSemana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            chartArea2.AxisX.MajorGrid.Enabled = false;
-            chartArea2.AxisY.MajorGrid.Enabled = false;
-            chartArea2.Name = "ChartArea1";
-            this.chartDiasSemana.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartDiasSemana.Legends.Add(legend2);
+            chartArea20.AxisX.MajorGrid.Enabled = false;
+            chartArea20.AxisY.MajorGrid.Enabled = false;
+            chartArea20.Name = "ChartArea1";
+            this.chartDiasSemana.ChartAreas.Add(chartArea20);
+            legend20.Name = "Legend1";
+            this.chartDiasSemana.Legends.Add(legend20);
             this.chartDiasSemana.Location = new System.Drawing.Point(17, 47);
             this.chartDiasSemana.Name = "chartDiasSemana";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartDiasSemana.Series.Add(series2);
+            series20.ChartArea = "ChartArea1";
+            series20.Legend = "Legend1";
+            series20.Name = "Series1";
+            this.chartDiasSemana.Series.Add(series20);
             this.chartDiasSemana.Size = new System.Drawing.Size(392, 187);
             this.chartDiasSemana.TabIndex = 3;
             this.chartDiasSemana.Text = "chart1";
@@ -329,18 +329,18 @@
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label29.Location = new System.Drawing.Point(215, 207);
+            this.label29.Location = new System.Drawing.Point(273, 207);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(28, 21);
+            this.label29.Size = new System.Drawing.Size(19, 21);
             this.label29.TabIndex = 39;
-            this.label29.Text = "%)";
+            this.label29.Text = ")";
             // 
             // lblPorcMayores
             // 
             this.lblPorcMayores.AutoSize = true;
             this.lblPorcMayores.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcMayores.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcMayores.Location = new System.Drawing.Point(190, 207);
+            this.lblPorcMayores.Location = new System.Drawing.Point(225, 207);
             this.lblPorcMayores.Name = "lblPorcMayores";
             this.lblPorcMayores.Size = new System.Drawing.Size(19, 21);
             this.lblPorcMayores.TabIndex = 38;
@@ -351,7 +351,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label31.Location = new System.Drawing.Point(170, 207);
+            this.label31.Location = new System.Drawing.Point(190, 207);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(19, 21);
             this.label31.TabIndex = 37;
@@ -373,18 +373,18 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(226, 175);
+            this.label25.Location = new System.Drawing.Point(273, 175);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(28, 21);
+            this.label25.Size = new System.Drawing.Size(19, 21);
             this.label25.TabIndex = 35;
-            this.label25.Text = "%)";
+            this.label25.Text = ")";
             // 
             // lblPorcAdultos
             // 
             this.lblPorcAdultos.AutoSize = true;
             this.lblPorcAdultos.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcAdultos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcAdultos.Location = new System.Drawing.Point(201, 175);
+            this.lblPorcAdultos.Location = new System.Drawing.Point(225, 175);
             this.lblPorcAdultos.Name = "lblPorcAdultos";
             this.lblPorcAdultos.Size = new System.Drawing.Size(19, 21);
             this.lblPorcAdultos.TabIndex = 34;
@@ -395,7 +395,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label27.Location = new System.Drawing.Point(181, 175);
+            this.label27.Location = new System.Drawing.Point(200, 175);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(19, 21);
             this.label27.TabIndex = 33;
@@ -417,18 +417,18 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label21.Location = new System.Drawing.Point(215, 145);
+            this.label21.Location = new System.Drawing.Point(273, 145);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(28, 21);
+            this.label21.Size = new System.Drawing.Size(19, 21);
             this.label21.TabIndex = 31;
-            this.label21.Text = "%)";
+            this.label21.Text = ")";
             // 
             // lblPorcMenores
             // 
             this.lblPorcMenores.AutoSize = true;
             this.lblPorcMenores.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcMenores.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcMenores.Location = new System.Drawing.Point(190, 145);
+            this.lblPorcMenores.Location = new System.Drawing.Point(225, 145);
             this.lblPorcMenores.Name = "lblPorcMenores";
             this.lblPorcMenores.Size = new System.Drawing.Size(19, 21);
             this.lblPorcMenores.TabIndex = 30;
@@ -439,7 +439,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label23.Location = new System.Drawing.Point(170, 145);
+            this.label23.Location = new System.Drawing.Point(190, 145);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(19, 21);
             this.label23.TabIndex = 29;
@@ -483,18 +483,18 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(340, 99);
+            this.label11.Location = new System.Drawing.Point(368, 99);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(28, 21);
+            this.label11.Size = new System.Drawing.Size(19, 21);
             this.label11.TabIndex = 25;
-            this.label11.Text = "%)";
+            this.label11.Text = ")";
             // 
             // lblPorcSinOS
             // 
             this.lblPorcSinOS.AutoSize = true;
             this.lblPorcSinOS.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcSinOS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcSinOS.Location = new System.Drawing.Point(306, 99);
+            this.lblPorcSinOS.Location = new System.Drawing.Point(317, 99);
             this.lblPorcSinOS.Name = "lblPorcSinOS";
             this.lblPorcSinOS.Size = new System.Drawing.Size(19, 21);
             this.lblPorcSinOS.TabIndex = 24;
@@ -505,7 +505,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(286, 99);
+            this.label20.Location = new System.Drawing.Point(292, 99);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(19, 21);
             this.label20.TabIndex = 23;
@@ -527,11 +527,11 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(340, 66);
+            this.label16.Location = new System.Drawing.Point(368, 66);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 21);
+            this.label16.Size = new System.Drawing.Size(19, 21);
             this.label16.TabIndex = 21;
-            this.label16.Text = "%)";
+            this.label16.Text = ")";
             // 
             // label19
             // 
@@ -549,7 +549,7 @@
             this.lblPorcConOS.AutoSize = true;
             this.lblPorcConOS.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcConOS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcConOS.Location = new System.Drawing.Point(306, 66);
+            this.lblPorcConOS.Location = new System.Drawing.Point(317, 66);
             this.lblPorcConOS.Name = "lblPorcConOS";
             this.lblPorcConOS.Size = new System.Drawing.Size(19, 21);
             this.lblPorcConOS.TabIndex = 15;
@@ -560,7 +560,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(286, 66);
+            this.label17.Location = new System.Drawing.Point(292, 66);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(19, 21);
             this.label17.TabIndex = 14;

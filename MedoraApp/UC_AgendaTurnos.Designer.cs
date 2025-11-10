@@ -61,7 +61,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(867, 54);
+            this.panel1.Size = new System.Drawing.Size(882, 54);
             this.panel1.TabIndex = 20;
             // 
             // label1
@@ -135,7 +135,7 @@
             this.DGV_Agenda.Location = new System.Drawing.Point(3, 236);
             this.DGV_Agenda.Name = "DGV_Agenda";
             this.DGV_Agenda.ReadOnly = true;
-            this.DGV_Agenda.Size = new System.Drawing.Size(845, 228);
+            this.DGV_Agenda.Size = new System.Drawing.Size(854, 228);
             this.DGV_Agenda.TabIndex = 25;
             this.DGV_Agenda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Agenda_CellContentClick);
             this.DGV_Agenda.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvAgenda_CellPainting);
@@ -263,7 +263,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "UC_AgendaTurnos";
-            this.Size = new System.Drawing.Size(867, 480);
+            this.Size = new System.Drawing.Size(882, 480);
             this.Load += new System.EventHandler(this.UC_AgendaTurnos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

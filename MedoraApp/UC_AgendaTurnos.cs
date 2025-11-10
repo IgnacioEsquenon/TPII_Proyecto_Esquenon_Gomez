@@ -64,7 +64,7 @@ namespace MedoraApp
             if (e.RowIndex >= 0 && DGV_Agenda.Columns[e.ColumnIndex].Name == "colAtender")
             {
                 string estado = DGV_Agenda.Rows[e.RowIndex].Cells["colEstadoReserva"].Value.ToString();
-                if (estado == "Finalizado")
+                if (estado == "Atendida")
                 {
                     return; 
                 }
@@ -95,7 +95,7 @@ namespace MedoraApp
                     {
                         string estado = estadoValue.ToString();
 
-                        if (estado == "Finalizado")
+                        if (estado == "Atendida")
                         {
                             
                             e.Paint(e.CellBounds, DataGridViewPaintParts.All & ~DataGridViewPaintParts.ContentForeground);

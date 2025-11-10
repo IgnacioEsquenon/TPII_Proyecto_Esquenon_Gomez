@@ -219,7 +219,7 @@ namespace MedoraApp
             this.panelContenido.Controls.Add(this.label1);
             this.panelContenido.Location = new System.Drawing.Point(141, 0);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(663, 453);
+            this.panelContenido.Size = new System.Drawing.Size(715, 453);
             this.panelContenido.TabIndex = 1;
             // 
             // label1
@@ -237,7 +237,7 @@ namespace MedoraApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 452);
+            this.ClientSize = new System.Drawing.Size(856, 452);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelContenido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -106,7 +106,6 @@ namespace MedoraApp
             TB_NombrePac.Clear();
             TB_ApellidoPac.Clear();
             TB_DNIPac.Clear();
-            TB_EdadPac.Clear();
             TB_EmailPac.Clear();
             TB_TelefonoPac.Clear();
 
@@ -122,20 +121,16 @@ namespace MedoraApp
 
         private void btnCrearPac_Click(object sender, EventArgs e)
         {
-            // --- 1. VALIDACIONES ---
-
-            // Validar campos vacíos (sin contraseña)
             if (string.IsNullOrWhiteSpace(TB_NombrePac.Text) ||
                 string.IsNullOrWhiteSpace(TB_ApellidoPac.Text) ||
                 string.IsNullOrWhiteSpace(TB_DNIPac.Text) ||
-                string.IsNullOrWhiteSpace(TB_EdadPac.Text) ||
-                string.IsNullOrWhiteSpace(TB_TelefonoPac.Text))
+                string.IsNullOrWhiteSpace(TB_TelefonoPac.Text) ||
+                CB_ObraSocial.SelectedValue == null)
             {
-                MessageBox.Show("Debe completar Nombre, Apellido, DNI ,Edad y Telefono.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Debe completar Nombre, Apellido, DNI, Teléfono y Obra Social.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Validar que nombre y apellido no contengan números (reutilizamos la lógica)
             if (TB_NombrePac.Text.Any(char.IsDigit))
             {
                 MessageBox.Show("El nombre no puede contener números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -148,10 +143,10 @@ namespace MedoraApp
                 return;
             }
 
-            // ✅ Nueva validación para la Edad
-            if (!int.TryParse(TB_EdadPac.Text, out int edad) || edad < 0 || edad > 120)
+            // Validar Fecha de Nacimiento 
+            if (dtpFechaNacimiento.Value.Date > DateTime.Now.Date)
             {
-                MessageBox.Show("La edad ingresada no es un número válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("La fecha de nacimiento no puede ser en el futuro.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -162,54 +157,48 @@ namespace MedoraApp
                 return;
             }
 
-            // ✅ Nueva validación de DNI/Email único (muy importante)
-            // Suponiendo que tienes un PacienteController llamado 'pacienteController'
-            if (pacienteController.ExistePaciente(TB_DNIPac.Text.Trim(), TB_EmailPac.Text.Trim()))
+            // Validar que DNI y Teléfono sean numéricos 
+            if (!TB_DNIPac.Text.All(char.IsDigit))
             {
-                MessageBox.Show("El DNI o el Email ya se encuentran registrados.", "Paciente Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El DNI debe contener solo números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!TB_TelefonoPac.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("El teléfono debe contener solo números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Validar selección de Obra Social
-            if (CB_ObraSocial.SelectedIndex == -1)
+            if (pacienteController.ExistePaciente(TB_DNIPac.Text.Trim(), TB_EmailPac.Text.Trim()))
             {
-                MessageBox.Show("Debe seleccionar una opción de obra social.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("El DNI o el Email ya se encuentran registrados.", "Paciente Duplicado");
                 return;
             }
 
             // --- 2. CREACIÓN DEL OBJETO PACIENTE ---
-
             Paciente nuevoPaciente = new Paciente
             {
                 Nombre = TB_NombrePac.Text.Trim(),
                 Apellido = TB_ApellidoPac.Text.Trim(),
                 Dni = TB_DNIPac.Text.Trim(),
-                Edad = edad,
-                Email = TB_EmailPac.Text.Trim(),
-                Telefono = TB_TelefonoPac.Text.Trim()
+                Email = string.IsNullOrWhiteSpace(TB_EmailPac.Text) ? null : TB_EmailPac.Text.Trim(),
+                Telefono = TB_TelefonoPac.Text.Trim(),
+                FechaNacimiento = dtpFechaNacimiento.Value.Date, // <-- Lee del DateTimePicker
+                IdObraSocial = (CB_ObraSocial.SelectedValue != null && (int)CB_ObraSocial.SelectedValue > 0)
+                               ? (int?)CB_ObraSocial.SelectedValue
+                               : null
             };
 
-            // Lógica para asignar la obra social (maneja el caso "Particular")
-            int idObraSocialSeleccionada = Convert.ToInt32(CB_ObraSocial.SelectedValue);
-            if (idObraSocialSeleccionada > 0)
-            {
-                nuevoPaciente.IdObraSocial = idObraSocialSeleccionada;
-            }
-            else
-            {
-                nuevoPaciente.IdObraSocial = null; // Si es 'Particular' (ID 0), guardamos NULL
-            }
-
             // --- 3. INSERCIÓN EN LA BASE DE DATOS ---
+            bool resultado = pacienteController.RegistrarPaciente(nuevoPaciente); // Llama al método correcto
 
-            bool resultado = pacienteController.CrearPaciente(nuevoPaciente);
-
+            // --- 4. Verificación del Resultado ---
             if (resultado)
             {
-                MessageBox.Show("✅ Paciente registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LimpiarCampos(); // Llama a tu método para limpiar el formulario
+                MessageBox.Show("✅ Paciente registrado correctamente.", "Éxito");
+                LimpiarCampos();
             }
-            // El controller se encarga de mostrar el error si 'CrearPaciente' devuelve false
+            // Si 'resultado' es false, el controlador ya se encargó de mostrar el mensaje de error.
         }
     }
 }

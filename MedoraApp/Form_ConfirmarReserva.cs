@@ -19,6 +19,7 @@ namespace MedoraApp
         private DateTime _fecha;
         private TimeSpan _hora;
         private int _idEspecialidad;
+        private DataTable dtPacientesMaestra;
 
         private TurnoController turnoController;
         private PacienteController pacienteController;
@@ -57,14 +58,17 @@ namespace MedoraApp
         {
             try
             {
-                CB_Paciente.DataSource = pacienteController.ObtenerTodosLosPacientes();
+                
+                dtPacientesMaestra = pacienteController.ObtenerTodosLosPacientes();
 
+                CB_Paciente.DataSource = dtPacientesMaestra;
                 CB_Paciente.DisplayMember = "DisplayText";
-
                 CB_Paciente.ValueMember = "id_paciente";
 
                 CB_Paciente.SelectedIndex = -1;
-                CB_Paciente.Text = "Buscar o seleccionar paciente...";
+                CB_Paciente.Text = "Escriba para buscar por DNI, Nombre o Apellido...";
+
+                CB_Paciente.AutoCompleteMode = AutoCompleteMode.None;
             }
             catch (Exception ex)
             {
@@ -112,6 +116,33 @@ namespace MedoraApp
                 this.Close(); 
             }
             
+        }
+
+        private void CB_Paciente_TextUpdate(object sender, EventArgs e)
+        {
+
+            string filtro = CB_Paciente.Text;
+
+            DataView dv = dtPacientesMaestra.DefaultView;
+
+            if (string.IsNullOrWhiteSpace(filtro))
+            {
+                dv.RowFilter = string.Empty;
+            }
+            else
+            {
+                string filtroSeguro = filtro.Replace("'", "''");
+                dv.RowFilter = $"DisplayText LIKE '%{filtroSeguro}%'";
+                
+            }
+
+            CB_Paciente.DataSource = dv.ToTable();
+
+            CB_Paciente.DroppedDown = true;
+            CB_Paciente.Cursor = Cursors.Default;
+
+            CB_Paciente.Text = filtro;
+            CB_Paciente.SelectionStart = filtro.Length;
         }
     }
 }

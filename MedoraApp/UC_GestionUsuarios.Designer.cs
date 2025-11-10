@@ -88,7 +88,7 @@
             this.btnEliminar});
             this.DGV_Usuarios.Location = new System.Drawing.Point(3, 120);
             this.DGV_Usuarios.Name = "DGV_Usuarios";
-            this.DGV_Usuarios.Size = new System.Drawing.Size(757, 246);
+            this.DGV_Usuarios.Size = new System.Drawing.Size(748, 311);
             this.DGV_Usuarios.TabIndex = 19;
             this.DGV_Usuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Usuarios_CellContentClick);
             this.DGV_Usuarios.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DGV_Usuarios_CellFormatting);
@@ -234,7 +234,7 @@
             this.Controls.Add(this.DGV_Usuarios);
             this.Controls.Add(this.panel1);
             this.Name = "UC_GestionUsuarios";
-            this.Size = new System.Drawing.Size(799, 369);
+            this.Size = new System.Drawing.Size(799, 477);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Usuarios)).EndInit();

@@ -79,16 +79,26 @@ namespace MedoraApp
 
         private void dgvHistorial_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (e.RowIndex >= 0 && dgvHistorial.Columns[e.ColumnIndex].Name == "colVerDiagnostico")
-            {
-                string diagnostico = dgvHistorial.Rows[e.RowIndex].Cells["colDiagnosticoData"].Value.ToString();
+            // 1. Verificamos que no estemos en la cabecera
+            if (e.RowIndex < 0) return;
 
-                if (diagnostico == "(No asistió el Paciente)" || diagnostico == "Sin diagnóstico")
-                {  
+            // 2. Verificamos que estemos en nuestra columna de botón "colVerDiagnostico"
+            if (dgvHistorial.Columns[e.ColumnIndex].Name == "colVerDiagnostico")
+            {
+                // 3. Obtenemos el texto de forma SEGURA desde la columna de DATOS INVISIBLE
+                //    'as string' convertirá DBNull.Value o null en un 'null' de C# sin fallar.
+                string diagnostico = dgvHistorial.Rows[e.RowIndex].Cells["colDiagnosticoData"].Value as string;
+
+                // 4. La Lógica de Decisión
+                //    string.IsNullOrEmpty() comprueba si es null O una cadena vacía ""
+                if (string.IsNullOrEmpty(diagnostico) || diagnostico == "(No asistió el Paciente)" || diagnostico == "Sin diagnóstico")
+                {
+                    // Si no hay diagnóstico, mostramos el texto informativo
                     e.Value = diagnostico;
                 }
                 else
                 {
+                    // Si SÍ hay un diagnóstico, ponemos el texto del botón
                     e.Value = "Ver Diagnóstico";
                 }
             }

@@ -162,7 +162,6 @@
             this.TB_EmailRec.Name = "TB_EmailRec";
             this.TB_EmailRec.Size = new System.Drawing.Size(153, 20);
             this.TB_EmailRec.TabIndex = 27;
-
             // 
             // TB_TelefonoRec
             // 
@@ -179,11 +178,10 @@
             this.TB_PasswordRec.Name = "TB_PasswordRec";
             this.TB_PasswordRec.Size = new System.Drawing.Size(153, 20);
             this.TB_PasswordRec.TabIndex = 29;
-
             // 
             // btnCrearUsuario
             // 
-            this.btnCrearUsuario.Location = new System.Drawing.Point(251, 308);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(256, 349);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(132, 44);
             this.btnCrearUsuario.TabIndex = 30;
@@ -211,7 +209,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "UC_CrearRecep";
-            this.Size = new System.Drawing.Size(659, 369);
+            this.Size = new System.Drawing.Size(659, 458);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

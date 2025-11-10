@@ -17,50 +17,64 @@ namespace MedoraAppLibrary
             connectionString = connString;
         }
 
-        public bool CrearPaciente(Paciente nuevoPaciente)
+        public bool RegistrarPaciente(Paciente nuevoPaciente)
         {
-            string query = @"INSERT INTO Paciente (nombre, apellido, dni, telefono, email, id_obra_social, edad)
-                         VALUES (@nombre, @apellido, @dni, @telefono, @email, @id_obra_social, @edad)";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@nombre", nuevoPaciente.Nombre);
-                cmd.Parameters.AddWithValue("@apellido", nuevoPaciente.Apellido);
-                cmd.Parameters.AddWithValue("@dni", nuevoPaciente.Dni);
-                cmd.Parameters.AddWithValue("@telefono", (object)nuevoPaciente.Telefono ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@email", (object)nuevoPaciente.Email ?? DBNull.Value);
-                cmd.Parameters.AddWithValue("@edad", nuevoPaciente.Edad);
-
-                if (nuevoPaciente.IdObraSocial.HasValue)
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    cmd.Parameters.AddWithValue("@id_obra_social", nuevoPaciente.IdObraSocial.Value);
+                    // 1. Llama al Stored Procedure correcto
+                    using (SqlCommand cmd = new SqlCommand("rec_RegistrarPaciente", con))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        // 2. Asigna todos los parámetros
+                        cmd.Parameters.AddWithValue("@Nombre", nuevoPaciente.Nombre);
+                        cmd.Parameters.AddWithValue("@Apellido", nuevoPaciente.Apellido);
+                        cmd.Parameters.AddWithValue("@Dni", nuevoPaciente.Dni);
+                        cmd.Parameters.AddWithValue("@Email", (object)nuevoPaciente.Email ?? DBNull.Value);
+                        cmd.Parameters.AddWithValue("@Telefono", nuevoPaciente.Telefono);
+
+                        // 3. Pasa la nueva propiedad FechaNacimiento
+                        cmd.Parameters.AddWithValue("@FechaNacimiento", nuevoPaciente.FechaNacimiento);
+
+                        // 4. Maneja la Obra Social
+                        if (nuevoPaciente.IdObraSocial.HasValue && nuevoPaciente.IdObraSocial.Value > 0)
+                        {
+                            cmd.Parameters.AddWithValue("@IdObraSocial", nuevoPaciente.IdObraSocial.Value);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@IdObraSocial", DBNull.Value);
+                        }
+
+                        con.Open();
+                        int filasAfectadas = cmd.ExecuteNonQuery();
+
+                        // 5. Devuelve 'true' si la inserción fue exitosa
+                        return filasAfectadas > 0;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                if (ex.Number == 2627) // Error de Clave Única (DNI, Email, etc.)
+                {
+                    MessageBox.Show("Error: El DNI, Email o Teléfono ya se encuentran registrados.", "Dato duplicado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    cmd.Parameters.AddWithValue("@id_obra_social", DBNull.Value);
+                    MessageBox.Show("Error de base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-                try
-                {
-                    connection.Open();
-                    int filasAfectadas = cmd.ExecuteNonQuery();
-                    return filasAfectadas > 0;
-                }
-                catch (SqlException ex)
-                {
-                    if (ex.Number == 2627) 
-                    {
-                        MessageBox.Show("Error: El DNI o el Email ya se encuentran registrados.", "Dato duplicado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error de base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    return false;
-                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inesperado al registrar paciente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
+
 
         public DataTable ObtenerTodosLosPacientes()
         {
@@ -89,45 +103,36 @@ namespace MedoraAppLibrary
 
         public bool ExistePaciente(string dni, string email)
         {
-            string query = "SELECT COUNT(1) FROM Paciente WHERE dni = @dni OR email = @email";
-
-            if (string.IsNullOrWhiteSpace(email))
+            try
             {
-                query = "SELECT COUNT(1) FROM Paciente WHERE dni = @dni";
-            }
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                if (!string.IsNullOrWhiteSpace(email))
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    query += " OR email = @email";
-                }
-
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@dni", dni);
-
-                if (!string.IsNullOrWhiteSpace(email))
-                {
-                    cmd.Parameters.AddWithValue("@email", email);
-                }
-
-                try
-                {
-                    connection.Open();
-                    object result = cmd.ExecuteScalar(); 
-
-                    if (result != null && result != DBNull.Value)
+                    using (SqlCommand cmd = new SqlCommand("rec_VerificarPacienteExistente", con))
                     {
-                        int count = Convert.ToInt32(result);
-                        return count > 0;
-                    }
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@Dni", dni);
 
-                    return false; 
+                        // Maneja el caso de que el email sea un string vacío
+                        if (!string.IsNullOrEmpty(email))
+                        {
+                            cmd.Parameters.AddWithValue("@Email", email);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@Email", DBNull.Value);
+                        }
+
+                        con.Open();
+                        // ExecuteScalar es perfecto para devolver un solo valor (1 o 0)
+                        int resultado = (int)cmd.ExecuteScalar();
+                        return (resultado == 1);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    return true;
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar paciente: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return true; // Si hay un error, devolvemos true por precaución para detener el registro.
             }
         }
 

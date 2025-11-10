@@ -50,7 +50,7 @@ namespace MedoraApp
         private void dgvListaBloques_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Ignorar clics en la cabecera
-            if (e.RowIndex < 0) return;
+            if (e.RowIndex < 0 || e.ColumnIndex < 0) return;
 
             // Si se hizo clic en el botón de Eliminar
             if (dgvListaBloques.Columns[e.ColumnIndex].Name == "colEliminar")
@@ -64,15 +64,33 @@ namespace MedoraApp
 
                 if (confirmacion == DialogResult.Yes)
                 {
-                    int idBloque = Convert.ToInt32(dgvListaBloques.Rows[e.RowIndex].Cells["colIdBloque"].Value);
-
-                    // Llamamos al método del controlador que ya creamos
-                    bool exito = _turnoController.EliminarBloqueHorario(idBloque);
-
-                    if (exito)
+                    try
                     {
-                        MessageBox.Show("Bloque horario eliminado con éxito.", "Éxito");
-                        CargarBloques(); // Recargamos la grilla para que se actualice
+                        // ===== ¡AQUÍ ESTÁ LA CORRECCIÓN! =====
+
+                        // 1. Obtenemos la fila de DATOS completa en la que se hizo clic.
+                        DataRowView filaDeDatos = (DataRowView)dgvListaBloques.Rows[e.RowIndex].DataBoundItem;
+
+                        // 2. Leemos el 'id_bloque' directamente de los datos, no de una celda.
+                        //    Este nombre "id_bloque" debe coincidir con el que devuelve el SP.
+                        int idBloque = Convert.ToInt32(filaDeDatos["id_bloque"]);
+
+                        // ======================================
+
+                        // 3. Llamamos al controlador con el ID correcto
+                        bool exito = _turnoController.EliminarBloqueHorario(idBloque);
+
+                        // 4. Si fue exitoso, refrescamos la vista
+                        if (exito)
+                        {
+                            MessageBox.Show("Bloque horario eliminado con éxito.", "Éxito");
+                            CargarBloques(); // Recargamos la grilla
+                        }
+                        // Si 'exito' es false, el controlador ya mostró el error de SQL
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al procesar la solicitud: " + ex.Message, "Error");
                     }
                 }
             }

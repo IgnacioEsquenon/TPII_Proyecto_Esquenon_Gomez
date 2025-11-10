@@ -42,9 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Edad = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.TB_EdadPac = new System.Windows.Forms.TextBox();
             this.CB_ObraSocial = new System.Windows.Forms.ComboBox();
             this.btnCrearPac = new System.Windows.Forms.Button();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,11 +169,11 @@
             this.Edad.AutoSize = true;
             this.Edad.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Edad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Edad.Location = new System.Drawing.Point(33, 179);
+            this.Edad.Location = new System.Drawing.Point(33, 176);
             this.Edad.Name = "Edad";
-            this.Edad.Size = new System.Drawing.Size(55, 21);
+            this.Edad.Size = new System.Drawing.Size(190, 21);
             this.Edad.TabIndex = 39;
-            this.Edad.Text = "Edad:";
+            this.Edad.Text = "Fecha de Nacimiento:";
             // 
             // label7
             // 
@@ -185,14 +185,6 @@
             this.label7.Size = new System.Drawing.Size(217, 21);
             this.label7.TabIndex = 40;
             this.label7.Text = "Seleccione Obra Social:";
-            // 
-            // TB_EdadPac
-            // 
-            this.TB_EdadPac.Location = new System.Drawing.Point(148, 180);
-            this.TB_EdadPac.Name = "TB_EdadPac";
-            this.TB_EdadPac.Size = new System.Drawing.Size(153, 20);
-            this.TB_EdadPac.TabIndex = 41;
-            this.TB_EdadPac.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_EdadPac_KeyPress);
             // 
             // CB_ObraSocial
             // 
@@ -213,14 +205,23 @@
             this.btnCrearPac.UseVisualStyleBackColor = true;
             this.btnCrearPac.Click += new System.EventHandler(this.btnCrearPac_Click);
             // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(229, 176);
+            this.dtpFechaNacimiento.MaxDate = new System.DateTime(2025, 11, 16, 0, 0, 0, 0);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaNacimiento.TabIndex = 44;
+            this.dtpFechaNacimiento.Value = new System.DateTime(2025, 11, 9, 0, 0, 0, 0);
+            // 
             // UC_RegistrarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
+            this.Controls.Add(this.dtpFechaNacimiento);
             this.Controls.Add(this.btnCrearPac);
             this.Controls.Add(this.CB_ObraSocial);
-            this.Controls.Add(this.TB_EdadPac);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Edad);
             this.Controls.Add(this.TB_TelefonoPac);
@@ -260,8 +261,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Edad;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TB_EdadPac;
         private System.Windows.Forms.ComboBox CB_ObraSocial;
         private System.Windows.Forms.Button btnCrearPac;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
     }
 }

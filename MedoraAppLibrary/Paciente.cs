@@ -15,14 +15,14 @@ namespace MedoraAppLibrary
         public string Email { get; set; }        
         public string Telefono { get; set; }
 
-        public int Edad { get; set; } // La edad como un número entero
+        public DateTime FechaNacimiento { get; set; } 
 
         // Se usa 'int?' para permitir que un paciente no tenga obra social (valor NULL)
         public int? IdObraSocial { get; set; }
 
         public Paciente() { }
 
-        public Paciente(int id, string nombre, string apellido, string dni, string email, string telefono, int edad, int id_obra_social )
+        public Paciente(int id, string nombre, string apellido, string dni, string email, string telefono, DateTime fechaNacimiento, int? id_obra_social )
         {
             IdPaciente = id;
             Nombre = nombre;
@@ -30,8 +30,8 @@ namespace MedoraAppLibrary
             Dni = dni;
             Email = email;
             Telefono = telefono;
-            Edad = edad;
-            IdObraSocial = id_obra_social;
+            this.FechaNacimiento = fechaNacimiento;
+            this.IdObraSocial = id_obra_social;
         }
 
         public string NombreCompleto()

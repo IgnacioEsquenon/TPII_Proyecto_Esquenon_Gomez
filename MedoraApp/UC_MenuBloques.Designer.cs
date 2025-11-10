@@ -44,7 +44,7 @@
             this.panel1.Controls.Add(this.btnCrearBloq);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(669, 53);
+            this.panel1.Size = new System.Drawing.Size(855, 53);
             this.panel1.TabIndex = 0;
             // 
             // btnVerBloques
@@ -55,7 +55,7 @@
             this.btnVerBloques.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnVerBloques.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnVerBloques.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerBloques.Location = new System.Drawing.Point(206, 5);
+            this.btnVerBloques.Location = new System.Drawing.Point(260, 5);
             this.btnVerBloques.Name = "btnVerBloques";
             this.btnVerBloques.Size = new System.Drawing.Size(110, 43);
             this.btnVerBloques.TabIndex = 5;
@@ -71,7 +71,7 @@
             this.btnCrearBloq.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnCrearBloq.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnCrearBloq.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearBloq.Location = new System.Drawing.Point(356, 5);
+            this.btnCrearBloq.Location = new System.Drawing.Point(431, 5);
             this.btnCrearBloq.Name = "btnCrearBloq";
             this.btnCrearBloq.Size = new System.Drawing.Size(110, 43);
             this.btnCrearBloq.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.p_Contenido_Bloq.BackColor = System.Drawing.Color.SlateBlue;
             this.p_Contenido_Bloq.Location = new System.Drawing.Point(0, 54);
             this.p_Contenido_Bloq.Name = "p_Contenido_Bloq";
-            this.p_Contenido_Bloq.Size = new System.Drawing.Size(668, 383);
+            this.p_Contenido_Bloq.Size = new System.Drawing.Size(854, 383);
             this.p_Contenido_Bloq.TabIndex = 1;
             // 
             // UC_MenuBloques
@@ -97,7 +97,7 @@
             this.Controls.Add(this.p_Contenido_Bloq);
             this.Controls.Add(this.panel1);
             this.Name = "UC_MenuBloques";
-            this.Size = new System.Drawing.Size(668, 432);
+            this.Size = new System.Drawing.Size(854, 432);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

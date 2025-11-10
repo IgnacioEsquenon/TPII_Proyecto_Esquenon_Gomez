@@ -197,11 +197,10 @@ namespace MedoraApp
             this.LB_Especialidad.Size = new System.Drawing.Size(148, 30);
             this.LB_Especialidad.TabIndex = 14;
             this.LB_Especialidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LB_Especialidad_KeyPress);
-            
             // 
             // btnCrearUsuario
             // 
-            this.btnCrearUsuario.Location = new System.Drawing.Point(245, 302);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(244, 345);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(132, 44);
             this.btnCrearUsuario.TabIndex = 15;
@@ -217,7 +216,6 @@ namespace MedoraApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 48);
             this.panel1.TabIndex = 16;
-            //
             // 
             // UC_CrearMedico
             // 
@@ -241,7 +239,7 @@ namespace MedoraApp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "UC_CrearMedico";
-            this.Size = new System.Drawing.Size(659, 369);
+            this.Size = new System.Drawing.Size(659, 449);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uCCrearMedicoBindingSource)).EndInit();

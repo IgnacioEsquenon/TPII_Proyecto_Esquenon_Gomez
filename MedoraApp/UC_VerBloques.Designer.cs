@@ -91,7 +91,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListaBloques.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvListaBloques.Size = new System.Drawing.Size(644, 281);
+            this.dgvListaBloques.Size = new System.Drawing.Size(662, 281);
             this.dgvListaBloques.TabIndex = 1;
             this.dgvListaBloques.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaBloques_CellContentClick);
             // 
@@ -163,7 +163,7 @@
             this.Controls.Add(this.dgvListaBloques);
             this.Controls.Add(this.label1);
             this.Name = "UC_VerBloques";
-            this.Size = new System.Drawing.Size(701, 376);
+            this.Size = new System.Drawing.Size(796, 376);
             this.Load += new System.EventHandler(this.UC_VerBloques_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaBloques)).EndInit();
             this.ResumeLayout(false);
